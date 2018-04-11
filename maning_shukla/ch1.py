@@ -1,2 +1,2 @@
 import tensorflow as tf
-x = 
+x = tf.constat
