@@ -13,3 +13,4 @@ neg_op = tf.negative(x)
 
 with tf.Session() as sess:
     result = sess.run(neg_op)
+result
