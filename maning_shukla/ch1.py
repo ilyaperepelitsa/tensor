@@ -12,4 +12,4 @@ x = tf.constant([[1, 2]])
 neg_op = tf.negative(x)
 
 with tf.Session() as sess:
-    result = 
+    result = sess.run(neg_op)
