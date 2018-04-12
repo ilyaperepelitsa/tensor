@@ -8,3 +8,4 @@ negMatrix
 
 
 ####### EXECUTING NOW
+x = tf.const
