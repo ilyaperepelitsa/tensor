@@ -8,4 +8,4 @@ negMatrix
 
 
 ####### EXECUTING NOW
-x = tf.const
+x = tf.constant([[1, 2]])
