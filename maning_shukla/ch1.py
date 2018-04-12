@@ -4,3 +4,7 @@ x
 negMatrix = tf.negative(x)
 negMatrix
 # print(negMatrix)
+
+
+
+#####
