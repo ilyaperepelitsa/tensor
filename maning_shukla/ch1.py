@@ -9,4 +9,4 @@ negMatrix
 
 ####### EXECUTING NOW
 x = tf.constant([[1, 2]])
-neg_op = 
+neg_op = tf.negative(x)
