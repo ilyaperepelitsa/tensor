@@ -11,4 +11,4 @@ negMatrix
 x = tf.constant([[1, 2]])
 neg_op = tf.negative(x)
 
-with tf.Session as 
+with tf.Session() as ses
