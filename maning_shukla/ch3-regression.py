@@ -19,4 +19,5 @@ def model(X, w):
     return tf.multiply(X, w)
 
 w = tf.Variable(0.0, name = "weights")
-y_model = model()
+y_model = model(X, w)
+cost = 
