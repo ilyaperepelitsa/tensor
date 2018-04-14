@@ -10,4 +10,4 @@ trX = np.linspace(-1, 1, 101)
 
 num_coeffs = 6
 trY_coeffs = [1, 2, 3, 4, 5, 6]
-trY
+trY = 0
