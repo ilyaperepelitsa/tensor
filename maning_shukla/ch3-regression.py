@@ -3,4 +3,4 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-learni
+learning_rate = 0.
