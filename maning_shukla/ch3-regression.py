@@ -20,4 +20,4 @@ def model(X, w):
 
 w = tf.Variable(0.0, name = "weights")
 y_model = model(X, w)
-cost = tf.square(Y - )
+cost = tf.square(Y - y_mode)
