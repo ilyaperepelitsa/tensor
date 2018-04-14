@@ -16,4 +16,5 @@ for i in range(num_coeffs):
     trY += trY_coeffs[i] * np.power(trX, i)
 trY += np.random.randn(*trX.shape) * 1.5
 
-plt.scatter(trX, tr)
+plt.scatter(trX, trY)
+plt.sh
