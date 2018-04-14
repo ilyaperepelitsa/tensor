@@ -13,3 +13,4 @@ y_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 # y_train
 
 X = tf.placeholder(tf.float32)
+X = tf.placeholder(tf.float32)
