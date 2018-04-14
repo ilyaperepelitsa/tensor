@@ -4,4 +4,4 @@ import matplotlib.pyplot as plt
 
 
 learning_rate = 0.01
-training_e
+training_epochs = 40
