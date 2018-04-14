@@ -36,4 +36,5 @@ w_val = sess.run(w)
 
 sess.close()
 plt.scatter(x_train, y_train)
-y_learned = x_train
+y_learned = x_train*w_val
+plt.plot()
