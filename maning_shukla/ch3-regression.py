@@ -6,4 +6,4 @@ import matplotlib.pyplot as plt
 learning_rate = 0.01
 training_epochs = 100
 
-x_train 
+x_train = np.linspace
