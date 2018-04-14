@@ -22,4 +22,4 @@ w = tf.Variable(0.0, name = "weights")
 y_model = model(X, w)
 cost = tf.square(Y - y_model)
 
-train_op = tf.tra
+train_op = tf.train.Gradi
