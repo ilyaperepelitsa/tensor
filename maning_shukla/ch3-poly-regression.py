@@ -21,4 +21,5 @@ plt.show()
 
 
 def model(X, w):
-    terms 
+    terms = []
+    for i in r
