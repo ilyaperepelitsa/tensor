@@ -18,3 +18,6 @@ trY += np.random.randn(*trX.shape) * 1.5
 
 plt.scatter(trX, trY)
 plt.show()
+
+
+def model
