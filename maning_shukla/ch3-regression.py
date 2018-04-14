@@ -12,4 +12,4 @@ y_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 # x_train
 # y_train
 
-X = tf.placeholder(tf.float)
+X = tf.placeholder(tf.float32)
