@@ -20,4 +20,5 @@ plt.scatter(trX, trY)
 plt.show()
 
 
-def model
+def model(X, w):
+    
