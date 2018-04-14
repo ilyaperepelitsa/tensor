@@ -14,4 +14,6 @@ trY = 0
 
 for i in range(num_coeffs):
     trY += trY_coeffs[i] * np.power(trX, i)
-trY += np.random.randn(*trX.shape)
+trY += np.random.randn(*trX.shape) * 1.5
+
+plt.
