@@ -5,3 +5,5 @@ import matplotlib.pyplot as plt
 
 learning_rate = 0.01
 training_epochs = 40
+
+trX = 
