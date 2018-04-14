@@ -9,4 +9,4 @@ training_epochs = 40
 trX = np.linspace(-1, 1, 101)
 
 num_coeffs = 6
-trY
+trY_coeffs = [1, 2, 3, 4, 5, ]
