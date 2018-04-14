@@ -38,3 +38,4 @@ sess.close()
 plt.scatter(x_train, y_train)
 y_learned = x_train*w_val
 plt.plot(x_train, y_learned, "r")
+plt.show()
