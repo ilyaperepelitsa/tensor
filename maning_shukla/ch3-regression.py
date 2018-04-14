@@ -15,4 +15,5 @@ y_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
-def model(X, w)
+def model(X, w):
+    retur
