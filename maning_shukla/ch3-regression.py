@@ -22,4 +22,4 @@ w = tf.Variable(0.0, name = "weights")
 y_model = model(X, w)
 cost = tf.square(Y - y_model)
 
-train_op = tf.train.GradientDescentOptimizer(learning_rate)
+train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize
