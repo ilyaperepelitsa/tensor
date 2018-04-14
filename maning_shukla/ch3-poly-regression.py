@@ -12,4 +12,5 @@ num_coeffs = 6
 trY_coeffs = [1, 2, 3, 4, 5, 6]
 trY = 0
 
-for i in range(num_coeffs)
+for i in range(num_coeffs):
+    t
