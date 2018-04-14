@@ -16,4 +16,4 @@ X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
 def model(X, w):
-    return tf.mult
+    return tf.multiply()
