@@ -21,4 +21,4 @@ plt.show()
 
 
 def model(X, w):
-    
+    terms 
