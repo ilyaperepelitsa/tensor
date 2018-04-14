@@ -13,4 +13,4 @@ trY_coeffs = [1, 2, 3, 4, 5, 6]
 trY = 0
 
 for i in range(num_coeffs):
-    trY += trY_coeffs
+    trY += trY_coeffs[i]
