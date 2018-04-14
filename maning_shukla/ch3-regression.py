@@ -35,4 +35,4 @@ for epoch in range(training_epochs):
 w_val = sess.run(w)
 
 sess.close()
-plt.scatter()
+plt.scatter(x_train, y_train)
