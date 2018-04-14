@@ -9,5 +9,5 @@ training_epochs = 100
 x_train = np.linspace(-1, 1, 101)
 y_train = 2 * x_train + np.random.randn(*x_train.shape) * 0.33
 
-x_train
-y_train
+# x_train
+# y_train
