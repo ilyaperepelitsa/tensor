@@ -51,4 +51,3 @@ plt.scatter(trX, trY)
 trY2 = 0
 for i in range(num_coeffs):
     trY2 += w_val[i] * np.power(trX, i)
-    
