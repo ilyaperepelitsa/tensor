@@ -27,4 +27,4 @@ def model(X, w):
         terms.append(term)
     return tf.add_n(terms)
 
-w = tf.Variable([0.] * num_coeffs, )
+w = tf.Variable([0.] * num_coeffs, name = "pa")
