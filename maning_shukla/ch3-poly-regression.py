@@ -40,3 +40,6 @@ sess.run(init)
 for epoch in range(training_epochs):
     for (x, y) in zip(trX, trY):
         sess.run(train_op, feed_dict = {X: x, Y: y})
+
+
+w_val
