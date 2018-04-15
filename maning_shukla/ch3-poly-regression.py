@@ -48,3 +48,4 @@ print(w_val)
 sess.close()
 
 plt.scatter(trX, trY)
+tr
