@@ -26,3 +26,5 @@ def model(X, w):
         term = tf.multiply(w[i], tf.pow(X, i))
         terms.append(term)
     return tf.add_n(terms)
+
+w = 
