@@ -29,4 +29,4 @@ def model(X, w):
 
 w = tf.Variable([0.] * num_coeffs, name = "parameters")
 y_model = model(X, w)
-cost = 
+cost = (tf.pow)
