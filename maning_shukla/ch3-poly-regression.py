@@ -25,4 +25,4 @@ def model(X, w):
     for i in range(num_coeffs):
         term = tf.multiply(w[i], tf.pow(X, i))
         terms.append(term)
-    return tf.add()
+    return tf.add_n(terms)
