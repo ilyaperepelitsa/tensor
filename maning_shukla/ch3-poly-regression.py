@@ -50,4 +50,4 @@ sess.close()
 plt.scatter(trX, trY)
 trY2 = 0
 for i in range(num_coeffs):
-    
+    trY2 += 
