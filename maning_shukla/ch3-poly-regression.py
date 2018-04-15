@@ -24,7 +24,7 @@ plt.show()
 def model(X, w):
     terms = []
     for i in range(num_coeffs):
-        term = tf.multiply(w[i], tf.pow(X, i, dtype = "float32"))
+        term = tf.multiply(w[i], tf.pow(X, i))
         terms.append(term)
     return tf.add_n(terms)
 
