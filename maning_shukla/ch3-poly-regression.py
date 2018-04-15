@@ -47,4 +47,4 @@ print(w_val)
 
 sess.close()
 
-plt.scatter()
+plt.scatter(trX, trY)
