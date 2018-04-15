@@ -28,3 +28,4 @@ def model(X, w):
     return tf.add_n(terms)
 
 w = tf.Variable([0.] * num_coeffs, name = "parameters")
+y_model = mod
