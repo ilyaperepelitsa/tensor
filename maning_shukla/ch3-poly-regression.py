@@ -42,4 +42,4 @@ for epoch in range(training_epochs):
         sess.run(train_op, feed_dict = {X: x, Y: y})
 
 
-w_val
+w_val = sess.run(w)
