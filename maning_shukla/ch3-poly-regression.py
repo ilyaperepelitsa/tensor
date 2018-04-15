@@ -49,3 +49,4 @@ sess.close()
 
 plt.scatter(trX, trY)
 trY2 = 0
+for i in rang
