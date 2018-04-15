@@ -33,4 +33,4 @@ y_model = model(X, w)
 cost = (tf.pow(Y - y_model, 2))
 train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
-sess = 
+sess = tf.Session()
