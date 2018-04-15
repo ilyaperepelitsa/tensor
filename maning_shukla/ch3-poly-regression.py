@@ -43,4 +43,4 @@ for epoch in range(training_epochs):
 
 
 w_val = sess.run(w)
-print
+print(w_val)
