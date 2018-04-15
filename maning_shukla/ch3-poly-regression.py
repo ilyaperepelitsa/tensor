@@ -53,4 +53,4 @@ for i in range(num_coeffs):
     trY2 += w_val[i] * np.power(trX, i)
 
 plt.plot(trX, trY, "r")
-plt.sh
+plt.show()
