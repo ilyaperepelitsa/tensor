@@ -7,6 +7,7 @@ learning_rate = 0.01
 training_epochs = 40
 
 trX = np.linspace(-1, 1, 51)
+tr
 
 num_coeffs = 6
 trY_coeffs = [1, 2, 3, 4, 5, 6]
