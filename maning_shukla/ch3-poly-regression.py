@@ -34,4 +34,5 @@ cost = (tf.pow(Y - y_model, 2))
 train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
 sess = tf.Session()
-init = tf.global_var
+init = tf.global_variables_initializer()
+sess.run()
