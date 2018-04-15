@@ -37,4 +37,4 @@ sess = tf.Session()
 init = tf.global_variables_initializer()
 sess.run(init)
 
-for epoch in ra
+for epoch in range(training_epochs)
