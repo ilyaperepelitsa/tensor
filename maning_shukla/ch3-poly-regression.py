@@ -46,4 +46,5 @@ w_val = sess.run(w)
 print(w_val)
 
 sess.close()
-plt
+
+plt.scatter()
