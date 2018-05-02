@@ -55,4 +55,4 @@ class SOM:
             sess.run(tf.global_variables_initializer())
             for i in range(self.num_iters):
                 for data_x in data:
-                    sess.run(se)
+                    sess.run(self.pro)
