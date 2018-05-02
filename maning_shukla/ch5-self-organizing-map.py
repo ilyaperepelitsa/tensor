@@ -80,4 +80,6 @@ colors = np.array(
     [1., 1., 0.]])
 
 som = SOM(4, 4, 3)
-som.t
+som.train(colors)
+
+p
