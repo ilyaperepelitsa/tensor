@@ -38,4 +38,4 @@ class HMM(object):
         for t in range(1, len(observations)):
             fwd = sess.run(hmm.forward_op(), feed_dict = {hmm.obs_idx: observations[t],
                                                             hmm.fwd: fwd})
-        prob = 
+        prob = sess.run(tf.red)
