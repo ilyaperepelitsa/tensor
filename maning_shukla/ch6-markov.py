@@ -63,6 +63,7 @@ def viterbi_decode(sess, hmm, observations):
     tokens = [viterbi[:, -1].argmax()]
     for i in range(len(observations) - 1, 0, -1):
         tokens.append(backpts[tokens[-1], i])
+    ret
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
