@@ -8,3 +8,5 @@ class SOM:
         self.height = height
         self.dim = dim
         self.node_locs = self.get_locs()
+
+        node
