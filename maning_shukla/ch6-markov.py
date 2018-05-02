@@ -3,4 +3,4 @@ import tensorflow as tf
 
 
 class HMM(object):
-    def __init__(self, init)
+    def __init__(self, initial_prob, tan)
