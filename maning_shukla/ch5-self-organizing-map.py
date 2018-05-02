@@ -83,4 +83,4 @@ som = SOM(4, 4, 3)
 som.train(colors)
 
 plt.imshow(som.centroid_grid)
-plt.show
+plt.show()
