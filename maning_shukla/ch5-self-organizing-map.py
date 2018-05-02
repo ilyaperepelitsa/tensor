@@ -32,4 +32,5 @@ class SOM:
         rate = tf.multiply(alpha, neigh_factor)
         rate_factor = tf.stack([tf.tile(tf.slice(rate, [i], [1]),
                                 [self.dim]) for i in range(num_nodes)])
-        nodes_diff = tf.multiply(rate_factor, tf.subtract(tf.stack([x for i in range(num_nodes)]), sel))
+        nodes_diff = tf.multiply(rate_factor, tf.subtract(tf.stack([x for i in range(num_nodes)]), self.nodes))
+        upda
