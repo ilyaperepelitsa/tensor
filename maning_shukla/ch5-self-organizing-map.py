@@ -5,4 +5,5 @@ class SOM:
     def __init__(self, width, height, dim):
         self.num_iters = 100
         self.width = width
-        self.height
+        self.height = height
+        
