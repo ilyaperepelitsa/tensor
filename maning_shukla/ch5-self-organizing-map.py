@@ -47,4 +47,5 @@ class SOM:
     def get_locs(self):
         locs = [[x, y]
                     for y in range(self.height)
-                    for x in range(self.)]
+                    for x in range(self.width)]
+        r
