@@ -40,7 +40,7 @@ class HMM(object):
         return tf.reshape(viterbi, tf.shape(self.viterbi))
 
     def backpt_op(self):
-        back_transitions = tf.
+        back_transitions = tf.matmul(self.viter)
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
