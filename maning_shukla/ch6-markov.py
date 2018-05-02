@@ -35,7 +35,8 @@ class HMM(object):
         return tf.reshape(fwd, tf.shape(self.fwd))
 
     def decode_op(self):
-        transitions = tf.matmul(self.viterbi, tf.transpose(self.get_emissions * self.trans_pp))
+        transitions = tf.matmul(self.viterbi, tf.transpose(self.get_emissions * self.trans_prob))
+        viterbi - 
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
