@@ -27,4 +27,4 @@ class HMM(object):
         fwd = tf.multiply(self.initial_prob, obs_prob)
         return fwd
 
-    def f
+    def forward_op(self)
