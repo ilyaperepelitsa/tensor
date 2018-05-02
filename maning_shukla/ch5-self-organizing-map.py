@@ -13,4 +13,4 @@ class SOM:
         self.nodes = nodes
 
         x = tf.placeholder(tf.float32, [dim])
-        
+        iter = tf.place
