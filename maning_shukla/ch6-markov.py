@@ -20,4 +20,4 @@ class HMM(object):
         slice_location = [0, obs_idx]
         num_rows = tf.shape(self.emission)[0]
         slice_shape = [num_rows, 1]
-        return tf.slice(self.emissi)
+        return tf.slice(self.emission, slice_)
