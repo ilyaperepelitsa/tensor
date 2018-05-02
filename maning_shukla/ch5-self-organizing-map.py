@@ -17,3 +17,5 @@ class SOM:
 
         self.x = x
         self.iter = iter
+
+        bmu_
