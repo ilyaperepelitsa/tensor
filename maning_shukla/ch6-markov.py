@@ -25,4 +25,6 @@ class HMM(object):
     def forward_init_op(self):
         obs_prob = self.get_emission(self.obs_idx)
         fwd = tf.multiply(self.initial_prob, obs_prob)
-        return forward_init_op
+        return fwd
+
+    def f
