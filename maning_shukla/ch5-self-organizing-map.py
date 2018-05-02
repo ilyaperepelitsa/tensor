@@ -37,4 +37,4 @@ class SOM:
         return tf.assign(self.nodes, update_nodes)
 
     def get_bmu_loc(self, x):
-        
+        expanded_x = 
