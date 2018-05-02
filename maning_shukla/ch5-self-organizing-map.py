@@ -64,4 +64,4 @@ class SOM:
                 centroid_grid[int(l[0])].append(self.nodes_val[i])
             self.centroid_grid = centroid_grid
 
-from matplotlib import p
+from matplotlib import pyplot as plt
