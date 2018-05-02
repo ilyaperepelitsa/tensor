@@ -9,4 +9,4 @@ class HMM(object):
         self.trans_prob = trans_prob
         self.emission = tf.constant(obs_prob)
 
-        assert 
+        assert self.initial_pr
