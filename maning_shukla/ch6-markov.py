@@ -63,7 +63,7 @@ def viterbi_decode(sess, hmm, observations):
     tokens = [viterbi[:, -1].argmax()]
     for i in range(len(observations) - 1, 0, -1):
         tokens.append(backpts[tokens[-1], i])
-    return tokens[]
+    return tokens[::-1]
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
@@ -86,3 +86,5 @@ observations = [0, 1, 1, 2, 1]
 with tf.Session() as sess:
     prob = forward_algoritm(sess, hmm, observations)
     print("Probability of observing {} is {}".format(observations, prob))
+
+    s
