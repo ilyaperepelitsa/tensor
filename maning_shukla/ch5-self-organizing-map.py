@@ -38,4 +38,4 @@ class SOM:
 
     def get_bmu_loc(self, x):
         expanded_x = tf.expand_dims(x, 0)
-        sqr_
+        sqr_diff = tf.squa
