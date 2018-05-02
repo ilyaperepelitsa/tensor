@@ -31,4 +31,4 @@ class HMM(object):
         transitions = tf.matmul(self.fwd, tf.transpose(self.get_emission(self.obs_idx)))
         weighted_transitions = transitions * self.trans_prob
         fwd = tf.reduce_sum(weighted_transitions, 0)
-        return tf.reshape(fwd, tf.shape)
+        return tf.reshape(fwd, tf.shape(self.fwd))
