@@ -52,7 +52,7 @@ def forward_algoritm(sess, hmm, observations):
     prob = sess.run(tf.reduce_sum(fwd))
     return prob
 
-def viterbi_decode
+def viterbi_decode(self)
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
