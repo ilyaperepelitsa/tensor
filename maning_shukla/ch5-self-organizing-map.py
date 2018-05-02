@@ -58,4 +58,5 @@ class SOM:
                     sess.run(self.propagate_nodes, feed_dict = {self.x: data_x,
                                                                 self.iter: i})
             centroid_grid = [[] for i in range(self.width)]
-            self.nodes_val = list(sess.run(self.))
+            self.nodes_val = list(sess.run(self.nodes))
+            
