@@ -60,7 +60,7 @@ trans_prob = np.array([[0.7, 0.3], [0.4, 0.6]])
 obs_prob = np.array([[0.1, 0.4, 0.5],
                      [0.6, 0.3, 0.1]])
 hmm = HMM(initial_prob = initial_prob, trans_prob = trans_prob, obs_prob = obs_prob)
-observation = [0, 1, 1, 2, 1]
+observations = [0, 1, 1, 2, 1]
 with tf.Session() as sess:
     prob = hmm.forward_algoritm(sess, hmm, observations)
     print("Probability of observing {} is {}".format(observations, prob))
