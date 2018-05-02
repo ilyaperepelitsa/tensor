@@ -53,7 +53,8 @@ def forward_algoritm(sess, hmm, observations):
     return prob
 
 def viterbi_decode(sess, hmm, observations):
-    viterbi = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs: observations[]})
+    viterbi = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs: observations[0]})
+    bacl
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
