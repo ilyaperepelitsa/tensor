@@ -25,4 +25,4 @@ class SOM:
         num_nodes = self.width * self.height
         rate = 1.0 - tf.div(iter, self.num_iters)
         alpha = rate * 0.5
-        sigma = rate * tf.to_float
+        sigma = rate * tf.to_float(tf.maximum)
