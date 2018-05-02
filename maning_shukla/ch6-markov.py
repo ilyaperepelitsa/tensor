@@ -45,4 +45,4 @@ class HMM(object):
 
 states = ("Rainy", "Sunny")
 observations = ("walk", "shop", "clean")
-start_probability = {"Rainy": 0.}
+start_probability = {"Rainy": 0.6, }
