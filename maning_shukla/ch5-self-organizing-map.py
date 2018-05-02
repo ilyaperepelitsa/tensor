@@ -9,4 +9,4 @@ class SOM:
         self.dim = dim
         self.node_locs = self.get_locs()
 
-        nodes = tf.Variable(tf.random_normal([wid]))
+        nodes = tf.Variable(tf.random_normal([width * height, d]))
