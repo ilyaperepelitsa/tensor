@@ -68,5 +68,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 colors = np.array(
-    [[0., 0., 1.].]
+    [[0., 0., 1.],
+    [0., 0., 1.],
+    [0., 0., 1.],]
 )
