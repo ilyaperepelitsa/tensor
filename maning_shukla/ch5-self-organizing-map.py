@@ -12,4 +12,4 @@ class SOM:
         nodes = tf.Variable(tf.random_normal([width * height, dim]))
         self.nodes = nodes
 
-        x = 
+        x = tf.place
