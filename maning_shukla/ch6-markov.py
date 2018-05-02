@@ -16,4 +16,4 @@ class HMM(object):
         self.obs_idx = tf.placeholder(tf.int32)
         self.fwd = tf.placeholder(tf.float64)
 
-    def get_emission(se)
+    def get_emission(self, obs_idx)
