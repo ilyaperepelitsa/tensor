@@ -30,4 +30,4 @@ class HMM(object):
     def forward_op(self):
         transitions = tf.matmul(self.fwd, tf.transpose(self.get_emission(self.obs_idx)))
         weighted_transitions = transitions * self.trans_prob
-        fwd = tf.reduce()
+        fwd = tf.reduce_sum()
