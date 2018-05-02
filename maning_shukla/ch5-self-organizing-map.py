@@ -45,4 +45,4 @@ class SOM:
         return bmu_loc
 
     def get_locs(self):
-        
+        locs = [[x, ]]
