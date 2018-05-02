@@ -88,4 +88,4 @@ with tf.Session() as sess:
     print("Probability of observing {} is {}".format(observations, prob))
 
     seq = viterbi_decode(sess, hmm, observations)
-    print("Most likely hidden states are ")
+    print("Most likely hidden states are {}".format)
