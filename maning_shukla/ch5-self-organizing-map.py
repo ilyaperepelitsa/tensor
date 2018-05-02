@@ -51,4 +51,4 @@ class SOM:
         return tf.to_float(locs)
 
     def train(self, data):
-        with tf.
+        with tf.Session() as sess:
