@@ -13,4 +13,4 @@ class HMM(object):
         assert self.trans_prob.shape == (self.N, self.N)
         assert obs_prob.shape[0] == self.N
 
-        self.obs_idx = tf.placehold
+        self.obs_idx = tf.placeholder(t)
