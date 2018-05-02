@@ -35,7 +35,7 @@ class HMM(object):
         return tf.reshape(fwd, tf.shape(self.fwd))
 
     def decode_op(self):
-        transitions = tf.matmul(self.viterbi, tf.transpose(self.get_emission(self)))
+        transitions = tf.matmul(self.viterbi, tf.transpose(self.get_emission(self.obs_idx)))
         weighted_transitions = transitions * self.trans_prob
         viterbi = tf.reduce_max(weighted_transitions, 0)
         return tf.reshape(viterbi, tf.shape(self.viterbi))
