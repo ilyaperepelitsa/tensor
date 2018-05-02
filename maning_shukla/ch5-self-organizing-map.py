@@ -9,4 +9,4 @@ class SOM:
         self.dim = dim
         self.node_locs = self.get_locs()
 
-        node
+        nodes = tf.Variable
