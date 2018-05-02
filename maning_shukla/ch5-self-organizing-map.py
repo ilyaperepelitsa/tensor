@@ -66,3 +66,5 @@ class SOM:
 
 from matplotlib import pyplot as plt
 import numpy as np
+
+colors = 
