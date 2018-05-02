@@ -18,4 +18,5 @@ class SOM:
         self.x = x
         self.iter = iter
 
-        bmu_loc = self.get_bmu_loc
+        bmu_loc = self.get_bmu_loc(x)
+        self.propaga
