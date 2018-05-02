@@ -7,4 +7,4 @@ class HMM(object):
         self.N = np.size(initial_prob)
         self.initial_prob = initial_prob
         self.trans_prob = trans_prob
-        self.emiss
+        self.emission = tf.constant(obs_)
