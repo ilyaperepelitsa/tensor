@@ -53,7 +53,7 @@ def forward_algoritm(sess, hmm, observations):
     return prob
 
 def viterbi_decode(sess, hmm, observations):
-    viter
+    viterbi = sess.run
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
