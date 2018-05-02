@@ -57,4 +57,4 @@ class SOM:
                 for data_x in data:
                     sess.run(self.propagate_nodes, feed_dict = {self.x: data_x,
                                                                 self.iter: i})
-            centro
+            centroid_grid = 
