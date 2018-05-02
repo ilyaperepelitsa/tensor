@@ -34,4 +34,4 @@ class SOM:
                                 [self.dim]) for i in range(num_nodes)])
         nodes_diff = tf.multiply(rate_factor, tf.subtract(tf.stack([x for i in range(num_nodes)]), self.nodes))
         update_nodes = tf.add(self.nodes, nodes_diff)
-        return tf.assign(self.n)
+        return tf.assign(self.nodes, upd)
