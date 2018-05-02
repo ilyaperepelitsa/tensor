@@ -10,4 +10,4 @@ class HMM(object):
         self.emission = tf.constant(obs_prob)
 
         assert self.initial_prob.shape == (self.N, 1)
-        assert self.tran
+        assert self.trans_prob.shap
