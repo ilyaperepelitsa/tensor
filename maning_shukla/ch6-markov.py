@@ -87,4 +87,5 @@ with tf.Session() as sess:
     prob = forward_algoritm(sess, hmm, observations)
     print("Probability of observing {} is {}".format(observations, prob))
 
-    seq = viterbi_decode(ses)
+    seq = viterbi_decode(sess, hmm, observations)
+    
