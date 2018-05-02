@@ -79,4 +79,5 @@ colors = np.array(
     [1., 0., 0.05],
     [1., 1., 0.]])
 
-som = SOM(4, )
+som = SOM(4, 4, 3)
+som.t
