@@ -41,7 +41,7 @@ class HMM(object):
 
     def backpt_op(self):
         back_transitions = tf.matmul(self.viterbi, np.ones((1, self.N)))
-        weighted
+        weighted_back_tran
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
