@@ -56,4 +56,4 @@ class SOM:
             for i in range(self.num_iters):
                 for data_x in data:
                     sess.run(self.propagate_nodes, feed_dict = {self.x : data_x,
-                                                                self.i})
+                                                                self.iter: i})
