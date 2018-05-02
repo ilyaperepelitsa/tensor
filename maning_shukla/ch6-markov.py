@@ -54,7 +54,7 @@ def forward_algoritm(sess, hmm, observations):
 
 def viterbi_decode(sess, hmm, observations):
     viterbi = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs: observations[0]})
-    backpts = np.ones((hmm.N, len(observa)))
+    backpts = np.ones((hmm.N, len(observations)), int)
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
