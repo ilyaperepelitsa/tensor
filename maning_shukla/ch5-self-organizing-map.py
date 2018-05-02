@@ -7,4 +7,4 @@ class SOM:
         self.width = width
         self.height = height
         self.dim = dim
-        self.node_locs = self.
+        self.node_locs = self.get_locs()
