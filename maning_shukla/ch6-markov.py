@@ -33,13 +33,13 @@ class HMM(object):
         fwd = tf.reduce_sum(weighted_transitions, 0)
         return tf.reshape(fwd, tf.shape(self.fwd))
 
-    def forward_algoritm(sess, hmm, observations):
-        fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
-        for t in range(1, len(observations)):
-            fwd = sess.run(hmm.forward_op(), feed_dict = {hmm.obs_idx: observations[t],
-                                                            hmm.fwd: fwd})
-        prob = sess.run(tf.reduce_sum(fwd))
-        return prob
+def forward_algoritm(sess, hmm, observations):
+    fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
+    for t in range(1, len(observations)):
+        fwd = sess.run(hmm.forward_op(), feed_dict = {hmm.obs_idx: observations[t],
+                                                        hmm.fwd: fwd})
+    prob = sess.run(tf.reduce_sum(fwd))
+    return prob
 
 
 
