@@ -62,4 +62,6 @@ class SOM:
             self.locs_val = list(sess.run(self.node_locs))
             for i, l in enumerate(self.locs_val):
                 centroid_grid[int(l[0])].append(self.nodes_val[i])
-            self.centroid_grid = centroid_gr
+            self.centroid_grid = centroid_grid
+
+from 
