@@ -33,4 +33,4 @@ class HMM(object):
         fwd = tf.reduce_sum(weighted_transitions, 0)
         return tf.reshape(fwd, tf.shape(self.fwd))
 
-    def forward_a
+    def forward_algoritm
