@@ -8,7 +8,7 @@ class HMM(object):
         self.initial_prob = initial_prob
         self.trans_prob = trans_prob
         self.emission = tf.constant(obs_prob)
-        self.viterbi =
+        self.viterbi = tf.placeholder()
 
         assert self.initial_prob.shape == (self.N, 1)
         assert self.trans_prob.shape == (self.N, self.N)
