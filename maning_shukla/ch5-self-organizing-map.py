@@ -53,4 +53,5 @@ class SOM:
     def train(self, data):
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
-            for i in range(self.num_iters)
+            for i in range(self.num_iters):
+                
