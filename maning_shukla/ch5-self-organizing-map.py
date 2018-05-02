@@ -31,4 +31,4 @@ class SOM:
         neigh_factor = tf.exp(-tf.div(sqr_dists_from_bmu, 2 * tf.square(sigma)))
         rate = tf.multiply(alpha, neigh_factor)
         rate_factor = tf.stack([tf.tile(tf.slice(rate, [i], [1]),
-                                [self.dim]) for i i])
+                                [self.dim]) for i in range(num)])
