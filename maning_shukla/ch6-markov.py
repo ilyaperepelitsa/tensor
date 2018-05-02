@@ -34,4 +34,4 @@ class HMM(object):
         return tf.reshape(fwd, tf.shape(self.fwd))
 
     def forward_algoritm(sess, hmm, observations):
-        fwd = sess.run(hmm.forward_init_op(), feed_dict = {})
+        fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs})
