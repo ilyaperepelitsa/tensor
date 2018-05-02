@@ -59,7 +59,8 @@ def viterbi_decode(sess, hmm, observations):
         viterbi, backpt = sess.run([hmm.decode_op(), hmm.backpt_op()],
                             feed_dict = {hmm.obs: observations[t],
                                         hmm.viterbi : viterbi})
-        backpt
+        backpts[:, t] = backpt
+    toke
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
