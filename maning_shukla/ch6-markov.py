@@ -17,4 +17,5 @@ class HMM(object):
         self.fwd = tf.placeholder(tf.float64)
 
     def get_emission(self, obs_idx):
-        slice_location = [0, ]
+        slice_location = [0, obs_idx]
+        num
