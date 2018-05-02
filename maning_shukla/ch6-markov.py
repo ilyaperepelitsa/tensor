@@ -22,4 +22,5 @@ class HMM(object):
         slice_shape = [num_rows, 1]
         return tf.slice(self.emission, slice_location, slice_shape)
 
-    def forward_init_op()
+    def forward_init_op(self):
+        
