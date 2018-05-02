@@ -22,4 +22,4 @@ class SOM:
         self.propagate_nodes = self.get_propagation(bmu_loc, x, iter)
 
     def get_propagation(self, bmu_loc, x, iter):
-        num_nodes = self.width
+        num_nodes = self.width * self.height
