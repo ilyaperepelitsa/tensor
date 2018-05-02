@@ -6,4 +6,4 @@ class SOM:
         self.num_iters = 100
         self.width = width
         self.height = height
-        
+        self.dim = GradientDescentOptimizer
