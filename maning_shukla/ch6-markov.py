@@ -36,7 +36,7 @@ class HMM(object):
 
     def decode_op(self):
         transitions = tf.matmul(self.viterbi, tf.transpose(self.get_emissions * self.trans_prob))
-        viterbi = tf.reduce_m
+        viterbi = tf.reduce_max(weighted_transitions)
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
