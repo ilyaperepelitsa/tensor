@@ -44,4 +44,4 @@ class HMM(object):
 
 
 states = ("Rainy", "Sunny")
-observation = 
+observations = ("w")
