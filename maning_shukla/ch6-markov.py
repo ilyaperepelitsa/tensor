@@ -2,4 +2,4 @@ import numpy as np
 import tensorflow as tf
 
 
-clas
+class HMM(ob)
