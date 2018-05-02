@@ -40,3 +40,7 @@ class HMM(object):
                                                             hmm.fwd: fwd})
         prob = sess.run(tf.reduce_sum(fwd))
         return prob
+
+
+
+states 
