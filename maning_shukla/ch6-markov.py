@@ -28,4 +28,4 @@ class HMM(object):
         return fwd
 
     def forward_op(self):
-        transitions = tf.matmul(self.fwd, tf.transpose(self.get_emission(se;f.)))
+        transitions = tf.matmul(self.fwd, tf.transpose(self.get_emission(self.obs)))
