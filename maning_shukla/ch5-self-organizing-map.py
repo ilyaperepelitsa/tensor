@@ -18,4 +18,4 @@ class SOM:
         self.x = x
         self.iter = iter
 
-        bmu_
+        bmu_loc = self.get
