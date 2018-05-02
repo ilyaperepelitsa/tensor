@@ -82,4 +82,4 @@ colors = np.array(
 som = SOM(4, 4, 3)
 som.train(colors)
 
-plt
+plt.imshow()
