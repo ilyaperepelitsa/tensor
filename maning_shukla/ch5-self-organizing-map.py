@@ -40,4 +40,5 @@ class SOM:
         expanded_x = tf.expand_dims(x, 0)
         sqr_diff = tf.square(tf.subtract(expanded_x, self.nodes))
         dists = tf.reduce_sum(sqr_diff, 1)
-        bmu_idx = tf.argmin(dists, )
+        bmu_idx = tf.argmin(dists, 0)
+        bmu_loc = 
