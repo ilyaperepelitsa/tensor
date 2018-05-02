@@ -50,4 +50,4 @@ class SOM:
                     for x in range(self.width)]
         return tf.to_float(locs)
 
-    def tra
+    def train(self, data)
