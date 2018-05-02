@@ -11,3 +11,4 @@ class HMM(object):
 
         assert self.initial_prob.shape == (self.N, 1)
         assert self.trans_prob.shape == (self.N, self.N)
+        assert obs
