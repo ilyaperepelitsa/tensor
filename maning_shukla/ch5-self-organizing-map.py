@@ -30,4 +30,4 @@ class SOM:
         sqr_dists_from_bmu = tf.reduce_sum(tf.square(tf.subtract(expanded_bmu_loc, self.node_locs)), 1)
         neigh_factor = tf.exp(-tf.div(sqr_dists_from_bmu, 2 * tf.square(sigma)))
         rate = tf.multiply(alpha, neigh_factor)
-        rate_factor = tf.stack([tf.tile(tf.slice(rate, [i], [1]))])
+        rate_factor = tf.stack([tf.tile(tf.slice(rate, [i], [1]),)])
