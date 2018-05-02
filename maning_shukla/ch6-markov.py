@@ -48,5 +48,5 @@ observations = ("walk", "shop", "clean")
 start_probability = {"Rainy": 0.6, "Sunny": 0.4}
 transition_probability = {
     "Rainy": {"Rainy": 0.7, "Sunny": 0.3},
-    "Rainy": {"Rainy": 0.7, "Sunny": 0.3}
+    "S": {"Rainy": 0.7, "Sunny": 0.3}
 }
