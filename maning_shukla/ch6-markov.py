@@ -61,3 +61,4 @@ obs_prob = np.array([[0.1, 0.4, 0.5],
                      [0.6, 0.3, 0.1]])
 hmm = HMM(initial_prob = initial_prob, trans_prob = trans_prob, obs_prob = obs_prob)
 observation = [0, 1, 1, 2, 1]
+with tf.
