@@ -56,4 +56,4 @@ class HMM(object):
 # }
 
 initial_prob = np.array([[0.6], [0.4]])
-trans_prob = np.array([[0.7, 0.3]])
+trans_prob = np.array([[0.7, 0.3], []])
