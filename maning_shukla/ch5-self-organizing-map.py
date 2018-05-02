@@ -36,4 +36,4 @@ class SOM:
         update_nodes = tf.add(self.nodes, nodes_diff)
         return tf.assign(self.nodes, update_nodes)
 
-    
+    def get_
