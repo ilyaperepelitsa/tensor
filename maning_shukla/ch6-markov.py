@@ -43,4 +43,4 @@ class HMM(object):
 
 
 
-states = ("Rainu")
+states = ("Rai")
