@@ -60,4 +60,4 @@ class SOM:
             centroid_grid = [[] for i in range(self.width)]
             self.nodes_val = list(sess.run(self.nodes))
             self.locs_val = list(sess.run(self.node_locs))
-            
+            for i, l in 
