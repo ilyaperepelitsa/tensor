@@ -15,4 +15,5 @@ class SOM:
         x = tf.placeholder(tf.float32, [dim])
         iter = tf.placeholder(tf.float32)
 
-        self.x
+        self.x = x
+        s
