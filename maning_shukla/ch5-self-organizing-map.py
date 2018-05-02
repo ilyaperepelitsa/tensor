@@ -42,4 +42,6 @@ class SOM:
         dists = tf.reduce_sum(sqr_diff, 1)
         bmu_idx = tf.argmin(dists, 0)
         bmu_loc = tf.stack([tf.mod(bmu_idx, self.width), tf.div(bmu_idx, self.width)])
-        return bm
+        return bmu_loc
+
+    
