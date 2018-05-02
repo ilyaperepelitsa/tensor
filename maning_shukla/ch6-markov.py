@@ -55,4 +55,4 @@ class HMM(object):
 #     "Sunny": {"walk": 0.6, "shop": 0.3, "clean": 0.1}
 # }
 
-ini
+initial_prob = 
