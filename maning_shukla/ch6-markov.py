@@ -34,7 +34,7 @@ class HMM(object):
         fwd = tf.reduce_sum(weighted_transitions, 0)
         return tf.reshape(fwd, tf.shape(self.fwd))
 
-    def decode_op)
+    def decode_op(self)
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
