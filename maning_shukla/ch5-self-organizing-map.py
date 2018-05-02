@@ -52,3 +52,4 @@ class SOM:
 
     def train(self, data):
         with tf.Session() as sess:
+            sess.run()
