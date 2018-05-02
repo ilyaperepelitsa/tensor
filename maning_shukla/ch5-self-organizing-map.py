@@ -39,3 +39,4 @@ class SOM:
     def get_bmu_loc(self, x):
         expanded_x = tf.expand_dims(x, 0)
         sqr_diff = tf.square(tf.subtract(expanded_x, self.nodes))
+        dists = 
