@@ -53,11 +53,11 @@ def forward_algoritm(sess, hmm, observations):
     return prob
 
 def viterbi_decode(sess, hmm, observations):
-    viterbi = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs: observations[0]})
+    viterbi = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
     backpts = np.ones((hmm.N, len(observations)), "int32") * -1
     for t in range(1, len(observations)):
         viterbi, backpt = sess.run([hmm.decode_op(), hmm.backpt_op()],
-                            feed_dict = {hmm.obs: observations[t],
+                            feed_dict = {hmm.obs_idx: observations[t],
                                         hmm.viterbi : viterbi})
         backpts[:, t] = backpt
     tokens = [viterbi[:, -1].argmax()]
@@ -88,4 +88,4 @@ with tf.Session() as sess:
     print("Probability of observing {} is {}".format(observations, prob))
 
     seq = viterbi_decode(sess, hmm, observations)
-    print("Most likely hidden states are {}".format)
+    print("Most likely hidden states are {}".format(seq))
