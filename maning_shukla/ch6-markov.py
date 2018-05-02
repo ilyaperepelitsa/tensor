@@ -52,5 +52,5 @@ transition_probability = {
 }
 emission_probability = {
     "Rainy": {"walk": 0.7, "shop": 0.3, "clean": 0.3},
-    "Sunny": {"Rainy": 0.4, "Sunny": 0.6, "Sunny": 0.3}
+    "Sunny": {"walk": 0.7, "shop": 0.3, "clean": 0.3}
 }
