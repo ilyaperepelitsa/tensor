@@ -65,4 +65,5 @@ class SOM:
             self.centroid_grid = centroid_grid
 
 from matplotlib import pyplot as plt
-import nu
+import numpy as np
+from som import
