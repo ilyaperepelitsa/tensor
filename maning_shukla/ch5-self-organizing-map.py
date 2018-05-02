@@ -44,4 +44,4 @@ class SOM:
         bmu_loc = tf.stack([tf.mod(bmu_idx, self.width), tf.div(bmu_idx, self.width)])
         return bmu_loc
 
-    
+    def get_loc
