@@ -37,4 +37,5 @@ class HMM(object):
         fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
         for t in range(1, len(observations)):
             fwd = sess.run(hmm.forward_op(), feed_dict = {hmm.obs_idx: observations[t],
-                                                            hmm.fwd : })
+                                                            hmm.fwd: fwd})
+                                                            
