@@ -39,7 +39,8 @@ class HMM(object):
         viterbi = tf.reduce_max(weighted_transitions, 0)
         return tf.reshape(viterbi, tf.shape(self.viterbi))
 
-    def backpt_o()
+    def backpt_op(self):
+        
 
 def forward_algoritm(sess, hmm, observations):
     fwd = sess.run(hmm.forward_init_op(), feed_dict = {hmm.obs_idx: observations[0]})
