@@ -14,3 +14,4 @@ class SOM:
 
         x = tf.placeholder(tf.float32, [dim])
         iter = tf.placeholder(tf.float32)
+        
