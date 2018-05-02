@@ -36,4 +36,5 @@ class SOM:
         update_nodes = tf.add(self.nodes, nodes_diff)
         return tf.assign(self.nodes, update_nodes)
 
-    def get_bmu_loc(sel)
+    def get_bmu_loc(self, x):
+        
