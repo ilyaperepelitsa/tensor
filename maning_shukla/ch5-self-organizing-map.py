@@ -49,3 +49,5 @@ class SOM:
                     for y in range(self.height)
                     for x in range(self.width)]
         return tf.to_float(locs)
+
+    def tra
