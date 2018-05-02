@@ -48,4 +48,4 @@ class SOM:
         locs = [[x, y]
                     for y in range(self.height)
                     for x in range(self.width)]
-        r
+        return tf.t
