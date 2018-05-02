@@ -61,7 +61,7 @@ def viterbi_decode(sess, hmm, observations):
                                         hmm.viterbi : viterbi})
         backpts[:, t] = backpt
     tokens = [viterbi[:, -1].argmax()]
-    for i in range(len
+    for i in range(len(observ))
 
 # states = ("Rainy", "Sunny")
 # observations = ("walk", "shop", "clean")
