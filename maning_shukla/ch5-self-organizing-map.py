@@ -27,4 +27,4 @@ class SOM:
         alpha = rate * 0.5
         sigma = rate * tf.to_float(tf.maximum(self.width, self.height)) / 2.
         expanded_bmu_loc = tf.expand_dims(tf.to_float(bmu_loc), 0)
-        sqr_dists_from_bmu = 
+        sqr_dists_from_bmu = tf.
