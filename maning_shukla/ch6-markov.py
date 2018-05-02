@@ -14,4 +14,4 @@ class HMM(object):
         assert obs_prob.shape[0] == self.N
 
         self.obs_idx = tf.placeholder(tf.int32)
-        self.fwd = tf.placeholder
+        self.fwd = tf.placeholder(tf.float)
