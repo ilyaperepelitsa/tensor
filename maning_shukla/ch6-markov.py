@@ -23,4 +23,4 @@ class HMM(object):
         return tf.slice(self.emission, slice_location, slice_shape)
 
     def forward_init_op(self):
-        obs_prob = self.get+
+        obs_prob = self.get_emission
