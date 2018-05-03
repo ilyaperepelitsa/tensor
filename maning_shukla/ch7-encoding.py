@@ -99,4 +99,4 @@ for i in range(1, 6):
         labels = np.hstack((labels, batch_data["labels"]))
     else:
         data = batch_data["data"]
-        labels = batch_data["label"]
+        labels = batch_data["labels"]
