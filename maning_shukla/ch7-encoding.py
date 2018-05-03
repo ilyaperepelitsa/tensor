@@ -116,4 +116,4 @@ horse_x = x[horse_indices]
 
 print(np.shape(horse_x))
 
-u
+input_dim = np
