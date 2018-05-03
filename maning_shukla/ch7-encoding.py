@@ -48,4 +48,4 @@ class Autoencoder:
             hidden, recontructed = sess.run([self.encoded, self.decoded],
             feed_dict = {self.x: data})
         print("input", data)
-        
+        print("compressed")
