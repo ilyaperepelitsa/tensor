@@ -17,4 +17,5 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_price
 
 def plot_prices(prices):
     plt.title("Opening stock prices")
-    plt.xlabel("")
+    plt.xlabel("day")
+    plt.y
