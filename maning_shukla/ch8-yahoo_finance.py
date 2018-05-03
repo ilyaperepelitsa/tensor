@@ -52,4 +52,4 @@ def sum_nums(args):
             sum += i
         except ValueError:
             pass
-    retur
+    return sum
