@@ -13,7 +13,8 @@ class Autoencoder:
             weights = tf.Variable(tf.random_normal([input_dim, hidden_dim],
                             dtype = tf.float32), name = "weights")
             biases = tf.Variable(tf.zeros([hidden_dim]), name = "biases")
-            encoded = tf.nn.tanh(tf.matmul(x, weights) + )
+            encoded = tf.nn.tanh(tf.matmul(x, weights) + biases)
+        
     def train(self, data):
 
     def test(self, data):
