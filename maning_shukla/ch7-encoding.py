@@ -11,7 +11,8 @@ class Autoencoder:
 
         with tf.name_scope("encode"):
             weights = tf.Variable(tf.random_normal([input_dim, hidden_dim],
-                            dtype = tf.float32), name = )
+                            dtype = tf.float32), name = "weights")
+                
     def train(self, data):
 
     def test(self, data):
