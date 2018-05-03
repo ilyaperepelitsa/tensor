@@ -30,5 +30,5 @@ class Autoencoder:
         self.saver = tf.train.Saver()
 
     def train(self, data):
-
+        nu
     def test(self, data):
