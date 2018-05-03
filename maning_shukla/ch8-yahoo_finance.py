@@ -50,5 +50,4 @@ def sum_nums(args):
         try:
             i = float(i)
         except ValueError:
-            p
-        if
+            pass
