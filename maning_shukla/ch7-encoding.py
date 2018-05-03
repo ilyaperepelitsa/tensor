@@ -1,9 +1,9 @@
 import tensorflow as tf
-import numpy as n
+import numpy as np
 
 
 class Autoencoder:
-    def __init__(self, input_dim, hidden_dim):
+    def __init__(self, input_dim, hidden_dim, epoch =):
 
     def train(self, data):
 
