@@ -55,4 +55,4 @@ def sum_nums(args):
     return sum
 
 
-sum_nu
+sum_nums(1, 2, 3)
