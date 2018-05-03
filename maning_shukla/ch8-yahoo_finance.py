@@ -5,4 +5,4 @@ import tensorflow as tf
 import random
 
 
-def get_prices(share_symbol):
+def get_prices(share_symbol, start_a):
