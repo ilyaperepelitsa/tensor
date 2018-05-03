@@ -44,4 +44,4 @@ class Autoencoder:
 
     def test(self, data):
         with tf.Session() as sess:
-            self.saver.restore
+            self.saver.restore(sess, )
