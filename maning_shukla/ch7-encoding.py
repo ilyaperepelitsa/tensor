@@ -45,4 +45,5 @@ class Autoencoder:
     def test(self, data):
         with tf.Session() as sess:
             self.saver.restore(sess, "./model.ckpt")
-            hidden, recontructed = sess.run([self.encoded, self.decoded])
+            hidden, recontructed = sess.run([self.encoded, self.decoded],
+            )
