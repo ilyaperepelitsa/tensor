@@ -3,7 +3,7 @@ import numpy as np
 
 
 class Autoencoder:
-    def __init__(self, input_dim, hidden_dim, epoch = 250, lea):
+    def __init__(self, input_dim, hidden_dim, epoch = 250, learning_rate):
 
     def train(self, data):
 
