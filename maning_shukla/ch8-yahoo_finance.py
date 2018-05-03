@@ -20,4 +20,5 @@ def plot_prices(prices):
     plt.xlabel("day")
     plt.ylabel("price ($)")
     plt.plot(prices)
-    plt.savefig("prices")
+    plt.savefig("prices.png")
+    
