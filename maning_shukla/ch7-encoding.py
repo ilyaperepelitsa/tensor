@@ -23,7 +23,9 @@ class Autoencoder:
 
         self.x = x
         self.encoded = encoded
-        self.decoded = 
+        self.decoded = decoded
+
+        self.
 
     def train(self, data):
 
