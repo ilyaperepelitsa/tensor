@@ -111,4 +111,4 @@ data = grayscale(data)
 x = np.matrix(data)
 y = np.array(labels)
 
-horse_indice
+horse_indices = np.wh
