@@ -97,4 +97,4 @@ for i in range(1, 6):
     if len(data) > 0:
         data = np.vstack((data, batch_data["data"]))
         labels = np.hstack((labels, batch_data["labels"]))
-        
+    else:
