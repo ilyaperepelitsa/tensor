@@ -40,5 +40,5 @@ class Autoencoder:
                 if i % 10 == 0:
                     print("epoch {0}: loss = {1}".format(i, l))
                     self.saver.save(sess, "./model.ckpt")
-            self
+            self.saver.save()
     def test(self, data):
