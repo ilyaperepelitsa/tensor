@@ -87,6 +87,7 @@ def unpickle(file):
     return dict
 
 
-/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py
+
 import numpy as np
-names = unpickle("")
+names = unpickle("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/batches.meta")['label_names']
+data, labe
