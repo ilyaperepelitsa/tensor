@@ -10,7 +10,7 @@ class Autoencoder:
         x = tf.placeholder(dtype = tf.float32, shape = [None, input_dim])
 
         with tf.name_scope("encode"):
-            
+            weights = 
     def train(self, data):
 
     def test(self, data):
