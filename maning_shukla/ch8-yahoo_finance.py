@@ -15,4 +15,5 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_price
         np.save(cache_filename, stok_prices)
     return stock_price.astype(float)
 
-def plot_prc
+def plot_prices(prices):
+    p
