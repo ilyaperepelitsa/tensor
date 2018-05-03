@@ -30,7 +30,8 @@ class Autoencoder:
         self.saver = tf.train.Saver()
 
     def get_batch(X, size):
-        a = np.random.choice(len(X), size, replace = Fat)
+        a = np.random.choice(len(X), size, replace = False)
+        return 
 
     def train(self, data):
         num_samples = len(data)
