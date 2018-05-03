@@ -108,4 +108,4 @@ def grayscale(a):
 data = grayscale(data)
 
 
-x = np.
+x = np.matrix(data)
