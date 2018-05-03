@@ -12,7 +12,7 @@ class Autoencoder:
         with tf.name_scope("encode"):
             weights = tf.Variable(tf.random_normal([input_dim, hidden_dim],
                             dtype = tf.float32), name = "weights")
-            biases = 
+            biases = tf.Variable()
     def train(self, data):
 
     def test(self, data):
