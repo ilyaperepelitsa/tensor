@@ -19,4 +19,5 @@ def plot_prices(prices):
     plt.title("Opening stock prices")
     plt.xlabel("day")
     plt.ylabel("price ($)")
-    plt.plot
+    plt.plot(prices)
+    
