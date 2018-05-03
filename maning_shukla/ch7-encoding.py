@@ -57,4 +57,4 @@ from sklearn import datasets
 hidden_dim = 1
 data = datasets.load_iris().data
 input_dim = len(data[0])
-ae = Autoe
+ae = Autoencoder(input)
