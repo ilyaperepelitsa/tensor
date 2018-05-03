@@ -14,7 +14,7 @@ class Autoencoder:
                             dtype = tf.float32), name = "weights")
             biases = tf.Variable(tf.zeros([hidden_dim]), name = "biases")
             encoded = tf.nn.tanh(tf.matmul(x, weights) + biases)
-        with t
+        with tf.name
     def train(self, data):
 
     def test(self, data):
