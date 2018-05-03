@@ -44,7 +44,7 @@ prices = get_prices("AAPL", "1992-07-22", "2016-07-22")
 
 float("pew")
 
-def sum_nums(args):
+def sum_nums(*args):
     sum = 0
     for i in args:
         try:
