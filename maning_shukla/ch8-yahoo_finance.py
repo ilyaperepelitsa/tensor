@@ -5,4 +5,4 @@ import tensorflow as tf
 import random
 
 
-def get
+def get_prices
