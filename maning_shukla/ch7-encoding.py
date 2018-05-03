@@ -30,5 +30,6 @@ class Autoencoder:
         self.saver = tf.train.Saver()
 
     def train(self, data):
-        num_samples = 
+        num_samples = len(data)
+        w
     def test(self, data):
