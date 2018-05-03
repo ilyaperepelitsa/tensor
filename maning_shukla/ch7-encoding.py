@@ -5,4 +5,4 @@ class Autoencoder:
 
     def train(self, data):
 
-    def test(self, d)
+    def test(self, data):
