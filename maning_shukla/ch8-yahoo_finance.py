@@ -49,4 +49,5 @@ def sum_nums(args):
     for i in args:
         try:
             i = float(i)
+        except
         if
