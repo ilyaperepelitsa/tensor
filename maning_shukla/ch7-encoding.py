@@ -26,7 +26,7 @@ class Autoencoder:
         self.decoded = decoded
 
         self.loss = tf.sqrt(tf.reduce_mean(tf.square(tf.subtract(self.x, self.decoded))))
-        self.train
+        self.train_op = 
 
     def train(self, data):
 
