@@ -9,7 +9,7 @@ class Autoencoder:
 
         x = tf.placeholder(dtype = tf.float32, shape = [None, input_dim])
 
-        w
+        with tf.name_scope
     def train(self, data):
 
     def test(self, data):
