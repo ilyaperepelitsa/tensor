@@ -80,4 +80,4 @@ x = small_gray_image.flatten()
 
 import pickle
 
-def unp
+def unpickle()
