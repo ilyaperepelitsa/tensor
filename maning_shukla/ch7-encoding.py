@@ -21,7 +21,7 @@ class Autoencoder:
             biases = tf.Variable(tf.zeros([input_dim]), name = "biases")
             decoded = tf.matmul(encoded, weights) + biases
 
-        self.x = 
+        self.x = xxx
 
     def train(self, data):
 
