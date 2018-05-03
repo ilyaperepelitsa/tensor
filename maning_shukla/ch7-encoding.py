@@ -55,4 +55,4 @@ class Autoencoder:
 from sklearn import datasets
 
 hidden_dim = 1
-data = datasets.load_iris
+data = datasets.load_iris().data
