@@ -35,5 +35,5 @@ class Autoencoder:
             sess.run(tf.global_variables_initializer())
             for i in range(self.epoch):
                 for j in range(num_samples):
-                    l, _
+                    l, _ = sess.run()
     def test(self, data):
