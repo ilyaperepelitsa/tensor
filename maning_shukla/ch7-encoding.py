@@ -100,3 +100,6 @@ for i in range(1, 6):
     else:
         data = batch_data["data"]
         labels = batch_data["labels"]
+
+
+def gra
