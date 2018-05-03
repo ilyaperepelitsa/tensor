@@ -52,4 +52,4 @@ class Autoencoder:
         print("reconstructed", reconstructed)
         return reconstructed
 
-from sklearn 
+from sklearn import datasets
