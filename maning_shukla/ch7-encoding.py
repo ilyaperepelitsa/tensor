@@ -111,4 +111,4 @@ data = grayscale(data)
 x = np.matrix(data)
 y = np.array(labels)
 
-horse_indices = np.where(y -)
+horse_indices = np.where(y == 7)[0]
