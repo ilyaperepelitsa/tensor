@@ -82,4 +82,4 @@ import pickle
 
 def unpickle(file):
     fo = open(file, "rb")
-    dict = pickle.load()
+    dict = pickle.load(fo, encoding)
