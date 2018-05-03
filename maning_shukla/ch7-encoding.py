@@ -39,6 +39,7 @@ class Autoencoder:
             sess.run(tf.global_variables_initializer())
             for i in range(self.epoch):
                 for j in range(num_samples):
+                for j in range(num_samples):
                     l, _ = sess.run([self.loss, self.train_op],
                     feed_dict = {self.x: [data[j]]})
                 if i % 10 == 0:
