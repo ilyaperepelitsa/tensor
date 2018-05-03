@@ -43,4 +43,5 @@ def plot_prices(prices):
 prices = get_prices("AAPL", "1992-07-22", "2016-07-22")
 
 
-def sum_nums()
+def sum_nums(args):
+    
