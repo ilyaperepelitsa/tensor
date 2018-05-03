@@ -16,4 +16,4 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_price
     return stock_price.astype(float)
 
 def plot_prices(prices):
-    p
+    plt.title("O")
