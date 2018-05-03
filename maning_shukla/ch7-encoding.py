@@ -41,7 +41,7 @@ class Autoencoder:
                 # for j in range(num_samples):
                 for j in range(5000):
                     batch_data = get_batch(data, self.batch_size)
-                l, _ = sess.run([self.loss, self.train_op], feed_dict={self.x: batch_data})
+                    l, _ = sess.run([self.loss, self.train_op], feed_dict={self.x: batch_data})
                     # l, _ = sess.run([self.loss, self.train_op],
                     # feed_dict = {self.x: batch_data})
                 if i % 10 == 0:
@@ -73,4 +73,4 @@ ae.test([[8, 4, 6, 2]])
 # loading own images
 from scipy.misc import imread, imresize
 
-gray_image = imread()
+gray_image = imread(filepath, )
