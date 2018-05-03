@@ -8,4 +8,5 @@ import random
 def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_prices.npy"):
     try:
         stock_prices = np.load(cache_filename)
-    except IO
+    except IOError:
+        
