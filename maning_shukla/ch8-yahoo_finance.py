@@ -44,4 +44,5 @@ prices = get_prices("AAPL", "1992-07-22", "2016-07-22")
 
 
 def sum_nums(args):
-    sum = 
+    sum = 0
+    f
