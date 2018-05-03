@@ -31,5 +31,5 @@ class Autoencoder:
 
     def train(self, data):
         num_samples = len(data)
-        with tf.Sess
+        with tf.Session() as 
     def test(self, data):
