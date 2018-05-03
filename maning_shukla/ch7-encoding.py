@@ -50,4 +50,4 @@ class Autoencoder:
         print("input", data)
         print("compressed", hidden)
         print("reconstructed", reconstructed)
-        
+        return reconstructed
