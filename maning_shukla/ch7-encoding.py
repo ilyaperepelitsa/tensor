@@ -103,4 +103,4 @@ for i in range(1, 6):
 
 
 def grayscale(a):
-    return a.
+    return a.reshape(a.sh)
