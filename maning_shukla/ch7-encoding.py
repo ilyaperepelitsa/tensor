@@ -39,5 +39,5 @@ class Autoencoder:
                     feed_dict = {self.x: [data[j]]})
                 if i % 10 == 0:
                     print("epoch {0}: loss = {1}".format(i, l))
-                    
+                    self.sav
     def test(self, data):
