@@ -80,4 +80,5 @@ x = small_gray_image.flatten()
 
 import pickle
 
-def unpickle()
+def unpickle(file):
+    fo = open()
