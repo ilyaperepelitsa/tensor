@@ -29,7 +29,7 @@ class Autoencoder:
         self.train_op = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.loss)
         self.saver = tf.train.Saver()
 
-    def get_batch()
+    def get_batch(X, size)
 
     def train(self, data):
         num_samples = len(data)
