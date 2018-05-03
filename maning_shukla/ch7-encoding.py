@@ -29,6 +29,8 @@ class Autoencoder:
         self.train_op = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.loss)
         self.saver = tf.train.Saver()
 
+    def 
+
     def train(self, data):
         num_samples = len(data)
         with tf.Session() as sess:
