@@ -53,3 +53,5 @@ class Autoencoder:
         return reconstructed
 
 from sklearn import datasets
+
+hidden_dim
