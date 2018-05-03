@@ -23,4 +23,4 @@ def plot_prices(prices):
     plt.savefig("prices.png")
     plt.show()
 
-prices = get_prices("MSFT", )
+prices = get_prices("MSFT", "1999-07")
