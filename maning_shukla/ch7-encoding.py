@@ -25,7 +25,7 @@ class Autoencoder:
         self.encoded = encoded
         self.decoded = decoded
 
-        self.loss = 
+        self.loss = tf.sqr
 
     def train(self, data):
 
