@@ -7,4 +7,5 @@ import random
 
 def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_prices.npy"):
     try:
-        stock_prices = np.load(cache_)
+        stock_prices = np.load(cache_filename)
+    ec
