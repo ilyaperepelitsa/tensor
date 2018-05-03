@@ -74,3 +74,4 @@ ae.test([[8, 4, 6, 2]])
 from scipy.misc import imread, imresize
 
 gray_image = imread(filepath, True)
+small_gray
