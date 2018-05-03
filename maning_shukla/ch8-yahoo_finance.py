@@ -1,1 +1,1 @@
-from yahoo_ha
+from yahoo_finance import SH
