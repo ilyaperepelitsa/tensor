@@ -24,7 +24,7 @@ class Autoencoder:
         self.x = x
         self.encoded = encoded
         self.decoded = decoded
-        self.
+        self.batch_size = 10
 
         self.loss = tf.sqrt(tf.reduce_mean(tf.square(tf.subtract(self.x, self.decoded))))
         self.train_op = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.loss)
