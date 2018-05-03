@@ -105,4 +105,7 @@ for i in range(1, 6):
 def grayscale(a):
     return a.reshape(a.shape[0], 3, 32, 32).mean(1).reshape(a.shape[0], -1)
 
-data = grayscale(dat)
+data = grayscale(data)
+
+
+from 
