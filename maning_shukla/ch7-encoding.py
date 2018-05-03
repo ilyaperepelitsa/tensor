@@ -43,4 +43,4 @@ class Autoencoder:
             self.saver.save(sess, "./model.ckpt")
 
     def test(self, data):
-        
+        with 
