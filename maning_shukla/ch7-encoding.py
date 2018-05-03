@@ -7,7 +7,7 @@ class Autoencoder:
         self.epoch = epoch
         self.learning_rate = learning_rate
 
-        x =
+        x = tf.placeholder(t)
     def train(self, data):
 
     def test(self, data):
