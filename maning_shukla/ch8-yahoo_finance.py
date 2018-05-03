@@ -47,5 +47,6 @@ float("pew")
 def sum_nums(args):
     sum = 0
     for i in args:
-        try
+        try:
+            i = float
         if
