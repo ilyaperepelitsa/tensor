@@ -92,4 +92,5 @@ import numpy as np
 names = unpickle("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/batches.meta")['label_names']
 data, labels = [], []
 for i in range(1, 6):
-    filename = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/data_batch_" + str()
+    filename = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/data_batch_" + str(i)
+    batch_data = 
