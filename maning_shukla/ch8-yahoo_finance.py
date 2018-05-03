@@ -49,5 +49,6 @@ def sum_nums(args):
     for i in args:
         try:
             i = float(i)
+            sum += i
         except ValueError:
             pass
