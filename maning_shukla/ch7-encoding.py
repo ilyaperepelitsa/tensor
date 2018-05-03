@@ -40,7 +40,7 @@ class Autoencoder:
             for i in range(self.epoch):
                 # for j in range(num_samples):
                 for j in range(500):
-                    batch_data = get_batch(data, )
+                    batch_data = get_batch(data, self.batch_size)
                     l, _ = sess.run([self.loss, self.train_op],
                     feed_dict = {self.x: [data[j]]})
                 if i % 10 == 0:
