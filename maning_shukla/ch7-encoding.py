@@ -1,6 +1,9 @@
 import tensorflow as tf
 import numpy as np
 
+def get_batch(X, size):
+    a = np.random.choice(len(X), size, replace = False)
+    return X[a]
 
 class Autoencoder:
     def __init__(self, input_dim, hidden_dim, epoch = 250, learning_rate = 0.001):
