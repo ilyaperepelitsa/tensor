@@ -43,6 +43,8 @@ class Autoencoder:
                     batch_data = get_batch(data, self.batch_size)
                     l, _ = sess.run([self.loss, self.train_op],
                     feed_dict = {self.x: [data[j]]})
+                    l, _ = sess.run([self.loss, self.train_op],
+                    feed_dict = {self.x: batch_data})
                 if i % 10 == 0:
                     print("epoch {0}: loss = {1}".format(i, l))
                     self.saver.save(sess, "./model.ckpt")
