@@ -76,3 +76,6 @@ from scipy.misc import imread, imresize
 gray_image = imread(filepath, True)
 small_gray_image = imresize(gray_image, 1./8.)
 x = small_gray_image.flatten()
+
+
+import pickle
