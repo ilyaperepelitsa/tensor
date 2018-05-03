@@ -33,7 +33,7 @@ class Autoencoder:
         a = np.random.choice(len(X), size, replace = False)
         return X[a]
 
-    def train(self, data, batch_size):
+    def train(self, data, batch_size = 10):
         num_samples = len(data)
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
