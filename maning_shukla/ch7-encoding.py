@@ -54,4 +54,5 @@ class Autoencoder:
 
 from sklearn import datasets
 
-hidden_dim
+hidden_dim = 1
+data = datasets
