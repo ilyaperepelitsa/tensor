@@ -37,5 +37,5 @@ class Autoencoder:
                 for j in range(num_samples):
                     l, _ = sess.run([self.loss, self.train_op],
                     feed_dict = {self.x: [data[j]]})
-                if 
+                if i % 10 
     def test(self, data):
