@@ -22,3 +22,5 @@ def plot_prices(prices):
     plt.plot(prices)
     plt.savefig("prices.png")
     plt.show()
+
+prices
