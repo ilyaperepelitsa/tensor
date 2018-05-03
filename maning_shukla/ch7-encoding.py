@@ -109,3 +109,4 @@ data = grayscale(data)
 
 
 x = np.matrix(data)
+y = np.ar
