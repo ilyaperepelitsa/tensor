@@ -93,4 +93,5 @@ names = unpickle("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/batches.m
 data, labels = [], []
 for i in range(1, 6):
     filename = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/data_batch_" + str(i)
-    batch_data = unpickle(fil)
+    batch_data = unpickle(filename)
+    if len)d
