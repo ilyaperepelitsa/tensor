@@ -49,4 +49,4 @@ class Autoencoder:
             feed_dict = {self.x: data})
         print("input", data)
         print("compressed", hidden)
-        print("reconstructed")
+        print("reconstructed", reci)
