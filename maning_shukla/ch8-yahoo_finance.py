@@ -23,4 +23,4 @@ def plot_prices(prices):
     plt.savefig("prices.png")
     plt.show()
 
-prices = get_pti
+prices = get_prices()
