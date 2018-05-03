@@ -51,3 +51,5 @@ class Autoencoder:
         print("compressed", hidden)
         print("reconstructed", reconstructed)
         return reconstructed
+
+from sklearn 
