@@ -43,4 +43,5 @@ class Autoencoder:
             self.saver.save(sess, "./model.ckpt")
 
     def test(self, data):
-        with tf.Session() as sess
+        with tf.Session() as sess:
+            self.saver.restore
