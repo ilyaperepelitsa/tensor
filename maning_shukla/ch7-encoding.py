@@ -102,4 +102,4 @@ for i in range(1, 6):
         labels = batch_data["labels"]
 
 
-def gra
+def grayscale
