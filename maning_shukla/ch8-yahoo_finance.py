@@ -10,4 +10,4 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_price
         stock_prices = np.load(cache_filename)
     except IOError:
         share = Share(share_symbol)
-        stock_hist =
+        stock_hist = share.get
