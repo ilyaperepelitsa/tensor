@@ -71,3 +71,4 @@ ae.test([[8, 4, 6, 2]])
 
 
 # loading own images
+from scipy
