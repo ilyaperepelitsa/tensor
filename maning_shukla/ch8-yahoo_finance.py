@@ -1,2 +1,2 @@
 from yahoo_finance import Share
-from matplotlib
+from matplotlib import pyp
