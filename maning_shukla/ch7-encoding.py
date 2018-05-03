@@ -56,3 +56,4 @@ from sklearn import datasets
 
 hidden_dim = 1
 data = datasets.load_iris().data
+input_dim = 
