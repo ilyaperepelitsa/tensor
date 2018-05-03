@@ -5,4 +5,4 @@ import tensorflow as tf
 import random
 
 
-def get_prices(share_symbol, start_date, end_date, cache_fi):
+def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_"):
