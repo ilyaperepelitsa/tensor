@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+import numpy as n
 
 
 class Autoencoder:
