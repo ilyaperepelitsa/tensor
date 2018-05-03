@@ -11,4 +11,5 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "stock_price
     except IOError:
         share = Share(share_symbol)
         stock_hist = share.get_historical(start_date, end_date)
-        stock_prices = [stock_price["Open"] for stock_price in stock_his]
+        stock_prices = [stock_price["Open"] for stock_price in stock_hist]
+        np.sav
