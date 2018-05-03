@@ -31,7 +31,7 @@ class Autoencoder:
 
     def get_batch(X, size):
         a = np.random.choice(len(X), size, replace = False)
-        return 
+        return X[a]
 
     def train(self, data):
         num_samples = len(data)
