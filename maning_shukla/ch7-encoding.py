@@ -38,5 +38,5 @@ class Autoencoder:
                     l, _ = sess.run([self.loss, self.train_op],
                     feed_dict = {self.x: [data[j]]})
                 if i % 10 == 0:
-                    print()
+                    print("epoch {0}")
     def test(self, data):
