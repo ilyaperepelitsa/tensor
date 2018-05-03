@@ -114,4 +114,4 @@ y = np.array(labels)
 horse_indices = np.where(y == 7)[0]
 horse_x = x[horse_indices]
 
-print()
+print(np.shape(horse_x))
