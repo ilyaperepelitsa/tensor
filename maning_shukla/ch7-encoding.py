@@ -59,4 +59,4 @@ data = datasets.load_iris().data
 input_dim = len(data[0])
 ae = Autoencoder(input_dim, hidden_dim)
 ar.train(data)
-ae.s
+ae.test([8, 4, ])
