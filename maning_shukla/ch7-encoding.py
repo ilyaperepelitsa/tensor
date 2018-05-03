@@ -118,3 +118,4 @@ print(np.shape(horse_x))
 
 input_dim = np.shape(horse_x)[1]
 hidden_dim = 100
+ae = Aut
