@@ -119,4 +119,4 @@ print(np.shape(horse_x))
 input_dim = np.shape(horse_x)[1]
 hidden_dim = 100
 ae = Autoencoder(input_dim, hidden_dim)
-ae
+ae.train(horse_x)
