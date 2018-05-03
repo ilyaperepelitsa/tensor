@@ -47,4 +47,4 @@ class Autoencoder:
             self.saver.restore(sess, "./model.ckpt")
             hidden, recontructed = sess.run([self.encoded, self.decoded],
             feed_dict = {self.x: data})
-        
+        print("input")
