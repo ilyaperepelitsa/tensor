@@ -115,3 +115,5 @@ horse_indices = np.where(y == 7)[0]
 horse_x = x[horse_indices]
 
 print(np.shape(horse_x))
+
+u
