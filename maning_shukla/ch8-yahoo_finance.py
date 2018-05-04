@@ -113,4 +113,4 @@ plot_prices(prices)
 actions = ["Buy", "Sell", "Hold"]
 hist = 3
 policy = RandomDecisionPolicy(actions)
-budget = 
+budget = 100000
