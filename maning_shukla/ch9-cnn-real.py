@@ -57,4 +57,5 @@ def conv_layer(conv, k = 2):
 def model():
     x_reshaped = tf.reshape(x, shape = [-1, 24, 24, 1])
 
-    conv_out1 = conv_layer
+    conv_out1 = conv_layer(x_reshaped, W1, b1)
+    
