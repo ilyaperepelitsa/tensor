@@ -75,4 +75,5 @@ W = tf.Variable(tf.random_normal([5, 5, 1, 32]))
 def show_weights(W, filename = None):
     plt.figure()
     rows, cols = 4, 8
-    for i in range(np.shape(w))
+    for i in range(np.shape(W)[3]):
+        
