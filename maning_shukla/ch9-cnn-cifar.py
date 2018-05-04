@@ -8,4 +8,5 @@ def unpickle(file):
 
 import numpy as np
 
-def()
+def clean(data):
+    
