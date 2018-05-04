@@ -27,4 +27,5 @@ def read_data(directory):
     names = unpickle("{}/batches.meta".format(directory))["label_names"]
     print("names", names)
 
-    data, label
+    data, labels = [], []
+    
