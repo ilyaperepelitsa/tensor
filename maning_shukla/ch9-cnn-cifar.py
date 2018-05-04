@@ -38,4 +38,4 @@ def read_data(directory):
             data = batch_data["data"]
             labels = batch_data["labels"]
 
-    pri
+    print(np.shape())
