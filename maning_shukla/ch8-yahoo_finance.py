@@ -100,4 +100,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         num_tries = 10
         final_portfolios = list()
         for i in range(num_tries):
-            final_portfolio = run_
+            final_portfolio = run_simulation()
