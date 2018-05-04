@@ -36,4 +36,4 @@ def read_data(directory):
             labels = np.hstack((labels, batch_data["labels"]))
         else:
             data = batch_data["data"]
-            l
+            labels = batch_data['']
