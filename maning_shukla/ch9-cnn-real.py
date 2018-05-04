@@ -55,4 +55,4 @@ def conv_layer(conv, k = 2):
 
 
 def model():
-    
+    x_reshaped  
