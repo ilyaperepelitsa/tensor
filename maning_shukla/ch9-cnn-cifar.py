@@ -37,4 +37,5 @@ def read_data(directory):
         else:
             data = batch_data["data"]
             labels = batch_data["labels"]
-        
+
+    pri
