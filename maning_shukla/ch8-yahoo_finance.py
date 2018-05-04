@@ -112,3 +112,4 @@ class RandomDecisionPolicy(DecisionPolicy):
 plot_prices(prices)
 actions = ["Buy", "Sell", "Hold"]
 hist = 3
+polict = R
