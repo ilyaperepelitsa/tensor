@@ -24,4 +24,4 @@ def clean(data):
 
 
 def read_data(directory):
-    names = unpickle("{}/batches.meta")
+    names = unpickle("{}/batches.meta".format(directo))
