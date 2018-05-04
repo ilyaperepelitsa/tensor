@@ -68,4 +68,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         action = random.choice(self.actions)
         return action
 
-    def run_sim
+    def run_simulation(poli)
