@@ -72,4 +72,5 @@ class RandomDecisionPolicy(DecisionPolicy):
         budget = initial_budget
         num_stocks = initial_num_stocks
         share_value = 0
-        transitions = 
+        transitions = list()
+        for i
