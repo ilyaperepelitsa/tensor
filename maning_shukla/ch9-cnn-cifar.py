@@ -31,4 +31,5 @@ def read_data(directory):
     for i in range(1, 6):
         filename = "{}/data_batch_{}".format(directory, i)
         batch_data = unpickle(filename)
-        if len(data)
+        if len(data) > 0:
+            
