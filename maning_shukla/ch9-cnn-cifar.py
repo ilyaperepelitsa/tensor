@@ -117,4 +117,5 @@ conv = tf.nn.conv2d(x, W, strides = [1, 1, 1, 1], padding = "SAME")
 conv_with_b = tf.nn.bias_add(conv, b)
 conv_out = tf.nn.relu(conv_with_b)
 
-with tf.Session() as 
+with tf.Session() as sess:
+    sess.ru
