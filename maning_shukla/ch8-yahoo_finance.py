@@ -31,7 +31,7 @@ def get_historical_data(name, number_of_days):
 
     return data[:number_of_days]
 
-
+get_historical_data()
 def plot_prices(prices):
     plt.title("Opening stock prices")
     plt.xlabel("day")
