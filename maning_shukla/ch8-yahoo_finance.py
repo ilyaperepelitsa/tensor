@@ -15,7 +15,7 @@ def get_prices(share_symbol, start_date, end_date, cache_filename = "/Users/ilya
         np.save(cache_filename, stok_prices)
     return stock_price.astype(float)
 
-import urllib2
+# import urllib2
 from bs4 import BeautifulSoup as bs
 
 def get_historical_data(name, number_of_days):
