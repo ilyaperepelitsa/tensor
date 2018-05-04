@@ -8,7 +8,7 @@ import random
 from iexfinance import get_historical_data
 from datetime import datetime
 
-start = datetime(2017, 2, 9)
+start = datetime(2010, 2, 9)
 end = datetime(2017, 5, 24)
 
 
