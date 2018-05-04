@@ -34,4 +34,4 @@ names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batch
 x = tf.placeholder(tf.float32, [None, 24 * 24])
 y = tf.placeholder(tf.float32, [None, len(names)])
 
-W1 = tf.Variable(tf.rt)
+W1 = tf.Variable(tf.random_norma)
