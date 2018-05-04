@@ -18,4 +18,5 @@ def clean(data):
     meansT = means.reshape(len(means), 1)
     stds = np.std(img_data, axis = 1)
     stdsT = stds.reshape(len(stds), 1)
-    adj_stds = np.maximum(stdsT, 1.0 / np.sqrt(img))
+    adj_stds = np.maximum(stdsT, 1.0 / np.sqrt(img_size))
+    
