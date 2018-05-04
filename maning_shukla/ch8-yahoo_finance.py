@@ -105,4 +105,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             print("Final portfolio: ${}".format(final_portfolio))
         plt.title("Final Portfolio Value")
         plt.xlabel("Simulation #")
-        p
+        plt.ylabel
