@@ -70,3 +70,4 @@ def model():
     local_out = tf.nn.relu(local)
 
     out = tf.add(tf.matmul(local_out, W_out), b_out)
+    return out
