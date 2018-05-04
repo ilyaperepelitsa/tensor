@@ -14,4 +14,4 @@ def clean(data):
     cropped_imgs = grayscale_imgs[:, 4:28, 4:28]
     img_data = cropped_imgs.reshape(data.shape[0], -1)
     img_size = np.shape(img_data)[1]
-    means =
+    means = np.mean()
