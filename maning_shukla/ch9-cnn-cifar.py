@@ -68,4 +68,4 @@ def show_some_images(names, data, labels):
 
 show_some_images(names, data, labels)
 
-W = tf.Variab
+W = tf.Variable(tf.random_)
