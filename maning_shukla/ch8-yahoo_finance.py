@@ -78,3 +78,4 @@ class RandomDecisionPolicy(DecisionPolicy):
                 print("progress {:.2f}%".format(float(100*i) / len(prices) - hist - 1)))
             current_state = np.asmatrix(np.hstack((prices[i:i+hist], budget, num_stocks)))
             current_portfolio = budget + num_stocks * share_value
+            action = policu
