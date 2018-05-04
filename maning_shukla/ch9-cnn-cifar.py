@@ -104,4 +104,5 @@ def show_conv_results(data, filename = None):
     else:
         plt.show()
 
-raw_data = data[4]
+raw_data = data[4, :]
+raw_img = 
