@@ -75,4 +75,4 @@ def model():
 model_op = model()
 
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = model_op, labels = y))
-train_
+train_op = tf.train
