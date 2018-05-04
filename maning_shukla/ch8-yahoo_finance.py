@@ -95,3 +95,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             policy.update_q(current_state, action, reward, next_state)
         portfolio = budget + num_stocks * share_value
         return portfolio
+    def 
