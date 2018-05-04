@@ -49,4 +49,4 @@ b_out = tf.Variable(tf.random_normal([1024]))
 
 
 def conv_layer(conv, k = 2):
-    return tf.b
+    return tf.nn.ma
