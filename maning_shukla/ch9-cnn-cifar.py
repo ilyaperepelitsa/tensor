@@ -47,4 +47,4 @@ def read_data(directory):
 names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py")
 
 
-import matplotlib.p
+import matplotlib.pyplot as plt
