@@ -16,7 +16,7 @@ import random
 #     return stock_price.astype(float)
 
 import urllib2
-from BeautifulSoup import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 
 def get_historical_data(name, number_of_days):
     data = []
