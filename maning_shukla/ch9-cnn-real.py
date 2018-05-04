@@ -66,4 +66,4 @@ def model():
     maxpool_out1 = maxpool_layer(norm2)
 
     maxpool_reshaped = tf.reshape(maxpool_out2, [-1, W3.get_shape().as_list()[0]])
-    local = tf.add(tf.matmul(maxpool_resh))
+    local = tf.add(tf.matmul(maxpool_reshaped, W3))
