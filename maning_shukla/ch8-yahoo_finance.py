@@ -70,4 +70,4 @@ class RandomDecisionPolicy(DecisionPolicy):
 
     def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
         budget = initial_budget
-        num_stocke
+        num_stocks = initial_num_sti
