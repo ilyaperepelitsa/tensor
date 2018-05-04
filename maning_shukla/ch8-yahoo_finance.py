@@ -65,4 +65,5 @@ class RandomDecisionPolicy(DecisionPolicy):
         self.actions = actions
 
     def select_action(self, current_state):
-        action = random.choice(s)
+        action = random.choice(self.actions)
+        re
