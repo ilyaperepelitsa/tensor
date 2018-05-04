@@ -9,4 +9,4 @@ def unpickle(file):
 import numpy as np
 
 def clean(data):
-    imgs = data.
+    imgs = data.reshape(da)
