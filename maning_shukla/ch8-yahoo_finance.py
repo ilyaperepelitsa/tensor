@@ -108,3 +108,5 @@ class RandomDecisionPolicy(DecisionPolicy):
         plt.ylabel("Net worth")
         plt.plot(final_portfolios)
         plt.show()
+
+plot
