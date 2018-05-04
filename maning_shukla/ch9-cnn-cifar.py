@@ -133,4 +133,4 @@ k = 2
 maxpool = tf.nn.max_pool(conv_out, ksize = [1, k ,k, 1],
                             strides = [1, k, k, 1], padding = "SAME")
 with tf.Session() as sess:
-    maxpool_
+    maxpool_val = sess.run()
