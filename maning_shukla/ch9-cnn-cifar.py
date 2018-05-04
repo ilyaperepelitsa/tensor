@@ -23,4 +23,4 @@ def clean(data):
     return normalized
 
 
-def read_data(d)
+def read_data(directory)""
