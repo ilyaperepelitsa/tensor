@@ -65,4 +65,4 @@ def show_some_images(names, data, labels):
     plt.tight_layout()
     plt.savefig("cifar_examples.png")
 
-show_some_images()
+show_some_images(names, data)
