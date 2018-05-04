@@ -42,4 +42,4 @@ def read_data(directory):
 
     data = clean(data)
     data = data.astype(np.float32)
-    return 
+    return names, data, labl
