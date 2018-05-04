@@ -72,4 +72,6 @@ def model():
     out = tf.add(tf.matmul(local_out, W_out), b_out)
     return out
 
-model_op = mod
+model_op = model()
+
+co
