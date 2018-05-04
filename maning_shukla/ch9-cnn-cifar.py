@@ -58,4 +58,4 @@ def show_some_images(names, data, labels):
     for i in range(rows * cols):
         plt.subplot(rows, cols, i + 1)
         j = random_idxs[i]
-        plt.title
+        plt.title(names[labels[j]])
