@@ -10,4 +10,4 @@ import numpy as np
 
 def clean(data):
     imgs = data.reshape(data.shape[0], 3, 32, 32)
-    grayscale_imgs 
+    grayscale_imgs = imgs.mean()
