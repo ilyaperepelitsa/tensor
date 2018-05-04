@@ -76,4 +76,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         for i in range(len(prices) - hist - 1):
             if i % 1000 == 0:
                 print("progress {:.2f}%".format(float(100*i) / len(prices) - hist - 1)))
-            current_state = np.asmatrix(np.hstack((prices[i:i+hist])))
+            current_state = np.asmatrix(np.hstack((prices[i:i+hist], )))
