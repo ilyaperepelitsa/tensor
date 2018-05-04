@@ -98,4 +98,4 @@ class RandomDecisionPolicy(DecisionPolicy):
 
     def run_simulations(policy, budget, num_stocks, prices, hist):
         num_tries = 10
-        final_po
+        final_portfolios -
