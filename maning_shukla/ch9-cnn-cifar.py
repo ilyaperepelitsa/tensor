@@ -10,4 +10,5 @@ import numpy as np
 
 def clean(data):
     imgs = data.reshape(data.shape[0], 3, 32, 32)
-    grayscale_imgs = imgs.mean()
+    grayscale_imgs = imgs.mean(1)
+    cropped_imgs = 
