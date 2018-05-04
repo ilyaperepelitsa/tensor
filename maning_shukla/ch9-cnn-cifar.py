@@ -91,4 +91,4 @@ with tf.Session() as sess:
     W_val = sess.run(W)
     show_weights(W_val, "step0_weights.png")
 
-def show_conv_results()
+def show_conv_results(data, filename = )
