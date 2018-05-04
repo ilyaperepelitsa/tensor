@@ -135,3 +135,4 @@ maxpool = tf.nn.max_pool(conv_out, ksize = [1, k ,k, 1],
 with tf.Session() as sess:
     maxpool_val = sess.run(maxpool)
     show_conv_results(maxpool_val, "step3_maxpool.png")
+    print
