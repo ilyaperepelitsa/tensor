@@ -103,4 +103,5 @@ class RandomDecisionPolicy(DecisionPolicy):
             final_portfolio = run_simulation(policy, budget, num_stocks, prices, hist)
             final_portfolios.append(final_portfolio)
             print("Final portfolio: ${}".format(final_portfolio))
-        plt.title("Final Portfolio")
+        plt.title("Final Portfolio Value")
+        plt.xl
