@@ -118,4 +118,4 @@ conv_with_b = tf.nn.bias_add(conv, b)
 conv_out = tf.nn.relu(conv_with_b)
 
 with tf.Session() as sess:
-    sess.run(tf.global_variables_)
+    sess.run(tf.global_variables_initializer())
