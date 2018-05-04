@@ -109,4 +109,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         plt.plot(final_portfolios)
         plt.show()
 
-plot
+plot_prices
