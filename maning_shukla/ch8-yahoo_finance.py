@@ -78,7 +78,6 @@ def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
             print('progress {:.2f}%'.format(float(100*i) / (len(prices) - hist - 1)))
         current_state = np.asmatrix(np.hstack((prices[i:i+hist], budget, num_stocks)))
         current_portfolio = budget + num_stocks * share_value
-        print(current_state, i)
         action = policy.select_action(current_state, i)
         share_value = float(prices[i + hist + 1])
         if action == 'Buy' and budget >= share_value:
