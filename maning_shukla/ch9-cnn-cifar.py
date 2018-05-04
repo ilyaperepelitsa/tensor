@@ -93,4 +93,4 @@ with tf.Session() as sess:
 
 def show_conv_results(data, filename = None):
     plt.figure()
-    rows, cols
+    rows, cols = 4, 
