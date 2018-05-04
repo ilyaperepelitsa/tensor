@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import tensorflow as tf
 import random
-
+import beau
 
 # def get_prices(share_symbol, start_date, end_date, cache_filename = "/Users/ilyaperepelitsa/Downloads/stock_prices.npy"):
 #     try:
@@ -31,7 +31,7 @@ def get_historical_data(name, number_of_days):
 
     return data[:number_of_days]
 
-get_historical_data("AAPL", )
+get_historical_data("AAPL", 200)
 def plot_prices(prices):
     plt.title("Opening stock prices")
     plt.xlabel("day")
