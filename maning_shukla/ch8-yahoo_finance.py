@@ -61,4 +61,5 @@ class DecisionPolicy:
         pass
 
 class RandomDecisionPolicy(DecisionPolicy):
-    def __init__(se)
+    def __init__(self, actions):
+        
