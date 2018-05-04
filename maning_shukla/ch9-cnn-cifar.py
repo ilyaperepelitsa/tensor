@@ -51,4 +51,4 @@ import matplotlib.pyplot as plt
 import random
 
 
-def show_some_images()
+def show_some_images(names, data, labels)
