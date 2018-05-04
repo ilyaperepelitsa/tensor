@@ -53,4 +53,5 @@ import random
 
 def show_some_images(names, data, labels):
     plt.figure()
-    rows, c
+    rows, cols = 4, 4
+    
