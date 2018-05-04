@@ -126,4 +126,4 @@ with tf.Session() as sess:
 
     conv_out_val = sess.run(conv_out)
     show_conv_results(conv_out_val, "step2_conv_outs.png")
-    print()
+    print(np.shape())
