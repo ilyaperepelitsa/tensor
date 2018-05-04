@@ -64,8 +64,8 @@ class RandomDecisionPolicy(DecisionPolicy):
     def __init__(self, actions):
         self.actions = actions
 
-    def select_action(self, current_state):
-        action = random.choice(self.actions)
+    def select_action(self, current_state, step):
+        action = self.actions[random.randint(0, len(self.actions) - 1)]
         return action
 
 def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
