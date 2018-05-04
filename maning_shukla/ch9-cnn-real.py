@@ -32,4 +32,4 @@ def read_data(directory):
 names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py")
 
 x = tf.placeholder(tf.float32, [None, 24 * 24])
-y = tf.placeholder(tf.float32,)
+y = tf.placeholder(tf.float32, [No])
