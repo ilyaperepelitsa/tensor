@@ -30,4 +30,5 @@ def read_data(directory):
     data, labels = [], []
     for i in range(1, 6):
         filename = "{}/data_batch_{}".format(directory, i)
-        batch_data = unpic
+        batch_data = unpickle(filename)
+        
