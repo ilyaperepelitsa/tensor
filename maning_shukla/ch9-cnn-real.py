@@ -69,4 +69,4 @@ def model():
     local = tf.add(tf.matmul(maxpool_reshaped, W3), b3)
     local_out = tf.nn.relu(local)
 
-    out = tf.add(tf)
+    out = tf.add(tf.matmul(local_p))
