@@ -86,5 +86,6 @@ def show_weights(W, filename = None):
         plt.show()
 
 with tf.Session as sess:
-    sess.run(tf.global_variables_init)
-show_weights(W)
+    sess.run(tf.global_variables_initializer())
+
+    show_weights(W)
