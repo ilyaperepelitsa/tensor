@@ -36,3 +36,7 @@ y = tf.placeholder(tf.float32, [None, len(names)])
 
 W1 = tf.Variable(tf.random_normal([5, 5, 1, 64]))
 b1 = tf.Variable(tf.random_normal([64]))
+
+
+W1 = tf.Variable(tf.random_normal([5, 5, 1, 64]))
+b1 = tf.Variable(tf.random_normal([64]))
