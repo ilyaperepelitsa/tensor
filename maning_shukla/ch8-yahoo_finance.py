@@ -41,18 +41,3 @@ def plot_prices(prices):
     plt.show()
 
 prices = get_prices("AAPL", "1992-07-22", "2016-07-22")
-
-float("pew")
-
-def sum_nums(*args):
-    sum = 0
-    for i in args:
-        try:
-            i = float(i)
-            sum += i
-        except ValueError:
-            pass
-    return sum
-
-
-sum_nums(1, 2, 3)
