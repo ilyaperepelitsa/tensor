@@ -125,4 +125,4 @@ with tf.Session() as sess:
     print(np.shape(conv_val))
 
     conv_out_val = sess.run(conv_out)
-    show_cong
+    show_conv_results(conb)
