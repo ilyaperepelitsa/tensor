@@ -111,3 +111,5 @@ plt.imshow(raw_img, cmap = "Greys_r")
 plt.savefig("input_image.png")
 
 X = tf.reshape(raw_data, shape = [-1, 24, 24, 1])
+
+b = tf.Va
