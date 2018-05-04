@@ -1,5 +1,5 @@
 import pickle
-import tensorflow as 
+import tensorflow as tf
 
 
 def unpickle(file):
@@ -71,3 +71,5 @@ def show_some_images(names, data, labels):
 show_some_images(names, data, labels)
 
 W = tf.Variable(tf.random_normal([5, 5, 1, 32]))
+
+def show_weightst 
