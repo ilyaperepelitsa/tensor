@@ -104,4 +104,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             final_portfolios.append(final_portfolio)
             print("Final portfolio: ${}".format(final_portfolio))
         plt.title("Final Portfolio Value")
-        plt.xl
+        plt.xlabel("Si")
