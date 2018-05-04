@@ -44,4 +44,4 @@ def read_data(directory):
     data = data.astype(np.float32)
     return names, data, labels
 
-names, data, labels = 
+names, data, labels = re
