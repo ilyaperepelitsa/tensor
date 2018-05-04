@@ -45,4 +45,4 @@ W3 = tf.Variable(tf.random_normal([6 * 6 * 64, 1024]))
 b3 = tf.Variable(tf.random_normal([1024]))
 
 W_out = tf.Variable(tf.random_normal([1024, len(names)]))
-bout = tf.Variable(tf.random_normal([1024]))
+b_out = tf.Variable(tf.random_normal([1024]))
