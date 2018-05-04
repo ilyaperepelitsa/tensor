@@ -45,3 +45,6 @@ def read_data(directory):
     return names, data, labels
 
 names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py")
+
+
+import m
