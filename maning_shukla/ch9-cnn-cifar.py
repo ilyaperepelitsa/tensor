@@ -102,4 +102,4 @@ def show_conv_results(data, filename = None):
     if filename:
         plt.savefig(filename)
     else:
-        p
+        plt.show()
