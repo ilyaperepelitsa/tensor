@@ -90,4 +90,4 @@ class RandomDecisionPolicy(DecisionPolicy):
                 action = "Hold"
             new_portfolio = budget + num_stocks * share_value
             reward = new_portfolio - current_portfolio
-            next_state = np.asmatrix
+            next_state = np.asmatrix(np.hstack)
