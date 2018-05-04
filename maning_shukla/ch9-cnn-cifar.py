@@ -79,4 +79,4 @@ def show_weights(W, filename = None):
         img = W[:, :, 0, i]
         plt.subplot(rows, cols, i + 1)
         plt.imshow(img, cmap = "Greys_r", interpolation = "none")
-        
+        plt.axis()
