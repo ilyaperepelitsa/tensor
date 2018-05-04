@@ -33,4 +33,5 @@ def read_data(directory):
         batch_data = unpickle(filename)
         if len(data) > 0:
             data = np.vstack((data, batch_data["data"]))
-            labels = np.hstack((labels, batch_data[]))
+            labels = np.hstack((labels, batch_data["labels"]))
+            
