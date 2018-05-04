@@ -107,4 +107,4 @@ def show_conv_results(data, filename = None):
 raw_data = data[4, :]
 raw_img = np.reshape(raw_data, (24, 24))
 plt.figure()
-plt.imshow(raw_img, cmap = )
+plt.imshow(raw_img, cmap = "Grey")
