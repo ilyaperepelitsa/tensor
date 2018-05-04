@@ -35,4 +35,4 @@ def read_data(directory):
             data = np.vstack((data, batch_data["data"]))
             labels = np.hstack((labels, batch_data["labels"]))
         else:
-            
+            data = batch
