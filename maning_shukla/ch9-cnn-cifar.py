@@ -44,4 +44,4 @@ def read_data(directory):
     data = data.astype(np.float32)
     return names, data, labels
 
-names, data, labels = read_data("")
+names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py")
