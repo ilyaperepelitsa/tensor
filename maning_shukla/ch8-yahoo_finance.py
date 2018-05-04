@@ -110,4 +110,5 @@ class RandomDecisionPolicy(DecisionPolicy):
         plt.show()
 
 plot_prices(prices)
-actions = ["Buy", "S"]
+actions = ["Buy", "Sell", "Hold"]
+hist = 3
