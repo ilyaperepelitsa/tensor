@@ -59,4 +59,4 @@ def model():
 
     conv_out1 = conv_layer(x_reshaped, W1, b1)
     maxpool_out1 = maxpool_layer(conv_out)
-    
+    norm1 = tf.nn.lrn(maxpool_out1, 4, bias = 1.0, alpha = 0.0)
