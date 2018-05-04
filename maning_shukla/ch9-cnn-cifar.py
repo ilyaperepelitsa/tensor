@@ -72,4 +72,5 @@ show_some_images(names, data, labels)
 
 W = tf.Variable(tf.random_normal([5, 5, 1, 32]))
 
-def show_weights(W, filename = No)
+def show_weights(W, filename = None):
+    plt.figur
