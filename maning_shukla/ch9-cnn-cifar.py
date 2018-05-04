@@ -97,4 +97,4 @@ def show_conv_results(data, filename = None):
     for i in range(np.shape(data)[3]):
         img = data[0, :, :, i]
         plt.subplot(rows, cols, i + 1)
-        
+        plt.imshow(img)
