@@ -54,4 +54,5 @@ def plot_prices(prices):
 plot_prices(prices)
 
 
-class DecisionPolicu
+class DecisionPolicy:
+    de
