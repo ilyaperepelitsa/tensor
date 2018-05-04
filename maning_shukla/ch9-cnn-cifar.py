@@ -129,4 +129,5 @@ with tf.Session() as sess:
     print(np.shape(conv_out_val))
 
 
-k = 
+k = 2
+maxpool = 
