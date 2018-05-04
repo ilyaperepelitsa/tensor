@@ -23,4 +23,4 @@ def clean(data):
     return normalized
 
 
-de
+def read_data(d)
