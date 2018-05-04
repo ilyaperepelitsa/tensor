@@ -6,4 +6,4 @@ def unpickle(file):
     fo.close()
     return dict
 
-import 
+import numpy as np
