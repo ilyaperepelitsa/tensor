@@ -101,4 +101,5 @@ def show_conv_results(data, filename = None):
         plt.axis("off")
     if filename:
         plt.savefig(filename)
-    
+    else:
+        p
