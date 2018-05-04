@@ -84,3 +84,5 @@ def show_weights(W, filename = None):
         plt.savefig(filename)
     else:
         plt.show()
+
+show_
