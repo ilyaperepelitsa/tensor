@@ -68,35 +68,32 @@ class RandomDecisionPolicy(DecisionPolicy):
         action = random.choice(self.actions)
         return action
 
-def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist, debug=False):
+def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
     budget = initial_budget
     num_stocks = initial_num_stocks
     share_value = 0
     transitions = list()
     for i in range(len(prices) - hist - 1):
-        if i % 100 == 0:
-            print('progress {:.2f}%'.format(float(100*i) / (len(prices) - hist - 1)))
+        if i % 1000 == 0:
+            print("progress {:.2f}%".format(float(100*i) / len(prices) - hist - 1))
         current_state = np.asmatrix(np.hstack((prices[i:i+hist], budget, num_stocks)))
         current_portfolio = budget + num_stocks * share_value
         action = policy.select_action(current_state, i)
-        share_value = float(prices[i + hist + 1])
-        if action == 'Buy' and budget >= share_value:
+        share_value = float(prices[i+hist])
+        if action == "Buy" and budget >= share_value:
             budget -= share_value
             num_stocks += 1
-        elif action == 'Sell' and num_stocks > 0:
+        elif action == "Sell" and num_stocks > 0:
             budget += share_value
             num_stocks -= 1
         else:
-            action = 'Hold'
+            action = "Hold"
         new_portfolio = budget + num_stocks * share_value
         reward = new_portfolio - current_portfolio
-        next_state = np.asmatrix(np.hstack((prices[i+1:i+hist+1], budget, num_stocks)))
+        next_state = np.asmatrix(np.hstack((prices[i + 1 : i + hist + 1], budget, num_stocks)))
         transitions.append((current_state, action, reward, next_state))
         policy.update_q(current_state, action, reward, next_state)
-
     portfolio = budget + num_stocks * share_value
-    if debug:
-        print('${}\t{} shares'.format(budget, num_stocks))
     return portfolio
 
 def run_simulations(policy, budget, num_stocks, prices, hist):
