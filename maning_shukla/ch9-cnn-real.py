@@ -74,4 +74,4 @@ def model():
 
 model_op = model()
 
-cost = tf.reduce_mean(tf.nn.softmax_)
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits)
