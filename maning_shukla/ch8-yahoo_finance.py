@@ -83,4 +83,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             if action == "Buy" and budget >= share_value:
                 budget -= share_value
                 num_stocks += 1
-            elif action = ""
+            elif action == "Sell"
