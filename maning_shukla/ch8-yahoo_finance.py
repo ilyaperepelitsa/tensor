@@ -75,4 +75,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         transitions = list()
         for i in range(len(prices) - hist - 1):
             if i % 1000 == 0:
-                print("progress {:.2f}%".format(float(100*i)))
+                print("progress {:.2f}%".format(float(100*i) / len(pr)))
