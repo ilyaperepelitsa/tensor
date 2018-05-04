@@ -64,3 +64,5 @@ def show_some_images(names, data, labels):
         plt.axis("off")
     plt.tight_layout()
     plt.savefig("cifar_examples.png")
+
+show
