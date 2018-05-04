@@ -53,3 +53,4 @@ import random
 
 def show_some_images(names, data, labels):
     plt.figure()
+    rows, c
