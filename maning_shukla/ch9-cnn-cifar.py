@@ -12,4 +12,4 @@ def clean(data):
     imgs = data.reshape(data.shape[0], 3, 32, 32)
     grayscale_imgs = imgs.mean(1)
     cropped_imgs = grayscale_imgs[:, 4:28, 4:28]
-    img_data = cropped_imgs
+    img_data = cropped_imgs.reshape(data.)
