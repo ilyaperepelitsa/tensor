@@ -48,4 +48,4 @@ W_out = tf.Variable(tf.random_normal([1024, len(names)]))
 b_out = tf.Variable(tf.random_normal([1024]))
 
 
-def conv_layer()
+def conv_layer(conv, k = 2)
