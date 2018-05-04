@@ -21,3 +21,6 @@ def clean(data):
     adj_stds = np.maximum(stdsT, 1.0 / np.sqrt(img_size))
     normalized = (img_data - meansT) / adj_stds
     return normalized
+
+
+de
