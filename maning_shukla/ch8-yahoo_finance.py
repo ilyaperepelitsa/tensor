@@ -9,7 +9,7 @@ from iexfinance import get_historical_data
 from datetime import datetime
 
 start = datetime(2014, 2, 9)
-end = datetime(2017, 5, 24)
+end = datetime.now()
 
 df = get_historical_data("AAPL", start=start, end=end, output_format='pandas')
 df.head()
@@ -51,4 +51,4 @@ def plot_prices(prices):
     plt.show()
 
 # prices = get_prices("AAPL", "1992-07-22", "2016-07-22")
-plot)
+plot_prices(prices)
