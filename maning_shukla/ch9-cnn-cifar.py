@@ -114,4 +114,4 @@ x = tf.reshape(raw_data, shape = [-1, 24, 24, 1])
 
 b = tf.Variable(tf.random_normal([32]))
 conv = tf.nn.conv2d(x, W, strides = [1, 1, 1, 1], padding = "SAME")
-conv_with_b = 
+conv_with_b = tf.nn.bias
