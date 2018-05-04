@@ -94,4 +94,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             transitions.append((current_state, action, reward, next_state))
             policy.update_q(current_state, action, reward, next_state)
         portfolio = budget + num_stocks * share_value
-        return
+        return portfolio
