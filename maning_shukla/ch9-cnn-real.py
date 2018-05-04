@@ -74,4 +74,4 @@ def model():
 
 model_op = model()
 
-cost = tf.reduce_m
+cost = tf.reduce_mean(tf.,)
