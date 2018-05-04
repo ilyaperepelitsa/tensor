@@ -85,4 +85,4 @@ class RandomDecisionPolicy(DecisionPolicy):
                 num_stocks += 1
             elif action == "Sell" and num_stocks > 0:
                 budget += share_value
-                num_stocks 
+                num_stocks -=
