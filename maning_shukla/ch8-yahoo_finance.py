@@ -93,4 +93,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             next_state = np.asmatrix(np.hstack((prices[i + 1 : i + hist + 1], budget, num_stocks)))
             transitions.append((current_state, action, reward, next_state))
             policy.update_q(current_state, action, reward, next_state)
-        portfolio = budget + num_stocks * 
+        portfolio = budget + num_stocks * share_value
