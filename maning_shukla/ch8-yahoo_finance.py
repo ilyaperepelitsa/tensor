@@ -5,6 +5,14 @@ import tensorflow as tf
 import random
 # import BeautifulSoup as bs
 
+from iexfinance import get_historical_data
+from datetime import datetime
+
+start = datetime(2017, 2, 9)
+end = datetime(2017, 5, 24)
+
+
+
 def get_prices(share_symbol, start_date, end_date, cache_filename = "/Users/ilyaperepelitsa/Downloads/stock_prices.npy"):
     try:
         stock_prices = np.load(cache_filename)
