@@ -55,4 +55,6 @@ def conv_layer(conv, k = 2):
 
 
 def model():
-    x_reshaped = tf.reshape(x, shape = [])
+    x_reshaped = tf.reshape(x, shape = [-1, 24, 24, 1])
+
+    
