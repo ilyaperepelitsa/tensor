@@ -104,5 +104,4 @@ def show_conv_results(data, filename = None):
     else:
         plt.show()
 
-
-    
+raw
