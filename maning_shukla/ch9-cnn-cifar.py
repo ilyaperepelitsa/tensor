@@ -54,4 +54,4 @@ import random
 def show_some_images(names, data, labels):
     plt.figure()
     rows, cols = 4, 4
-    random_idxs = ran
+    random_idxs = random.sample(ranfe)
