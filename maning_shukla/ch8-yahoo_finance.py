@@ -60,4 +60,5 @@ class DecisionPolicy:
     def update_q(self, state, action, reward, next_action):
         pass
 
-class RandomDecisionPolicy(DecisionPolicy)
+class RandomDecisionPolicy(DecisionPolicy):
+    def __in
