@@ -57,4 +57,4 @@ plot_prices(prices)
 class DecisionPolicy:
     def select_action(self, current_state):
         pass
-    def update_q(self, state, action, re)
+    def update_q(self, state, action, reward, next_a
