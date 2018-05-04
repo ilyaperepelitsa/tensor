@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import tensorflow as tf
 import random
-import beau
+import BeautifulSoup as bv
 
 # def get_prices(share_symbol, start_date, end_date, cache_filename = "/Users/ilyaperepelitsa/Downloads/stock_prices.npy"):
 #     try:
