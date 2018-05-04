@@ -95,4 +95,5 @@ def show_conv_results(data, filename = None):
     plt.figure()
     rows, cols = 4, 8
     for i in range(np.shape(data)[3]):
-        img = data[0, :, :]
+        img = data[0, :, :, i]
+        plt.
