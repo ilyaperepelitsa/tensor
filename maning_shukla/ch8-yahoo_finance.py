@@ -60,4 +60,4 @@ class DecisionPolicy:
     def update_q(self, state, action, reward, next_action):
         pass
 
-class
+class Ta
