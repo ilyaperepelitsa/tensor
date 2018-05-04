@@ -17,4 +17,4 @@ def clean(data):
     means = np.mean(img_data, axis = 1)
     meansT = means.reshape(len(means), 1)
     stds = np.std(img_data, axis = 1)
-    
+    stdsT 
