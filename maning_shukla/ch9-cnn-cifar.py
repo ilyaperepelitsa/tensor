@@ -105,4 +105,4 @@ def show_conv_results(data, filename = None):
         plt.show()
 
 raw_data = data[4, :]
-raw_img = np.reshape
+raw_img = np.reshape(raw_data, )
