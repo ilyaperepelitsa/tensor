@@ -107,4 +107,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         plt.xlabel("Simulation #")
         plt.ylabel("Net worth")
         plt.plot(final_portfolios)
-        plt.show
+        plt.show()
