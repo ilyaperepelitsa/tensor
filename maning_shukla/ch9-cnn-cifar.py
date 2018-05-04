@@ -67,3 +67,5 @@ def show_some_images(names, data, labels):
     plt.show()
 
 show_some_images(names, data, labels)
+
+W
