@@ -82,4 +82,5 @@ class RandomDecisionPolicy(DecisionPolicy):
             share_value = float(prices[i+hist])
             if action == "Buy" and budget >= share_value:
                 budget -= share_value
-                num_stocks += 
+                num_stocks += 1
+            elif action = ""
