@@ -89,4 +89,4 @@ with tf.Session as sess:
     sess.run(tf.global_variables_initializer())
 
     W_val = sess.run(W)
-    show_weights(W_val, "step0_wi")
+    show_weights(W_val, "step0_weights.png")
