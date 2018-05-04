@@ -96,4 +96,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         portfolio = budget + num_stocks * share_value
         return portfolio
 
-    def 
+    def run_simulations(po)
