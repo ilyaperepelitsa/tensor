@@ -103,3 +103,6 @@ def show_conv_results(data, filename = None):
         plt.savefig(filename)
     else:
         plt.show()
+
+
+    
