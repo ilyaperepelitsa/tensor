@@ -41,3 +41,4 @@ def read_data(directory):
     print(np.shape(data), np.shape(labels))
 
     data = clean(data)
+    data = data
