@@ -79,4 +79,5 @@ class RandomDecisionPolicy(DecisionPolicy):
             current_state = np.asmatrix(np.hstack((prices[i:i+hist], budget, num_stocks)))
             current_portfolio = budget + num_stocks * share_value
             action = policy.select_action(current_state, i)
-            share_value = float(prices[i+hi])
+            share_value = float(prices[i+hist])
+            if 
