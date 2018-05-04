@@ -76,3 +76,4 @@ model_op = model()
 
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = model_op, labels = y))
 train_op = tf.train.AdamOptimizer(learning_rate = 0.001).minimize(cost)
+correct_pred = 
