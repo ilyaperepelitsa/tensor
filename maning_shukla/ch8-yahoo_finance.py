@@ -55,4 +55,4 @@ plot_prices(prices)
 
 
 class DecisionPolicy:
-    def select_actio
+    def select_action(self, curr)
