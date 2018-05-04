@@ -64,8 +64,8 @@ class RandomDecisionPolicy(DecisionPolicy):
     def __init__(self, actions):
         self.actions = actions
 
-    def select_action(self, current_state, step):
-        action = self.actions[random.randint(0, len(self.actions) - 1)]
+    def select_action(self, current_state):
+        action = random.choice(self.actions)
         return action
 
 def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
@@ -78,6 +78,7 @@ def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist):
             print('progress {:.2f}%'.format(float(100*i) / (len(prices) - hist - 1)))
         current_state = np.asmatrix(np.hstack((prices[i:i+hist], budget, num_stocks)))
         current_portfolio = budget + num_stocks * share_value
+        p
         action = policy.select_action(current_state, i)
         share_value = float(prices[i + hist + 1])
         if action == 'Buy' and budget >= share_value:
