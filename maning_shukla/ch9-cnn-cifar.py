@@ -130,4 +130,4 @@ with tf.Session() as sess:
 
 
 k = 2
-maxpool = tf.nn.max_pool(conv_out, ksize = [1, ])
+maxpool = tf.nn.max_pool(conv_out, ksize = [1, k ,k, 1],)
