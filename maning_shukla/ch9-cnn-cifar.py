@@ -110,4 +110,4 @@ plt.figure()
 plt.imshow(raw_img, cmap = "Greys_r")
 plt.savefig("input_image.png")
 
-X = 
+X = tf.reshape()
