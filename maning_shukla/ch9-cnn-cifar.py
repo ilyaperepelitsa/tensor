@@ -77,4 +77,4 @@ def show_weights(W, filename = None):
     rows, cols = 4, 8
     for i in range(np.shape(W)[3]):
         img = W[:, :, 0, i]
-        plt.subplot
+        plt.subplot(rows, cols, )
