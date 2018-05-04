@@ -32,4 +32,4 @@ def read_data(directory):
         filename = "{}/data_batch_{}".format(directory, i)
         batch_data = unpickle(filename)
         if len(data) > 0:
-            
+            data = n
