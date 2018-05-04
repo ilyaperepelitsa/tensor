@@ -112,4 +112,4 @@ plt.savefig("input_image.png")
 
 X = tf.reshape(raw_data, shape = [-1, 24, 24, 1])
 
-b = tf.Variable(tf)
+b = tf.Variable(tf.random_normal)
