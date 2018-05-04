@@ -23,4 +23,5 @@ def clean(data):
     return normalized
 
 
-def read_data(directory)""
+def read_data(directory):
+    names = unpick
