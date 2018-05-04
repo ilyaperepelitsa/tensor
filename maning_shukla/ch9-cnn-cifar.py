@@ -98,4 +98,5 @@ def show_conv_results(data, filename = None):
         img = data[0, :, :, i]
         plt.subplot(rows, cols, i + 1)
         plt.imshow(img, cmap = "Greys_r", interpolation = "none")
-        plt.axis()
+        plt.axis("off")
+    
