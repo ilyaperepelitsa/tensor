@@ -85,5 +85,5 @@ def show_weights(W, filename = None):
     else:
         plt.show()
 
-with 
+with tf.Session as sess
 show_weights(W)
