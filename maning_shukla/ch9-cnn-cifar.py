@@ -124,4 +124,4 @@ with tf.Session() as sess:
     show_conv_results(conv_val, "stepl_convs.png")
     print(np.shape(conv_val))
 
-conv
+conv_out_val = sess.run(conf_)
