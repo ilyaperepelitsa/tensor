@@ -81,4 +81,4 @@ def show_weights(W, filename = None):
         plt.imshow(img, cmap = "Greys_r", interpolation = "none")
         plt.axis("off")
     if filename:
-        
+        plt.savefiw
