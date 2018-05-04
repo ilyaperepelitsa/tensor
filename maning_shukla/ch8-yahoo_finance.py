@@ -115,4 +115,4 @@ hist = 3
 policy = RandomDecisionPolicy(actions)
 budget = 100000.0
 num_stocks = 0
-run_simulations(policy, budget, nu)
+run_simulations(policy, budget, num_stocks, pr)
