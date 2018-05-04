@@ -13,7 +13,7 @@ end = datetime(2017, 5, 24)
 
 df = get_historical_data("AAPL", start=start, end=end, output_format='pandas')
 df.head()
-list(df.close)
+prices = list(df.close)
 
 # def get_prices(share_symbol, start_date, end_date, cache_filename = "/Users/ilyaperepelitsa/Downloads/stock_prices.npy"):
 #     try:
