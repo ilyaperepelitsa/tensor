@@ -56,4 +56,5 @@ def show_some_images(names, data, labels):
     rows, cols = 4, 4
     random_idxs = random.sample(range(len(data)), rows * cols)
     for i in range(rows * cols):
-        plt.subplot(rows, cols, ui)
+        plt.subplot(rows, cols, i + 1)
+        j = 
