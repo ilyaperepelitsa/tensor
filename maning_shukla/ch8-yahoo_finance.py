@@ -110,3 +110,4 @@ class RandomDecisionPolicy(DecisionPolicy):
         plt.show()
 
 plot_prices(prices)
+actions = ["Bu"]
