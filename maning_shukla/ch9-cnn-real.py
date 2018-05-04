@@ -46,3 +46,6 @@ b3 = tf.Variable(tf.random_normal([1024]))
 
 W_out = tf.Variable(tf.random_normal([1024, len(names)]))
 b_out = tf.Variable(tf.random_normal([1024]))
+
+
+def con
