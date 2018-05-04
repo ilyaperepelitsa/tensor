@@ -38,4 +38,6 @@ def read_data(directory):
             data = batch_data["data"]
             labels = batch_data["labels"]
 
-    print(np.shape(data), np.shape(la))
+    print(np.shape(data), np.shape(labels))
+
+    data = clean)
