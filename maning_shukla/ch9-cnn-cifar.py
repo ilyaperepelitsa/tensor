@@ -132,4 +132,4 @@ with tf.Session() as sess:
 k = 2
 maxpool = tf.nn.max_pool(conv_out, ksize = [1, k ,k, 1],
                             strides = [1, k, k, 1], padding = "SAME")
-wih
+with tf.Session() as s
