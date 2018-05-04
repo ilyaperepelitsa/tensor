@@ -95,8 +95,8 @@ def run_simulation(policy, initial_budget, initial_num_stocks, prices, hist, deb
         policy.update_q(current_state, action, reward, next_state)
 
     portfolio = budget + num_stocks * share_value
-    if debug:
-        print('${}\t{} shares'.format(budget, num_stocks))
+    # if debug:
+    #     print('${}\t{} shares'.format(budget, num_stocks))
     return portfolio
 
 def run_simulations(policy, budget, num_stocks, prices, hist):
