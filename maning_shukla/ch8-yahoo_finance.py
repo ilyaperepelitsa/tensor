@@ -89,4 +89,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             else:
                 action = "Hold"
             new_portfolio = budget + num_stocks * share_value
-            rewar
+            reward = new_portfolio 
