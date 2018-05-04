@@ -28,4 +28,4 @@ def read_data(directory):
     print("names", names)
 
     data, labels = [], []
-    
+    for i in rang
