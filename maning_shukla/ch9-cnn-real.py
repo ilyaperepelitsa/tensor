@@ -8,4 +8,27 @@ def unpickle(file):
     fo.close()
     return dict
 
+def read_data(directory):
+    names = unpickle("{}/batches.meta".format(directory))["label_names"]
+    print("names", names)
+
+    data, labels = [], []
+    for i in range(1, 6):
+        filename = "{}/data_batch_{}".format(directory, i)
+        batch_data = unpickle(filename)
+        if len(data) > 0:
+            data = np.vstack((data, batch_data["data"]))
+            labels = np.hstack((labels, batch_data["labels"]))
+        else:
+            data = batch_data["data"]
+            labels = batch_data["labels"]
+
+    print(np.shape(data), np.shape(labels))
+
+    data = clean(data)
+    data = data.astype(np.float32)
+    return names, data, labels
+
+names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py")
+
 names, data, labels =
