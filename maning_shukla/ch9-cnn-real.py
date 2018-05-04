@@ -41,5 +41,5 @@ b1 = tf.Variable(tf.random_normal([64]))
 W2 = tf.Variable(tf.random_normal([5, 5, 1, 64]))
 b2 = tf.Variable(tf.random_normal([64]))
 
-W1 = tf.Variable(tf.random_normal([6 * 6 * 64, 1024]))
-b1 = tf.Variable(tf.random_normal([1024]))
+W3 = tf.Variable(tf.random_normal([6 * 6 * 64, 1024]))
+b3 = tf.Variable(tf.random_normal([1024]))
