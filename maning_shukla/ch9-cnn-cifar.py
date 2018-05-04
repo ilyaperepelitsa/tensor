@@ -48,3 +48,4 @@ names, data, labels = read_data("/Users/ilyaperepelitsa/Downloads/cifar-10-batch
 
 
 import matplotlib.pyplot as plt
+import random
