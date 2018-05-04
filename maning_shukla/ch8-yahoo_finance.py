@@ -74,4 +74,5 @@ class RandomDecisionPolicy(DecisionPolicy):
         share_value = 0
         transitions = list()
         for i in range(len(prices) - hist - 1):
-            if i % 1000 == 
+            if i % 1000 == 0:
+                print()
