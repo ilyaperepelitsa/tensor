@@ -58,4 +58,5 @@ def model():
     x_reshaped = tf.reshape(x, shape = [-1, 24, 24, 1])
 
     conv_out1 = conv_layer(x_reshaped, W1, b1)
-    maxpool_out1 = maxpool_layer
+    maxpool_out1 = maxpool_layer(conv_out)
+    
