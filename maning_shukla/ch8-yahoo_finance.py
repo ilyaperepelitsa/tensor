@@ -80,4 +80,4 @@ class RandomDecisionPolicy(DecisionPolicy):
             current_portfolio = budget + num_stocks * share_value
             action = policy.select_action(current_state, i)
             share_value = float(prices[i+hist])
-            if action == ""
+            if action == "Buy" and budget
