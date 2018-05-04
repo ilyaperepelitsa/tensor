@@ -60,4 +60,5 @@ def show_some_images(names, data, labels):
         j = random_idxs[i]
         plt.title(names[labels[j]])
         img = np.reshape(data[j, :], (24, 24))
-        plt.imshow(img, cmap = )
+        plt.imshow(img, cmap = "Greys_r")
+        
