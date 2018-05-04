@@ -62,4 +62,4 @@ def show_some_images(names, data, labels):
         img = np.reshape(data[j, :], (24, 24))
         plt.imshow(img, cmap = "Greys_r")
         plt.axis("off")
-    
+    plt.tight_layout()
