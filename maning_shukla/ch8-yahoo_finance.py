@@ -87,4 +87,5 @@ class RandomDecisionPolicy(DecisionPolicy):
                 budget += share_value
                 num_stocks -= 1
             else:
-                action = "Hol"
+                action = "Hold"
+            new_portf
