@@ -121,4 +121,4 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     conv_val = sess.run(conv)
-    show_conv_results(conv_val, "")
+    show_conv_results(conv_val, "stepl_conb")
