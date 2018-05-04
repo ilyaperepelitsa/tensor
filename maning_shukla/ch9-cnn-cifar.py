@@ -120,4 +120,5 @@ conv_out = tf.nn.relu(conv_with_b)
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
-    conv_val = sess.run()
+    conv_val = sess.run(conv)
+    
