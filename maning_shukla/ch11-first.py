@@ -131,4 +131,5 @@ go_prefixes = tf.fill([BATCH_SIZE, 1], output_symbol_to_int["<GO>"])
 decoder_input_seq = tf.concat([go_prefixes, decoder_raw_seq], 1)
 
 
-decoder_embedding = tf.Variable(tf.random_uniform([OUTPUT_NU]))
+decoder_embedding = tf.Variable(tf.random_uniform([OUTPUT_NUM_VOCAB,
+    ]))
