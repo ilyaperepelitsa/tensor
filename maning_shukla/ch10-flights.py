@@ -61,17 +61,27 @@ class SeriesPredictor:
         out = tf.squeeze(out)
         return out
 
-    def train(self, train_x, train_y):
+    def train(self, train_x, train_y, test_x, test_y):
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
-            sess.run(tf.global_variables_initializer())
-            for i in range(10000):
-                _, mse = sess.run([self.train_op, self.cost],
-                            feed_dict = {self.x : train_x, self.y: train_y})
-                if i % 100 == 0:
-                    print(i, mse)
-            save_path = self.saver.save(sess, "model.ckpt")
-            print("Model saved to {}".format(save_path))
+            sess.run(tf.initialize_all_variables())
+            max_patience = 3
+            patience = max_patience
+            min_test_err = float('inf')
+            step = 0
+            while patience > 0:
+                _, train_err = sess.run([self.train_op, self.cost], feed_dict={self.x: train_x, self.y: train_y})
+                if step % 100 == 0:
+                    test_err = sess.run(self.cost, feed_dict={self.x: test_x, self.y: test_y})
+                    print('step: {}\t\ttrain err: {}\t\ttest err: {}'.format(step, train_err, test_err))
+                    if test_err < min_test_err:
+                        min_test_err = test_err
+                        patience = max_patience
+                    else:
+                        patience -= 1
+                step += 1
+            save_path = self.saver.save(sess, 'model.ckpt')
+            print('Model saved to {}'.format(save_path))
 
     def test(self, sess, test_x):
         tf.get_variable_scope().reuse_variables()
