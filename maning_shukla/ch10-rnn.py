@@ -17,4 +17,4 @@ class SeriesPredictor:
         self.cost = tf.reduce_mean(tf.square(self.model() - self.y))
         self.train_op = tf.train.AdamOptimizer().minimize(self.cost)
 
-        self.saver = tf
+        self.saver = tf.train.Saver()
