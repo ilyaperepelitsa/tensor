@@ -61,4 +61,4 @@ train_y = [[1, 3, 7, 11],
             [5, 12, 14, 15],
             [3, 7, 9, 12]]
 
-predictor.train()
+predictor.train(train_x, train_y)
