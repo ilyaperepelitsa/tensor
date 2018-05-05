@@ -15,4 +15,4 @@ def load_series(filename, series_idx = 1):
     except IOError:
         return None
 
-def split_data(data, percen)
+def split_data(data, percent_train  )
