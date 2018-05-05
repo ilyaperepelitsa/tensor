@@ -1,6 +1,21 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import pickle
+
+def clean(data):
+    imgs = data.reshape(data.shape[0], 3, 32, 32)
+    grayscale_imgs = imgs.mean(1)
+    cropped_imgs = grayscale_imgs[:, 4:28, 4:28]
+    img_data = cropped_imgs.reshape(data.shape[0], -1)
+    img_size = np.shape(img_data)[1]
+    means = np.mean(img_data, axis = 1)
+    meansT = means.reshape(len(means), 1)
+    stds = np.std(img_data, axis = 1)
+    stdsT = stds.reshape(len(stds), 1)
+    adj_stds = np.maximum(stdsT, 1.0 / np.sqrt(img_size))
+    normalized = (img_data - meansT) / adj_stds
+    return normalized
 
 def unpickle(file):
     fo = open(file, "rb")
@@ -47,8 +62,11 @@ b3 = tf.Variable(tf.random_normal([1024]))
 W_out = tf.Variable(tf.random_normal([1024, len(names)]))
 b_out = tf.Variable(tf.random_normal([1024]))
 
+def conv_layer(x, W, b):
+    conv = tf.nn.conv2d(x, W, strides = [1, 1, 1, 1], padding = "SAME")
+    conv_with_b = tf.nn.bias_add(conv, d)
 
-def conv_layer(conv, k = 2):
+def maxpool_layer(conv, k = 2):
     return tf.nn.max_pool(conv, ksize = [1, k, k, 1], strides = [1, k, k, 1],
                             padding = "SAME")
 
@@ -82,4 +100,16 @@ accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    onehot_labels = tf.one_hot(labels, len(name))
+    onehot_labels = tf.one_hot(labels, len(names), on_value = 1., off_value = 0., axis = -1)
+    onehot_vals = sess.run(onehot_labels)
+    batch_size = len(data) // 200
+    print("batch size", batch_size)
+    for j in range(0, 1000):
+        print("EPOCH", j)
+        for i in range(0, len(data), batch_size):
+            batch_data = data[i:i+batch_size, :]
+            batch_onehot_vals = onehot_vals[i:i+batch_size, :]
+            _, accuracy_val = sess.run([train_op, accuracy], feed_dict  = {x: batch_data, y:batch_onehot_vals})
+            if i % 1000 == 0:
+                print(i, accuracy_val)
+        print("DONE WITH EPOCH")
