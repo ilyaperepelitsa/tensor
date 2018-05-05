@@ -66,7 +66,7 @@ def conv_layer(x, W, b):
     conv = tf.nn.conv2d(x, W, strides = [1, 1, 1, 1], padding = "SAME")
     conv_with_b = tf.nn.bias_add(conv, b)
     conv_out = tf.nn.relu(conv_with_b)
-    re
+    return conv_out
 
 def maxpool_layer(conv, k = 2):
     return tf.nn.max_pool(conv, ksize = [1, k, k, 1], strides = [1, k, k, 1],
