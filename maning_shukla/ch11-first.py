@@ -115,4 +115,4 @@ encoder_input_embedded = tf.contrib.layers.embed_sequence(
     INPUT_NUM_VOCAB,
     ENCODER_EMBEDDING_DIM)
 
-#
+#Encoder output
