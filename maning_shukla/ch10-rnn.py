@@ -53,4 +53,4 @@ class SeriesPredictor:
             print(output)
 
 
-predictor = S
+predictor = SeriesPredictor(input_dim = 1)
