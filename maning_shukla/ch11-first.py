@@ -127,4 +127,4 @@ encoder_output, encoder_state = tf.nn.dynamic_rnn(
 del(encoder_output)
 
 decoder_raw_seq = decoder_output_seq[:, :-1]
-go_
+go_prefixes = 
