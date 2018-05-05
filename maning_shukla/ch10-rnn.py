@@ -35,4 +35,4 @@ class SeriesPredictor:
 
     def train(self, train_x, train_y):
         with tf.Session() as sess:
-            
+            tf.get_variable
