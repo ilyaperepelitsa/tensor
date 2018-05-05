@@ -93,4 +93,4 @@ for i in range(len(actual_vals) - seq_size - 1):
 predictor.train(train_x, train_y, test_x, test_y)
 
 with tf.Session() as sess:
-    predicted_v
+    predicted_vals = predictor.
