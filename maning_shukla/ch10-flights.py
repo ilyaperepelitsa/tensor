@@ -78,3 +78,6 @@ predictor = SeriesPredictor(
 
 data = data_loader.load_series("/Users/ilyaperepelitsa/Downloads/international-airline-passengers.csv")
 train_data, actual_vals = data_loader.split_data(data)
+
+
+train_x. 
