@@ -12,7 +12,7 @@ def make_cell(state_dim):
 
 def make_multi_cell(state_dim, num_layers):
     cells = [make_cell(state_dim) for _ in range(num_layers)]
-    return tf.contrib.rnn.MultiRNNCell
+    return tf.contrib.rnn.MultiRNNCell(cells)
 
 with tf.variable_scope("first_cell") as scope:
     cell = make_cell(state_dim = 10)
@@ -21,3 +21,5 @@ with tf.variable_scope("first_cell") as scope:
 with tf.variable_scope("second_cell") as scope:
     cell2 = make_cell(state_dim = 10)
     outputs2, states2 = tf.nn.dynamic_rnn(cell2, outputs, dtype = tf.float32)
+
+multi
