@@ -81,8 +81,7 @@ OUTPUT_NUM_VOCAB = len(output_symbol_to_int)
 encoder_input_seq = tf.placeholder(
     tf.int32,
     [None, None],
-    name = "encoder_input_seq"
-)
+    name = "encoder_input_seq")
 
 encoder_seq_len = tf.placeholder(
     tf.int32,
