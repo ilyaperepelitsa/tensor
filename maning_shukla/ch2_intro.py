@@ -28,7 +28,7 @@ with tf.Session() as sess:
         sess.run(gd_step, feed_dict = {x: batch_xs, y_true: batch_ys})
         if _ % 100 == 0:
 
-            # print(gd_step)
+            print(ans)
 
     ans = sess.run(accuracy, feed_dict = {x: data.test.images, y_true: data.test.labels})
 
