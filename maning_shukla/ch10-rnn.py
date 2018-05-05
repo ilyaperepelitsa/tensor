@@ -57,3 +57,4 @@ predictor = SeriesPredictor(input_dim = 1, seq_size = 4, hidden_dim = 10)
 train_x = [[[1], [2], [5], [6]],
             [[5], [7], [7], [8]],
             [[3], [4], [5], [7]]]
+train_y 
