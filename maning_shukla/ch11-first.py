@@ -16,4 +16,4 @@ with tf.variable_scope("first_cell") as scope:
 
 with tf.variable_scope("second_cell") as scope:
     cell2 = make_cell(state_dim = 10)
-    outputs
+    outputs2, states2.
