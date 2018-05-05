@@ -1,2 +1,2 @@
 import tensorflow as tf
-from tesnorflow.examples.tutorials
+from tesnorflow.examples.tutorials.mnist import input
