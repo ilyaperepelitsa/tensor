@@ -37,7 +37,7 @@ class SeriesPredictor:
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
             sess.run(tf.global_variables_initializer())
-            for i in range(1000):
+            for i in range(10000):
                 _, mse = sess.run([self.train_op, self.cost],
                             feed_dict = {self.x : train_x, self.y: train_y})
                 if i % 100 == 0:
@@ -64,4 +64,4 @@ train_y = [[1, 3, 7, 11],
 predictor.train(train_x, train_y)
 test_x = [[[1], [2], [3], [4]],
             [[4], [5], [6], [7]]]
-predictor.test()
+predictor.test(test_x)
