@@ -54,4 +54,4 @@ def extract_character_vocab(data):
     special_symbols = ["<PAD>", "<UNK>", "<GO>", "<EOS>"]
     set_symbols = set([character for line in data for character in line])
     all_symbols = special_symbols + list(set_symbols)
-    int_to_cs
+    int_to_symbols = {word_io}
