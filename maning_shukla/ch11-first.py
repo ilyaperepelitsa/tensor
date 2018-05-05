@@ -27,4 +27,5 @@ outputs4, states4 = tf.nn.dynamic_rnn(multi_cell, input_placeholder, dtype = tf.
 
 
 embeddings_0d = tf.constant([17, 22, 35, 51])
-embeddings_4d = tf.constant([[1, 0, 0 , 0]])
+embeddings_4d = tf.constant([[1, 0, 0 , 0],
+                            ])
