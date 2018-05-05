@@ -68,9 +68,8 @@ def conv_layer(x, W, b):
     conv_out = tf.nn.relu(conv_with_b)
     return conv_out
 
-def maxpool_layer(conv, k = 2):
-    return tf.nn.max_pool(conv, ksize = [1, k, k, 1], strides = [1, k, k, 1],
-                            padding = "SAME")
+def maxpool_layer(conv, k=2):
+    return tf.nn.max_pool(conv, ksize=[1, k, k, 1], strides=[1, k, k, 1], padding='SAME')
 
 
 
