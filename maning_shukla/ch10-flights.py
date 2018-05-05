@@ -98,4 +98,4 @@ with tf.Session() as sess:
     plot_results(train_data, predicted_vals, actual_vals, "predictions.png")
 
     prev_sq = train_x[-1]
-    
+    predicted_vals = 
