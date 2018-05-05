@@ -6,6 +6,18 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
+def plot_results(train_x, predictions, actual, filename):
+    plt.figure()
+    num_train = len(train_x)
+    plt.plot(list(range(num_train)), train_x, color='b', label='training data')
+    plt.plot(list(range(num_train, num_train + len(predictions))), predictions, color='r', label='predicted')
+    plt.plot(list(range(num_train, num_train + len(actual))), actual, color='g', label='test data')
+    plt.legend()
+    if filename is not None:
+        plt.savefig(filename)
+    else:
+        plt.show()
+
 def load_series(filename, series_idx = 1):
     try:
         with open(filename) as csvfile:
