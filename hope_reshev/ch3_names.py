@@ -11,4 +11,4 @@ print(c2.name)
 
 ### NAME SCOPES
 with tf.Graph().as_default():
-    c1 = 
+    c1 = tf.constant()
