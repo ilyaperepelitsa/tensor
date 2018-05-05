@@ -136,4 +136,4 @@ decoder_embedding = tf.Variable(tf.random_uniform([OUTPUT_NUM_VOCAB,
 decoder_input_embedded = tf.nn.embedding_lookup(decoder_embedding, decoder_imput_seq)
 decoder_milti_cell = make_multi_cell(RNN_STATE_DIM, RNN_NUM_LAYERS)
 
-output_layer_kernel_initializer
+output_layer_kernel_initializer = tf.tru
