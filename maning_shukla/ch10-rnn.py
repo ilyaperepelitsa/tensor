@@ -29,4 +29,4 @@ class SeriesPredictor:
         outputs, states = tf.nn.dynamic_rnn(cell, self.x, dtype = tf.float32)
         num_examples = tf.shape(self.x)[0]
         W_repeated = tf.tile(tf.expand_dims(self.W_out, 0), [num_examples, 1, 1])
-        
+        out = tf.matu
