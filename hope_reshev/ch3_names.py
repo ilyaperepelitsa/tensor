@@ -14,4 +14,4 @@ with tf.Graph().as_default():
     c1 = tf.constant(4, dtype = tf.float64, nale = "c")
     with tf.name_scope("prefix_name"):
         c2 = tf.constant(4, dtype = tf.int32, name = "c")
-        
+        c3 = tf.const
