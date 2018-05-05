@@ -7,5 +7,3 @@ print(a.get_shape())
 
 x = tf.constant([1, 0, 1])
 print(x.get_shape())
-
-x = 
