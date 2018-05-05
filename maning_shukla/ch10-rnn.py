@@ -15,4 +15,4 @@ class SeriesPredictor:
         self.y = tf.placeholder(tf.float32, [None, seq_size])
 
         self.cost = tf.reduce_mean(tf.square(self.model() - self.y))
-        self.train_op = tf
+        self.train_op = tf.train.Adam
