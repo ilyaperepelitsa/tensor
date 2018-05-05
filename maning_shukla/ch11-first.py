@@ -106,7 +106,7 @@ decoder_seq_len = tf.placeholder(
 
 def make_cell(state_dim):
     lstm_initializer = tf.random_uniform_initializer(-0.1, 0.1)
-    return tf.contrib.rnn.LSTMCell(state_dim, initializer )
+    return tf.contrib.rnn.LSTMCell(state_dim, initializer = lstm_initializer)
 
 def make_multi_cell(state_dim, num_layers):
     cells = [make_cell(state_dim) for _ in range(num_layers)]
