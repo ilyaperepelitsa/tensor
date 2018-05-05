@@ -71,4 +71,6 @@ class SeriesPredictor:
 
 
 seq_size = 5
-predictor = SeriesPredictor()
+predictor = SeriesPredictor(
+    input_dim
+)
