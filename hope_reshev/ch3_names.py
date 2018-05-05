@@ -6,4 +6,4 @@ with tf.Graph().as_default():
     c2 = tf.constant(4, dtype = tf.int32, name = "c")
 
 print(c1.name)
-pti
+print(c2.)
