@@ -120,5 +120,7 @@ encoder_multi_cell = make_multi_cell(RNN_STATE_DIM, RNN_NUM_LAYERS)
 
 encoder_output, encoder_state = tf.nn.dynamic_rnn(
     encoder_multi_cell,
-    encoder_in
+    encoder_input_embedded,
+    sequence_length = encoder_seq_len,
+    dtype = 
 )
