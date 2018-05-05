@@ -96,3 +96,5 @@ with tf.Session() as sess:
     predicted_vals = predictor.test(sess, test_x)[:, 0]
     print("predicted_vals", np.shape(predicted_vals))
     plot_results(train_data, predicted_vals, actual_vals, "predictions.png")
+
+    prev_sq = tr
