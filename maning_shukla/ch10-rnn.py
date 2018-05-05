@@ -11,4 +11,5 @@ class SeriesPredictor:
         self.W_out = tf.Variable(tf.random_normal([hidden_dim, 1]), name = "W_out")
         self.b_out = tf.Variable(tf.random_normal([1]), name = "b_out")
 
-        self.x = tf.placeholder(tf.float32, [None, seq_size, i])
+        self.x = tf.placeholder(tf.float32, [None, seq_size, input_dim])
+        self.
