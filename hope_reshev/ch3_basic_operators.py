@@ -1,4 +1,4 @@
 import tensorflow as tf
 
 a = tf.constant(5)
-b
+b = tf.constant(2)
