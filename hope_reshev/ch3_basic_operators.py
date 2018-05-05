@@ -1,3 +1,4 @@
 import tensorflow as tf
 
-a = 
+a = tf.constant(5)
+b
