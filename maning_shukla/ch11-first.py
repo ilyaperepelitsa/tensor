@@ -137,4 +137,4 @@ decoder_input_embedded = tf.nn.embedding_lookup(decoder_embedding, decoder_imput
 decoder_milti_cell = make_multi_cell(RNN_STATE_DIM, RNN_NUM_LAYERS)
 
 output_layer_kernel_initializer = tf.truncated_normal_initializer(mean = 0.0, stddev = 0.1)
-output
+output_layer = Dense()
