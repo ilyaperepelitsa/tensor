@@ -68,3 +68,6 @@ class SeriesPredictor:
         self.saver.restore(sess, "./model.ckpt")
         output = sess.run(self.model(), feed_dict = {self.x: test_x})
         return output
+
+
+se
