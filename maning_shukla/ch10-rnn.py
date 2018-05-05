@@ -42,4 +42,5 @@ class SeriesPredictor:
                             feed_dict = {self.x : train_x, self.y: train_y})
                 if i % 100 == 0:
                     print(i, mse)
-            save_path = self.saver.save(sess, "model.c")
+            save_path = self.saver.save(sess, "model.ckpt")
+            print("Mod")
