@@ -133,4 +133,4 @@ decoder_input_seq = tf.concat([go_prefixes, decoder_raw_seq], 1)
 
 decoder_embedding = tf.Variable(tf.random_uniform([OUTPUT_NUM_VOCAB,
                                                     DECODER_EMBEDDING_DIM]))
-decoder_input_embedde
+decoder_input_embedded = tf.nn.embedding_
