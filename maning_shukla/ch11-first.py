@@ -109,4 +109,4 @@ def make_multi_cell(state_dim, num_layers):
     return tf.contrib.rnn.MultiRNNCell(cells)
 
 
-#En
+#Encoder embedding
