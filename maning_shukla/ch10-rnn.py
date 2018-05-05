@@ -37,10 +37,10 @@ class SeriesPredictor:
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
             sess.run(tf.global_variables_initializer())
-            for i in range(10000):
+            for i in range(1000):
                 _, mse = sess.run([self.train_op, self.cost],
                             feed_dict = {self.x : train_x, self.y: train_y})
-                if i % 1000 == 0:
+                if i % 100 == 0:
                     print(i, mse)
             save_path = self.saver.save(sess, "model.ckpt")
             print("Model saved to {}".format(save_path))
