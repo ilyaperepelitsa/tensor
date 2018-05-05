@@ -1,1 +1,2 @@
-import nump
+import numpy as np
+import tens
