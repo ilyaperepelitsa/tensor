@@ -10,4 +10,4 @@ e = tf.add(c, b)
 f = tf.subtract(d, e)
 
 sess = tf.Session()
-outs = ses
+outs = sess.run(f)
