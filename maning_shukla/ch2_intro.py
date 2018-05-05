@@ -30,6 +30,6 @@ with tf.Session() as sess:
 
             print(_)
 
-    ans = sess.run(accuracy, feed_dict = {x: data.test.images, y_true: data.test.labels})
+            ans = sess.run(accuracy, feed_dict = {x: data.test.images, y_true: data.test.labels})
 
 print("Accuracy: {:.5}%".format(ans*100))
