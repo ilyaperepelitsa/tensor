@@ -89,3 +89,16 @@ encoder_input_seq = tf.placeholder(
     [None, None],
     name = "encoder_input_seq"
 )
+
+# Encoder placeholders
+encoder_input_seq = tf.placeholder(
+    tf.int32,
+    [None, None],
+    name = "encoder_input_seq"
+)
+
+encoder_input_seq = tf.placeholder(
+    tf.int32,
+    [None, None],
+    name = "encoder_input_seq"
+)
