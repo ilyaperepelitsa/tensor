@@ -7,4 +7,4 @@ def load_series(filename, series_idx = 1):
         with open(filename) as csvfile:
             csvreader = csv.reader(csvfile)
 
-            data = [float()]
+            data = [float(row[series_isc])]
