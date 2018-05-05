@@ -84,13 +84,13 @@ encoder_input_seq = tf.placeholder(
     name = "encoder_input_seq"
 )
 
-encoder_input_seq = tf.placeholder(
+encoder_se = tf.placeholder(
     tf.int32,
     [None, None],
     name = "encoder_input_seq"
 )
 
-# Deod placeholders
+# Decoder placeholders
 encoder_input_seq = tf.placeholder(
     tf.int32,
     [None, None],
