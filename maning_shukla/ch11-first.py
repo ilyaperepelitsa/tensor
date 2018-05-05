@@ -58,3 +58,5 @@ def extract_character_vocab(data):
     symbol_to_int = {word: word_i for word_, word in int_to_symbol.items()}
 
     return int_to_symbol, symbol_to_int
+
+i
