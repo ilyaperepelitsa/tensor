@@ -85,4 +85,5 @@ for i in range(len(train_data) - seq_size - 1) :
     train_x.append(np.expand_dims(train_data[i:i+seq_size], axis = 1).tolist())
     text_y.append(train_data[i+1:i+seq_size+1])
 
-test_x, test_y = []
+test_x, test_y = [], []
+f
