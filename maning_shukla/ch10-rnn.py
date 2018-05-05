@@ -3,4 +3,5 @@ import tensorflow as tf
 from tensorflow.contrib import rnn
 
 class SeriesPredictor:
-    
+    def __init__:
+        
