@@ -12,4 +12,4 @@ class SeriesPredictor:
         self.b_out = tf.Variable(tf.random_normal([1]), name = "b_out")
 
         self.x = tf.placeholder(tf.float32, [None, seq_size, input_dim])
-        self.y = tf.placeholder(tf.floa)
+        self.y = tf.placeholder(tf.float32, [None, ])
