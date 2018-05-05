@@ -1,2 +1,2 @@
 import tensorflow as tf
-from tesnorflow.
+from tesnorflow.examples.tutorials
