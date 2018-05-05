@@ -102,3 +102,11 @@ decoder_seq_len = tf.placeholder(
     (None,),
     name = "decoder_seq_len"
 )
+
+
+def make_cell(state_dim):
+    return tf.contrib.rnn.LSTMCell(state_dim)
+
+def make_multi_cell(state_dim, num_layers):
+    cells = [make_cell(state_dim) for _ in range(num_layers)]
+    return tf.contrib.rnn.MultiRNNCell(cells)
