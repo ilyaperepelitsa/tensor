@@ -1,4 +1,5 @@
 import tensorflow as tf
 
 
-sess = tf.Inter
+sess = tf.InteractiveSession()
+c = tf.lins
