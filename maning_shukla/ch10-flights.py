@@ -11,7 +11,7 @@ def load_series(filename, series_idx = 1):
         with open(filename) as csvfile:
             csvreader = csv.reader(csvfile)
 
-            data = [float(row[series_idx]) for row in csvreader[1] if len(row) > 0]
+            data = [float(row[series_idx]) for row in csvreader if len(row) > 0]
 
             normalized_data = (data - np.mean(data)) / np.std(data)
 
@@ -81,7 +81,7 @@ predictor = SeriesPredictor(
     hidden_dim = 100)
 
 data = load_series("/Users/ilyaperepelitsa/Downloads/international-airline-passengers.csv")
-train_data, actual_vals = data_loader.split_data(data)
+train_data, actual_vals = split_data(data)
 
 
 train_x. train_y = [], []
