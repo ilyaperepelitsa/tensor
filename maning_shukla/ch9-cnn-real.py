@@ -80,4 +80,4 @@ correct_pred = tf.equal(tf.argmax(model_op, 1), tf.argmax(y, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 
-with tf.Session()
+with tf.Session() as sess
