@@ -11,4 +11,4 @@ c = tf.constant(np.array([[[1, 2, 3],
 
                           [[1, 1, 1],
                            [2, 2, 2]]]))
-print("3D NumPy array input: {}")
+print("3D NumPy array input: {}".format(c.get_shape))
