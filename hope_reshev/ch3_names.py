@@ -10,3 +10,4 @@ print(c2.name)
 
 
 ### NAME SCOPES
+with tf.Graph()
