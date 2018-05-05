@@ -54,7 +54,7 @@ def extract_character_vocab(data):
     special_symbols = ["<PAD>", "<UNK>", "<GO>", "<EOS>"]
     set_symbols = set([character for line in data for character in line])
     all_symbols = special_symbols + list(set_symbols)
-    int_to_symbols = {word_i : word for word_i, word in enumerate(all_symbols)}
+    int_to_symbol = {word_i : word for word_i, word in enumerate(all_symbols)}
     symbol_to_int = {word: word_i for word_, word in int_to_symbol.items()}
 
     return int_to_symbol, symbol_to_int
@@ -62,5 +62,5 @@ def extract_character_vocab(data):
 input_sentences = ["hello stranger", "bye bye"]
 output_sentences = ["hiya", "later alligator"]
 
-input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_setences)
+input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_sentences)
 output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_sentences)
