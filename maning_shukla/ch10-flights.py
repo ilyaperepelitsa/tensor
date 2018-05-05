@@ -90,4 +90,6 @@ for i in range(len(actual_vals) - seq_size - 1):
     test_x.append(np.expand_dims(actual_vals[i:i+seq_size], axis = 1).tolist())
     test_y.append(actual_vals[i+1:i+seq_size+1])
 
-predictor.train(train_x, train_y, test_x, te)
+predictor.train(train_x, train_y, test_x, test_y)
+
+with
