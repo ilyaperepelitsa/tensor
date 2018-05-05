@@ -110,3 +110,4 @@ def make_multi_cell(state_dim, num_layers):
 
 
 #Encoder embedding
+encoder
