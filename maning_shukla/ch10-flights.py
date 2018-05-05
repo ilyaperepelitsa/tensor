@@ -11,4 +11,4 @@ def load_series(filename, series_idx = 1):
 
             normalized_data = (data - np.mean(data)) / np.std(data)
 
-        retur
+        return normalized
