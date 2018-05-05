@@ -95,4 +95,4 @@ predictor.train(train_x, train_y, test_x, test_y)
 with tf.Session() as sess:
     predicted_vals = predictor.test(sess, test_x)[:, 0]
     print("predicted_vals", np.shape(predicted_vals))
-    plot_results
+    plot_results(train)
