@@ -16,4 +16,5 @@ with tf.Graph().as_default():
         c2 = tf.constant(4, dtype = tf.int32, name = "c")
         c3 = tf.constant(4, dtype = tf.float64, name = "c")
 
-print(c)
+print(c1.name)
+print()
