@@ -11,4 +11,5 @@ def make_cell(state_dim):
     return tf.contrib.rnn.LSTMCell(state_dim)
 
 with tf.variable_scope("first_cell") as scope:
-    cell = make_cell(state_dime = 10)
+    cell = make_cell(state_dim = 10)
+    outputs
