@@ -47,4 +47,4 @@ class SeriesPredictor:
     def test(self, test_x):
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
-            self.saver.restore(sess, "/")
+            self.saver.restore(sess, "./model")
