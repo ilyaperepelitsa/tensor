@@ -29,4 +29,4 @@ with tf.Session() as sess:
 
     ans = sess.run(accuracy, feed_dict = {x: data.test.images, y_true: data.test.labels})
 
-print("Accuracy:")
+print("Accuracy: {:.5}")
