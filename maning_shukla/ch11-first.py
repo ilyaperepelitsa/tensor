@@ -1,2 +1,4 @@
 import tensorflow as tf
-input 
+
+
+input_dim = 
