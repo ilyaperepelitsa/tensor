@@ -1,3 +1,3 @@
 import csv
 import numpy as np
-import matplotl
+import matplotlib.pyplot as
