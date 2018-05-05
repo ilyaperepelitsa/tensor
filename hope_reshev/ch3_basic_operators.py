@@ -5,4 +5,4 @@ b = tf.constant(2)
 c = tf.constant(3)
 
 
-d = tf.multi
+d = tf.multiply(a, b)
