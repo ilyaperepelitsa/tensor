@@ -48,4 +48,4 @@ class SeriesPredictor:
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
             self.saver.restore(sess, "./model.ckpt")
-            output = sess.run(self.model(), )
+            output = sess.run(self.model(), feed_dict = {self})
