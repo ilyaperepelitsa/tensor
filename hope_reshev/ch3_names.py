@@ -10,4 +10,5 @@ print(c2.name)
 
 
 ### NAME SCOPES
-with tf.Graph().as_default
+with tf.Graph().as_default():
+    c1 = 
