@@ -122,5 +122,8 @@ encoder_output, encoder_state = tf.nn.dynamic_rnn(
     encoder_multi_cell,
     encoder_input_embedded,
     sequence_length = encoder_seq_len,
-    dtype = 
-)
+    dtype = tf.float32)
+
+del(encoder_output)
+
+decode
