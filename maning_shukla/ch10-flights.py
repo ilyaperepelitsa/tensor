@@ -71,4 +71,4 @@ class SeriesPredictor:
 
 
 seq_size = 5
-predictor = Serei
+predictor = SeriesPredictor()
