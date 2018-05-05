@@ -126,4 +126,4 @@ encoder_output, encoder_state = tf.nn.dynamic_rnn(
 
 del(encoder_output)
 
-decode
+decoder_raw_seq = deco
