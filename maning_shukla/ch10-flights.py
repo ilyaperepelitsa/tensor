@@ -77,3 +77,4 @@ predictor = SeriesPredictor(
     hidden_dim = 100)
 
 data = data_loader.load_series("/Users/ilyaperepelitsa/Downloads/international-airline-passengers.csv")
+train_da
