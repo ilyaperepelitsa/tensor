@@ -12,4 +12,4 @@ print(c2.name)
 ### NAME SCOPES
 with tf.Graph().as_default():
     c1 = tf.constant(4, dtype = tf.float64, nale = "c")
-    with tf.name_
+    with tf.name_scope()
