@@ -8,4 +8,4 @@ class SeriesPredictor:
         self.seq_size = seq_size
         self.hidden_dim = hidden_dim
 
-        self.W_out = tf.Variable()
+        self.W_out = tf.Variable(tf.random_)
