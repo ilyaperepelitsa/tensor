@@ -86,4 +86,4 @@ for i in range(len(train_data) - seq_size - 1) :
     text_y.append(train_data[i+1:i+seq_size+1])
 
 test_x, test_y = [], []
-f
+for i in range(len())
