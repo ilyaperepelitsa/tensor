@@ -82,4 +82,4 @@ train_data, actual_vals = data_loader.split_data(data)
 
 train_x. train_y = [], []
 for i in range(len(train_data) - seq_size - 1) :
-    train_x.append(np.expand_dims(train_data[i:i ]))
+    train_x.append(np.expand_dims(train_data[i:i+seq_size]))
