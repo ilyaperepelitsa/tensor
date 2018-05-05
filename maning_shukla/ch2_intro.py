@@ -26,7 +26,7 @@ with tf.Session() as sess:
     for _ in range(NUM_STEPS):
         batch_xs, batch_ys = data.train.next_batch(MINIBATCH_SIZE)
         sess.run(gd_step, feed_dict = {x: batch_xs, y_true: batch_ys})
-        if _ % 100 == 0:
+        if _ % 1000 == 0:
 
 
 
