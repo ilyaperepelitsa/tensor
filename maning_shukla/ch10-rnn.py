@@ -34,4 +34,4 @@ class SeriesPredictor:
         return out
 
     def train(self, train_x, train_y):
-        
+        with tf.Session
