@@ -87,4 +87,4 @@ for i in range(len(train_data) - seq_size - 1) :
 
 test_x, test_y = [], []
 for i in range(len(train_data) - seq_size - 1):
-    
+    test.
