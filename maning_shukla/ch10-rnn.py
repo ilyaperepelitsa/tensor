@@ -19,4 +19,6 @@ class SeriesPredictor:
 
         self.saver = tf.train.Saver()
 
-    def model(s)
+    def model(self):
+        """
+        """
