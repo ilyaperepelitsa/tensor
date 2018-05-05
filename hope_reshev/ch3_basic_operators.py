@@ -12,3 +12,5 @@ f = tf.subtract(d, e)
 sess = tf.Session()
 outs = sess.run(f)
 sess.close()
+
+outs
