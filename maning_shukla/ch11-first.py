@@ -59,4 +59,5 @@ def extract_character_vocab(data):
 
     return int_to_symbol, symbol_to_int
 
-input_setences = ["hello stranger"]
+input_setences = ["hello stranger", "bye bye"]
+output_sentences = 
