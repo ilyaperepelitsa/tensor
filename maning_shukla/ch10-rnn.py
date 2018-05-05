@@ -46,4 +46,4 @@ class SeriesPredictor:
             print("Model saved to {}".format(save_path))
     def test(self, test_x):
         with tf.Session() as sess:
-            tf.get_variable_scope()
+            tf.get_variable_scope().reuse
