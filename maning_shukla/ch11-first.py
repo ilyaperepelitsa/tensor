@@ -139,5 +139,5 @@ decoder_milti_cell = make_multi_cell(RNN_STATE_DIM, RNN_NUM_LAYERS)
 output_layer_kernel_initializer = tf.truncated_normal_initializer(mean = 0.0, stddev = 0.1)
 output_layer = Dense(
 OUTPUT_NUM_VOCAB,
-kernel_initializer = output
+kernel_initializer = output_layer_
 )
