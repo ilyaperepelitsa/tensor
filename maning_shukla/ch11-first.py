@@ -10,6 +10,7 @@ input_placeholder = tf.placeholder(dtype = tf.float32, shape = [None, seq_size, 
 def make_cell(state_dim):
     return tf.contrib.rnn.LSTMCell(state_dim)
 
+def make 
 with tf.variable_scope("first_cell") as scope:
     cell = make_cell(state_dim = 10)
     outputs, states = tf.nn.dynamic_rnn(cell, input_placeholder, dtype = tf.float32)
