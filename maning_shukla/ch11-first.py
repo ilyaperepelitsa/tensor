@@ -52,4 +52,4 @@ print(lookup_0d)
 
 def extract_character_vocab(data):
     special_symbols = ["<PAD>", "<UNK>", "<GO>", "<EOS>"]
-    set_symbols
+    set_symbols = set([char])
