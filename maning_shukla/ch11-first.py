@@ -1,4 +1,5 @@
 import tensorflow as tf
 
 
-input_dim = 
+input_dim = 1
+seq_size = 
