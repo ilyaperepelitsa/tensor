@@ -21,4 +21,5 @@ class SeriesPredictor:
 
     def model(self):
         """
+        
         """
