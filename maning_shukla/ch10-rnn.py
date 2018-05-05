@@ -1,3 +1,3 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.cot
+from tensorflow.contrib import rnn
