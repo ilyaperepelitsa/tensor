@@ -68,4 +68,6 @@ output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_sent
 NUM_EPOCS = 300
 RNN_STATE_DIM = 512
 RNN_NUM_LAYERS = 2
-ENCODER_EMBEDDING_DIM = DECODER_EMBEDDING_DIM = 
+ENCODER_EMBEDDING_DIM = DECODER_EMBEDDING_DIM = 64
+
+BATCH_S
