@@ -9,3 +9,4 @@ with tf.Session() as sess:
     sess.run(init)
     # sess.run(init_val.eval)
     post_var = sess.run(var)
+    var.e
