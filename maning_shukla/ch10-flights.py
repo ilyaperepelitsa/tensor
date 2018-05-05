@@ -1,2 +1,2 @@
 import csv
-im
+import numpy as np
