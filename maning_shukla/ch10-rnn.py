@@ -25,4 +25,4 @@ class SeriesPredictor:
         :param W: matrix if fully-connected output layer weights
         :param b: vector of fully-connected output layer biases
         """
-        
+        cell = rnn.B
