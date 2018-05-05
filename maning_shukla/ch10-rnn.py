@@ -21,5 +21,7 @@ class SeriesPredictor:
 
     def model(self):
         """
-        :param x: inputs of size [T, batch_size, in]
+        :param x: inputs of size [T, batch_size, input_size]
+        :param x: inputs of size [T, batch_size, input_size]
+        :param x: inputs of size [T, batch_size, input_size]
         """
