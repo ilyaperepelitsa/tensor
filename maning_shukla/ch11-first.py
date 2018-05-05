@@ -75,3 +75,6 @@ LEARNING_RATE = 0.0003
 
 INPUT_NUM_VOCAB = len(input_symbol_to_int)
 OUTPUT_NUM_VOCAB = len(output_symbol_to_int)
+
+
+# e
