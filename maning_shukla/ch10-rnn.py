@@ -37,4 +37,4 @@ class SeriesPredictor:
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
             sess.run(tf.global_variables_initializer())
-            f
+            for i in range(10)
