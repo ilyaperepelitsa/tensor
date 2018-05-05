@@ -65,4 +65,4 @@ output_sentences = ["hiya", "later alligator"]
 input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_sentences)
 output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_sentences)
 
-NUM
+NUM_EPOCS = 
