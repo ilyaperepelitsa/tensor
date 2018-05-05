@@ -64,4 +64,4 @@ train_y = [[1, 3, 7, 11],
 predictor.train(train_x, train_y)
 test_x = [[[1], [2], [3], [4]],
             [[4], [5], [6], [7]]]
-predicti
+predictor.test()
