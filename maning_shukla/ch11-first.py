@@ -50,4 +50,4 @@ lookup_2x2d = sess.run(tf.nn.embedding_lookup(embeddings_2x2d, ids))
 print(lookup_0d)
 
 
-def ext
+def extract_character_vocs
