@@ -22,3 +22,5 @@ accuracy = tf.reduce_mean(tf.cast(correct_mask, tf.float32))
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
+
+    for _ in r
