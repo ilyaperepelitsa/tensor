@@ -14,3 +14,7 @@ x.eval()
 x = tf.expand_dims(x, 1)
 x.eval()
 print(x.get_shape())
+
+
+
+b = tf.
