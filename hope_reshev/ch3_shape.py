@@ -1,3 +1,3 @@
 import numpy as np
 
-c = tf.co
+c = tf.constant([[1, 2, 3],])
