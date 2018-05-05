@@ -51,4 +51,4 @@ print(lookup_0d)
 
 
 def extract_character_vocab(data):
-    spe
+    special_symbols 
