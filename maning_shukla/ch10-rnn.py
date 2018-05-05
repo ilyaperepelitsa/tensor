@@ -27,4 +27,4 @@ class SeriesPredictor:
         """
         cell = rnn.BasicLSTMCell(self.hidden_dim)
         outputs, states = tf.nn.dynamic_rnn(cell, self.x, dtype = tf.float32)
-        num_exap
+        num_examples = 
