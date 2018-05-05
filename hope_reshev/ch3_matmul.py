@@ -11,4 +11,5 @@ a.eval()
 x = tf.constant([1, 0, 1])
 print(x.get_shape())
 x.eval()
-x = tf.expand_
+x = tf.expand_dims(x, 1)
+x.eval()
