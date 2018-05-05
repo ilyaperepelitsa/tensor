@@ -8,3 +8,5 @@ c = tf.constant(3)
 d = tf.multiply(a, b)
 e = tf.add(c, b)
 f = tf.subtract(d, e)
+
+sess = tf.S
