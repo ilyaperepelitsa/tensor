@@ -16,4 +16,4 @@ def load_series(filename, series_idx = 1):
         return None
 
 def split_data(data, percent_train = 0.8):
-    num_rows = len(data)
+    num_rows = len(data) * percent_train    
