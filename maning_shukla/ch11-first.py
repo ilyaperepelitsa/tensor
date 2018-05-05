@@ -59,4 +59,4 @@ def extract_character_vocab(data):
 
     return int_to_symbol, symbol_to_int
 
-i
+input_setences = ["he"]
