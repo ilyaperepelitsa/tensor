@@ -14,4 +14,5 @@ class SeriesPredictor:
         self.x = tf.placeholder(tf.float32, [None, seq_size, input_dim])
         self.y = tf.placeholder(tf.float32, [None, seq_size])
 
-        self.cost = tf.reduce_mean(tf.square(self.model()))
+        self.cost = tf.reduce_mean(tf.square(self.model() - self.y))
+        
