@@ -26,4 +26,4 @@ multi_cell = make_multi_cell(state_dim = 10, num_layers = 4)
 outputs4, states4 = tf.nn.dynamic_rnn(multi_cell, input_placeholder, dtype = tf.float32)
 
 
-embe
+embeddings_
