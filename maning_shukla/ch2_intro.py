@@ -13,4 +13,4 @@ y_true = tf.placeholder(tf.float32, [None, 10])
 y_pred = tf.matmul(x, W)
 
 
-cross_entropy = 
+cross_entropy = tf.reduce_mean()
