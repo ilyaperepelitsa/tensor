@@ -19,9 +19,15 @@ def load_series(filename, series_idx = 1):
     except IOError:
         return None
 
-def split_data(data, percent_train = 0.8):
-    num_rows = len(data) * percent_train
-    return data[:num_rows], data[num_rows:]
+def split_data(data, percent_train=0.80):
+    num_rows = len(data)
+    train_data, test_data = [], []
+    for idx, row in enumerate(data):
+        if idx < num_rows * percent_train:
+            train_data.append(row)
+        else:
+            test_data.append(row)
+    return train_data, test_data
 
 
 class SeriesPredictor:
