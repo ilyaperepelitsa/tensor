@@ -62,5 +62,5 @@ def extract_character_vocab(data):
 input_setences = ["hello stranger", "bye bye"]
 output_sentences = ["hiya", "later alligator"]
 
-input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_sentences)
-output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_)
+input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_setences)
+output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_sentences)
