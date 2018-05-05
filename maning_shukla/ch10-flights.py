@@ -70,4 +70,5 @@ class SeriesPredictor:
         return output
 
 
-seq_size = 
+seq_size = 5
+predic
