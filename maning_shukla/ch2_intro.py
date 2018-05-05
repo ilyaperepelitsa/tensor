@@ -24,4 +24,4 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for _ in range(NUM_STEPS):
-        batch_xs, batch_ys = data.train.next_bat
+        batch_xs, batch_ys = data.train.next_batch(MI)
