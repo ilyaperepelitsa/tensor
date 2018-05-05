@@ -18,3 +18,4 @@ print(x.get_shape())
 
 
 b = tf.matmul(a, x)
+b.eval()
