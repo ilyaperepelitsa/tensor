@@ -100,5 +100,5 @@ decoder_output_seq = tf.placeholder(
 decoder_seq_len = tf.placeholder(
     tf.int32,
     [None, None],
-    name = "encoder_seq_len"
+    name = "decoder_seq_len"
 )
