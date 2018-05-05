@@ -7,5 +7,5 @@ print(var)
 init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(init)
-    sess.run
+    sess.run(init_val.)
     post_var = sess.run(var)
