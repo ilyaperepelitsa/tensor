@@ -1,1 +1,3 @@
-import tensorflow a
+import tensorflow as tf
+
+init_val
