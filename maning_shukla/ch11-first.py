@@ -38,4 +38,4 @@ embeddings_2x2d = tf.constant([[[1, 0], [0 , 0]],
                                 [[0, 0], [0 , 1]],])
 
 
-ids = tf.constat
+ids = tf.constant([1. ])
