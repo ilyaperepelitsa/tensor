@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 DATA_DIR = "/tmp/data"
-NUM_STEPS = 1000
+NUM_STEPS = 100000
 MINIBATCH_SIZE = 100
 
 data = input_data.read_data_sets(DATA_DIR, one_hot = True)
@@ -31,6 +31,6 @@ with tf.Session() as sess:
 
 
             ans = sess.run(accuracy, feed_dict = {x: data.test.images, y_true: data.test.labels})
-            print(_)
+            print(ans)
 
 print("Accuracy: {:.5}%".format(ans*100))
