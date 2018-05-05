@@ -2,4 +2,4 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-def 
+def load_series(filename, seie)
