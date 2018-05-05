@@ -75,3 +75,5 @@ predictor = SeriesPredictor(
     input_dim = 1,
     seq_size = seq_size,
     hidden_dim = 100)
+
+data - da
