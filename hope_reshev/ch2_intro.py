@@ -3,7 +3,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 DATA_DIR = "/tmp/data"
 NUM_STEPS = 10000
-MINIBATCH_SIZE = 100
+MINIBATCH_SIZE = 20
 
 data = input_data.read_data_sets(DATA_DIR, one_hot = True)
 x = tf.placeholder(tf.float32, [None, 784])
