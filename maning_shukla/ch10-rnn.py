@@ -26,4 +26,4 @@ class SeriesPredictor:
         :param b: vector of fully-connected output layer biases
         """
         cell = rnn.BasicLSTMCell(self.hidden_dim)
-        outputs, states = tf.nn.dynamic_rnn(cell, self.)
+        outputs, states = tf.nn.dynamic_rnn(cell, self.x, dtype =)
