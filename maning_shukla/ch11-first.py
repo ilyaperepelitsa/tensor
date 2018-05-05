@@ -22,4 +22,4 @@ with tf.variable_scope("second_cell") as scope:
     cell2 = make_cell(state_dim = 10)
     outputs2, states2 = tf.nn.dynamic_rnn(cell2, outputs, dtype = tf.float32)
 
-multi_cell = make
+multi_cell = make_multi_cell
