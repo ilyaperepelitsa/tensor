@@ -2,4 +2,4 @@ import tensorflow as tf
 
 
 sess = tf.InteractiveSession()
-c = tf.lins
+c = tf.linspace()
