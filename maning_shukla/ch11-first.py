@@ -66,4 +66,4 @@ input_int_to_symbol, input_symbol_to_int = extract_character_vocab(input_sentenc
 output_int_to_symbol, output_symbol_to_int = extract_character_vocab(output_sentences)
 
 NUM_EPOCS = 300
-RNN_STATE_
+RNN_STATE_DIM = 512
