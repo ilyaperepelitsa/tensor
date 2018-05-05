@@ -90,7 +90,7 @@ data = load_series("/Users/ilyaperepelitsa/Downloads/international-airline-passe
 train_data, actual_vals = split_data(data)
 
 
-train_x. train_y = [], []
+train_x, train_y = [], []
 for i in range(len(train_data) - seq_size - 1) :
     train_x.append(np.expand_dims(train_data[i:i+seq_size], axis = 1).tolist())
     text_y.append(train_data[i+1:i+seq_size+1])
