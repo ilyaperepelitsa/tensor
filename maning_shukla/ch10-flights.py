@@ -76,4 +76,4 @@ predictor = SeriesPredictor(
     seq_size = seq_size,
     hidden_dim = 100)
 
-data -
+data = data_loader
