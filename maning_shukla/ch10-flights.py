@@ -8,4 +8,5 @@ def load_series(filename, series_idx = 1):
             csvreader = csv.reader(csvfile)
 
             data = [float(row[series_idx]) for row in csvreader if len(row) > 0]
-            
+
+            normalized_
