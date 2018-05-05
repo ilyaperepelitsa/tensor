@@ -21,5 +21,5 @@ class SeriesPredictor:
 
     def model(self):
         """
-        
+        :param x:
         """
