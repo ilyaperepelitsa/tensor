@@ -38,4 +38,5 @@ class SeriesPredictor:
             tf.get_variable_scope().reuse_variables()
             sess.run(tf.global_variables_initializer())
             for i in range(1000):
-                _, mse = sess.run([self.train_op, self.cost])
+                _, mse = sess.run([self.train_op, self.cost],
+                            feed)
