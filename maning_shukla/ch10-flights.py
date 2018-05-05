@@ -102,4 +102,4 @@ with tf.Session() as sess:
     for i in range(20):
         next_seq = predictor.test(sess, [prev_seq])
         predicted_vals.append(next_seq[-1])
-        prev_seq = np.vstack((prev_seq[1:]))
+        prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))
