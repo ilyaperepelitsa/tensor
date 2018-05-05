@@ -1,4 +1,5 @@
 import tensorflow as tf
 
 
-with tf.Graph().as_d
+with tf.Graph().as_default():
+    c1 = 
