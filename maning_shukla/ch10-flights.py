@@ -81,3 +81,4 @@ train_data, actual_vals = data_loader.split_data(data)
 
 
 train_x. train_y = [], []
+for i in r
