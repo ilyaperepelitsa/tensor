@@ -129,7 +129,7 @@ with tf.Session() as sess:
     print("predicted_vals", np.shape(predicted_vals))
     plot_results(train_data, predicted_vals, actual_vals, "predictions.png")
 
-    prev_sq = train_x[-1]
+    prev_seq = train_x[-1]
     predicted_vals = []
     for i in range(20):
         next_seq = predictor.test(sess, [prev_seq])
