@@ -4,4 +4,4 @@ from tensorflow.contrib import rnn
 
 class SeriesPredictor:
     def __init__(self, input_dim, seq_size, hidden_dim = 10):
-        
+        self.input_dim = input
