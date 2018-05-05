@@ -20,4 +20,5 @@ correct_mask = tf.equal(tf.argmax(y_pred, 1), tf.argmax(y_true, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_mask, tf.float32))
 
 
-with tf
+with tf.Session() as sess:
+    
