@@ -6,4 +6,4 @@ NUM_STEPS = 1000
 MINIBATCH_SIZE = 100
 
 data = input_data.read_data_sets(DATA_DIR, one_hot = True)
-x = tf.placeh
+x = tf.placeholder(tf.float)
