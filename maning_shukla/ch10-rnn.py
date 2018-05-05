@@ -23,5 +23,5 @@ class SeriesPredictor:
         """
         :param x: inputs of size [T, batch_size, input_size]
         :param W: matrix if fully-connected output layer weights
-        :param x: vector of fully-connected output lay
+        :param b: vector of fully-connected output layer biases
         """
