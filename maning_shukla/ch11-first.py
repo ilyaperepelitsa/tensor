@@ -39,4 +39,4 @@ embeddings_2x2d = tf.constant([[[1, 0], [0 , 0]],
 
 
 ids = tf.constant([1, 0, 2])
-loo
+lookup_0d = sess.run()
