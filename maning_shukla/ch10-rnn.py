@@ -44,4 +44,4 @@ class SeriesPredictor:
                     print(i, mse)
             save_path = self.saver.save(sess, "model.ckpt")
             print("Model saved to {}".format(save_path))
-    def ter
+    def test(self, test)
