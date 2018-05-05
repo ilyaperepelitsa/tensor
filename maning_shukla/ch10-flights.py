@@ -13,4 +13,6 @@ def load_series(filename, series_idx = 1):
 
         return normalized_data
     except IOError:
-        
+        return None
+
+    
