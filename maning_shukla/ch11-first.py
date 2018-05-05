@@ -32,7 +32,7 @@ embeddings_4d = tf.constant([[1, 0, 0 , 0],
                              [0, 0, 1 , 0],
                              [0, 0, 0 , 1],])
 
-embeddings_4d = tf.constant([[1, 0, 0 , 0],
+embeddings_2x2d = tf.constant([[1, 0, 0 , 0],
                              [0, 1, 0 , 0],
                              [0, 0, 1 , 0],
                              [0, 0, 0 , 1],])
