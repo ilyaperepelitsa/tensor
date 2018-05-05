@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 DATA_DIR = "/tmp/data"
-NUM_STEPS = 100000
+NUM_STEPS = 10000
 MINIBATCH_SIZE = 100
 
 data = input_data.read_data_sets(DATA_DIR, one_hot = True)
