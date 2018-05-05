@@ -45,4 +45,5 @@ class SeriesPredictor:
             save_path = self.saver.save(sess, "model.ckpt")
             print("Model saved to {}".format(save_path))
     def test(self, test_x):
-        with tf.Session() as sess
+        with tf.Session() as sess:
+            tf.get
