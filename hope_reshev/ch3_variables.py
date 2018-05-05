@@ -1,3 +1,3 @@
 import tensorflow as tf
 
-init_val
+init_val = tf.random_norma
