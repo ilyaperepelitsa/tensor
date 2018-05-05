@@ -36,4 +36,5 @@ class SeriesPredictor:
     def train(self, train_x, train_y):
         with tf.Session() as sess:
             tf.get_variable_scope().reuse_variables()
-            sess.run(tf.global_variables_ini)
+            sess.run(tf.global_variables_initializer())
+            f
