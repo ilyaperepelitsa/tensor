@@ -90,7 +90,7 @@ encoder_input_seq = tf.placeholder(
     name = "encoder_input_seq"
 )
 
-# Encoder placeholders
+# Deod placeholders
 encoder_input_seq = tf.placeholder(
     tf.int32,
     [None, None],
