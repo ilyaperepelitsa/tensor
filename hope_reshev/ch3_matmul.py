@@ -17,4 +17,4 @@ print(x.get_shape())
 
 
 
-b = tf.
+b = tf.matmul(a, x)
