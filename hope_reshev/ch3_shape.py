@@ -6,4 +6,4 @@ c = tf.constant([[1, 2, 3],
 print("Python list input: {}".format(c.get_shape()))
 
 
-c = 
+c = tf.constant(np.a)
