@@ -7,4 +7,6 @@ MINIBATCH_SIZE = 100
 
 data = input_data.read_data_sets(DATA_DIR, one_hot = True)
 x = tf.placeholder(tf.float32, [None, 784])
-W = tf.Variable(tf.zeros([784, 19]))
+W = tf.Variable(tf.zeros([784, 10]))
+
+y_t
