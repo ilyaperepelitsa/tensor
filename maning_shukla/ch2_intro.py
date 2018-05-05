@@ -17,4 +17,4 @@ cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = 
 gd_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
 correct_mask = tf.equal(tf.argmax(y_pred, 1), tf.argmax(y_true, 1))
-accuracy = tf.reduce_mean(tf.cast(correct_mask))
+accuracy = tf.reduce_mean(tf.cast(correct_mask, tf.float32))
