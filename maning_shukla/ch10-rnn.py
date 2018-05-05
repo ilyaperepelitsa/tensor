@@ -31,4 +31,6 @@ class SeriesPredictor:
         W_repeated = tf.tile(tf.expand_dims(self.W_out, 0), [num_examples, 1, 1])
         out = tf.matmul(outputs, W_repeated) + self.b_out
         out = tf.squeeze(out)
-        
+        return out
+
+    def trai
