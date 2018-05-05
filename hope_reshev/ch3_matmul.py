@@ -6,4 +6,4 @@ a = tf.constant([[1, 2, 3],
 print(a.get_shape())
 
 x = tf.constant([1, 0, 1])
-print(x_ge)
+print(x.get_shape())
