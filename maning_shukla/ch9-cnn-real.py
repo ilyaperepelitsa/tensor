@@ -82,4 +82,4 @@ accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    onehot_labels = tf.one_hot(l)
+    onehot_labels = tf.one_hot(labels, len(name))
