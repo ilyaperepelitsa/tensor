@@ -33,4 +33,4 @@ class SeriesPredictor:
         out = tf.squeeze(out)
         return out
 
-    def trai
+    def train(self, )
