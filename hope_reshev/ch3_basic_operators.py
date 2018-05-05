@@ -7,4 +7,4 @@ c = tf.constant(3)
 
 d = tf.multiply(a, b)
 e = tf.add(c, b)
-f = tf.s
+f = tf.subtract(d, e)
