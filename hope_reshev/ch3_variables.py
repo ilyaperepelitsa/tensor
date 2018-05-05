@@ -5,3 +5,4 @@ var = tf.Variable(init_val, name = "var")
 print(var)
 
 init = tf.global_variables_initializer()
+with tf.S
