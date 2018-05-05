@@ -11,7 +11,7 @@ def make_cell(state_dim):
     return tf.contrib.rnn.LSTMCell(state_dim)
 
 def make_multi_cell(state_dim, num_layers):
-    SSA
+    
 
 with tf.variable_scope("first_cell") as scope:
     cell = make_cell(state_dim = 10)
