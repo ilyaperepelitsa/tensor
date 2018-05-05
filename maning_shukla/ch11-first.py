@@ -55,7 +55,7 @@ def extract_character_vocab(data):
     set_symbols = set([character for line in data for character in line])
     all_symbols = special_symbols + list(set_symbols)
     int_to_symbol = {word_i : word for word_i, word in enumerate(all_symbols)}
-    symbol_to_int = {word: word_i for word_, word in int_to_symbol.items()}
+    symbol_to_int = {word: word_i for word_i, word in int_to_symbol.items()}
 
     return int_to_symbol, symbol_to_int
 
