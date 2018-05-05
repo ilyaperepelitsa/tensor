@@ -92,14 +92,12 @@ encoder_seq_len = tf.placeholder(
 decoder_output_seq = tf.placeholder(
     tf.int32,
     [None, None],
-    name = "decoder_output_seq"
-)
+    name = "decoder_output_seq")
 
 decoder_seq_len = tf.placeholder(
     tf.int32,
     (None,),
-    name = "decoder_seq_len"
-)
+    name = "decoder_seq_len")
 
 
 def make_cell(state_dim):
