@@ -82,4 +82,4 @@ train_data, actual_vals = data_loader.split_data(data)
 
 train_x. train_y = [], []
 for i in range(len(train_data) - seq_size - 1) :
-    train
+    train_x.appen
