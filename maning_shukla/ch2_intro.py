@@ -10,4 +10,4 @@ x = tf.placeholder(tf.float32, [None, 784])
 W = tf.Variable(tf.zeros([784, 10]))
 
 y_true = tf.placeholder(tf.float32, [None, 10])
-y_pred = tf.ma
+y_pred = tf.matmul(x, W)
