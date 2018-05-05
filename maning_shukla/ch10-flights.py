@@ -70,4 +70,4 @@ class SeriesPredictor:
         return output
 
 
-se
+seq_size = 
