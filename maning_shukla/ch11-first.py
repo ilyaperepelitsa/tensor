@@ -119,5 +119,6 @@ encoder_input_embedded = tf.contrib.layers.embed_sequence(
 encoder_multi_cell = make_multi_cell(RNN_STATE_DIM, RNN_NUM_LAYERS)
 
 encoder_output, encoder_state = tf.nn.dynamic_rnn(
-    encoder_multi_cell
+    encoder_multi_cell,
+    encoder_in
 )
