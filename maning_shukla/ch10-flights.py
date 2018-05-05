@@ -103,3 +103,4 @@ with tf.Session() as sess:
         next_seq = predictor.test(sess, [prev_seq])
         predicted_vals.append(next_seq[-1])
         prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))
+    plot_resilt
