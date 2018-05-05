@@ -43,4 +43,4 @@ class SeriesPredictor:
                 if i % 100 == 0:
                     print(i, mse)
             save_path = self.saver.save(sess, "model.ckpt")
-            print("Model saved to {}.")
+            print("Model saved to {}".format())
