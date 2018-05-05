@@ -111,5 +111,5 @@ def make_multi_cell(state_dim, num_layers):
 
 #Encoder embedding
 encoder_input_embedded = tf.contrib.layers.embed_sequence(
-
-)
+    encoder_input_seq,
+    )
