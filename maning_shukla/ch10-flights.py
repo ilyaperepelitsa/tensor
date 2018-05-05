@@ -101,4 +101,4 @@ with tf.Session() as sess:
     predicted_vals = []
     for i in range(20):
         next_seq = predictor.test(sess, [prev_seq])
-        predicted_vals.append()
+        predicted_vals.append(next_seq[-1])
