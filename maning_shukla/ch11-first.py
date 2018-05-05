@@ -128,4 +128,7 @@ del(encoder_output)
 
 decoder_raw_seq = decoder_output_seq[:, :-1]
 go_prefixes = tf.fill([BATCH_SIZE, 1], output_symbol_to_int["<GO>"])
-decoder_input_seq = tf.concat([go_prefixes, decoder_raw_seq])
+decoder_input_seq = tf.concat([go_prefixes, decoder_raw_seq], 1)
+
+
+decoder
