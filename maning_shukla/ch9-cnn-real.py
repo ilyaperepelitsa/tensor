@@ -63,7 +63,7 @@ W_out = tf.Variable(tf.random_normal([1024, len(names)]))
 b_out = tf.Variable(tf.random_normal([1024]))
 
 def conv_layer(x, W, b):
-    conv = tf.nn.conv2d(x, W, strides = [1, 1, 1, 1], padding = "SAME")
+    conv = tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
     conv_with_b = tf.nn.bias_add(conv, b)
     conv_out = tf.nn.relu(conv_with_b)
     return conv_out
