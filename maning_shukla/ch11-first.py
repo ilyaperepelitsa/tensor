@@ -10,4 +10,5 @@ input_placeholder = tf.placeholder(dtype = tf.float32, shape = [None, seq_size, 
 def make_cell(state_dim):
     return tf.contrib.rnn.LSTMCell(state_dim)
 
-with tf.variable_scope("first")
+with tf.variable_scope("first_cell") as scope:
+    c
