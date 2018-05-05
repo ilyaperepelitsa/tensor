@@ -78,4 +78,4 @@ OUTPUT_NUM_VOCAB = len(output_symbol_to_int)
 
 
 # Encoder placeholders
-encoder_input_seq = 
+encoder_input_seq = tf.placeholder()
