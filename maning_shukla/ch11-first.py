@@ -16,4 +16,4 @@ with tf.variable_scope("first_cell") as scope:
 
 with tf.variable_scope("second_cell") as scope:
     cell2 = make_cell(state_dim = 10)
-    outputs2, states2 = tf.nn.dynamic_rnn(cell, )
+    outputs2, states2 = tf.nn.dynamic_rnn(cell2, outputs)
