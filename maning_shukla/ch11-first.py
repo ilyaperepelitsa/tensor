@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+sess = tf.InteractiveSession()
 
 input_dim = 1
 seq_size = 6
