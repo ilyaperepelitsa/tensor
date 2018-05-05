@@ -42,8 +42,8 @@ ids = tf.constant([1, 0, 2])
 lookup_0d = sess.run(tf.nn.embedding_lookup(embeddings_0d))
 print(lookup_0d)
 
-lookup_4d = sess.run(tf.nn.embedding_lookup(embeddings_0d))
+lookup_4d = sess.run(tf.nn.embedding_lookup(embeddings_4d))
 print(lookup_0d)
 
-lookup_2d = sess.run(tf.nn.embedding_lookup(embeddings_0d))
+lookup_2x2d = sess.run(tf.nn.embedding_lookup(embeddings_0d))
 print(lookup_0d)
