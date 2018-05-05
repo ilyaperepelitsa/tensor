@@ -64,7 +64,6 @@ class SeriesPredictor:
             print("Model saved to {}".format(save_path))
 
     def test(self, sess, test_x):
-        # with tf.Session() as sess:
         tf.get_variable_scope().reuse_variables()
         self.saver.restore(sess, "./model.ckpt")
         output = sess.run(self.model(), feed_dict = {self.x: test_x})
