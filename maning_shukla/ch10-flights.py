@@ -100,4 +100,4 @@ with tf.Session() as sess:
     prev_sq = train_x[-1]
     predicted_vals = []
     for i in range(20):
-        
+        next_seq = pred
