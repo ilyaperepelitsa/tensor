@@ -77,4 +77,5 @@ INPUT_NUM_VOCAB = len(input_symbol_to_int)
 OUTPUT_NUM_VOCAB = len(output_symbol_to_int)
 
 
-# e
+# Encoder placeholders
+encoder_input
