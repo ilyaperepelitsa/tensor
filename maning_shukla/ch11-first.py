@@ -8,4 +8,6 @@ input_placeholder = tf.placeholder(dtype = tf.float32, shape = [None, seq_size, 
 
 
 def make_cell(state_dim):
-    return tf.contrib.rnn.LSTMCell()
+    return tf.contrib.rnn.LSTMCell(state_dim)
+
+w
