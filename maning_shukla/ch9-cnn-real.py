@@ -75,14 +75,14 @@ def maxpool_layer(conv, k = 2):
 
 
 def model():
-    x_reshaped = tf.reshape(x, shape = [-1, 24, 24, 1])
+    x_reshaped = tf.reshape(x, shape=[-1, 24, 24, 1])
 
     conv_out1 = conv_layer(x_reshaped, W1, b1)
-    maxpool_out1 = maxpool_layer(conv_out)
-    norm1 = tf.nn.lrn(maxpool_out1, 4, bias = 1.0, alpha = 0.001 / 9.0, beta = 0.75)
-    conv_out2 = conv_layer(x_reshaped, W2, b2)
-    norm2 = tf.nn.lrn(conv_out2, 4, bias = 1.0, alpha = 0.001 / 9.0, beta = 0.75)
-    maxpool_out1 = maxpool_layer(norm2)
+    maxpool_out1 = maxpool_layer(conv_out1)
+    norm1 = tf.nn.lrn(maxpool_out1, 4, bias=1.0, alpha=0.001 / 9.0, beta=0.75)
+    conv_out2 = conv_layer(norm1, W2, b2)
+    norm2 = tf.nn.lrn(conv_out2, 4, bias=1.0, alpha=0.001 / 9.0, beta=0.75)
+    maxpool_out2 = maxpool_layer(norm2)
 
     maxpool_reshaped = tf.reshape(maxpool_out2, [-1, W3.get_shape().as_list()[0]])
     local = tf.add(tf.matmul(maxpool_reshaped, W3), b3)
