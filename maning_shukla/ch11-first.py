@@ -7,4 +7,4 @@ seq_size = 6
 input_placeholder = tf.placeholder(dtype = tf.float32, shape = [None, seq_size, input_dim])
 
 
-def make 
+def make_cell(state_dim)
