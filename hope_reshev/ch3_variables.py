@@ -4,4 +4,4 @@ init_val = tf.random_normal((1, 5), 0, 1)
 var = tf.Variable(init_val, name = "var")
 print(var)
 
-init = tf.global_va
+init = tf.global_variables_initializer()
