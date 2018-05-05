@@ -9,4 +9,5 @@ class SeriesPredictor:
         self.hidden_dim = hidden_dim
 
         self.W_out = tf.Variable(tf.random_normal([hidden_dim, 1]), name = "W_out")
-        self.b_out = tf.Variable(tf.random_normal([1]), )
+        self.b_out = tf.Variable(tf.random_normal([1]), name = "b_out")
+        
