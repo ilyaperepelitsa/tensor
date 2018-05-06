@@ -21,4 +21,4 @@ def conv_layer(input, shape):
     b = bias_variable([shape[3]])
     return tf.nn.relu(conv2d(input, W) + b)
 
-def full_la
+def full_layer(input, s)
