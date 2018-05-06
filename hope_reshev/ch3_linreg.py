@@ -16,4 +16,4 @@ g = tf.Graph()
 wb_ = []
 with g.as_default():
     x = tf.placeholder(tf.float32, shape = [None, 3])
-    y_trie
+    y_true = 
