@@ -34,4 +34,5 @@ with g.as_default():
     init = tf.global_variables_initializer()
     with tf.Session() as sess:
         sess.run(init)
-        for step in range(NUM_STEPS)
+        for step in range(NUM_STEPS):
+            sess
