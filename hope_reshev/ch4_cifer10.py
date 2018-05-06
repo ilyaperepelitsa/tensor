@@ -9,4 +9,4 @@ def bias_variable(shape):
     initial = tf.constant(0.1, shape = shape)
     return tf.Variable(initial)
 
-def conf
+def conv2d(x, W):
