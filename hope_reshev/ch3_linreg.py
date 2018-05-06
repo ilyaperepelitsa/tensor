@@ -29,4 +29,4 @@ with g.as_default():
     with tf.name_scope("train") as scope:
         learning_rate = 0.5
         optimizer = tf.train.GradientDescentOptimizer(learning_rate)
-        
+        train = opti
