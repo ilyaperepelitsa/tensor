@@ -32,4 +32,4 @@ def full_layer(input, size):
 x = tf.placeholder(tf.float32, shape = [None, 784])
 y_ = tf.placeholder(tf.float32, shape = [None, 10])
 
-x_image = tf.reshape(x, [1])
+x_image = tf.reshape(x, [-1, 28, 28, 1])
