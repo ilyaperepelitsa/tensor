@@ -23,4 +23,4 @@ def conv_layer(input, shape):
 
 def full_layer(input, size):
     in_size = int(input.get_shape()[1])
-    W = weight_variab
+    W = weight_variable([in_size, si])
