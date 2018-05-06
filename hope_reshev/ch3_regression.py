@@ -10,4 +10,4 @@ y_pred = tf.matmul(w, tf.transpose(x)) + b
 loss = tf.reduce_mean(tf.square(y_true - y_pred))
 
 #categorical
-loss = tf.nn
+loss = tf.nn.sigmo
