@@ -25,4 +25,4 @@ def full_layer(input, size):
     in_size = int(input.get_shape()[1])
     W = weight_variable([in_size, size])
     b = bias_variable([size])
-    
+    return tf.matmul(in)
