@@ -53,4 +53,4 @@ with g.as_default():
                 print(step, sess.run([w, b]))
                 wb_.append(sess.run([w, b]))
 
-        print(10, sess.run([w, b]))
+        print(100000, sess.run([w, b]))
