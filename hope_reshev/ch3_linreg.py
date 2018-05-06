@@ -13,3 +13,5 @@ import tensorflow as tf
 NUM_STEPS = 10
 
 g = tf.Graph()
+wb_ = []
+with 
