@@ -18,4 +18,5 @@ def max_pool_2x2(x):
 
 def conv_layer(input, shape):
     W = weight_variable([in_size, size])
-    b = bias_variable([shape])
+    b = bias_variable([shape[3]])
+    ret
