@@ -23,4 +23,4 @@ with g.as_default():
         b = tf.Variable(0, dtype = tf.float32, name = "bias")
         y_pred = tf.matmul(w, tf.transpose(x)) + b
 
-    with tf.
+    with tf.name_scope("l")
