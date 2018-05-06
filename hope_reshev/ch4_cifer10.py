@@ -30,4 +30,4 @@ def full_layer(input, size):
 
 
 x = tf.placeholder(tf.float32, shape = [None, 784])
-y_ = 
+y_ = tf.placeh
