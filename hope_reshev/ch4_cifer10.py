@@ -1,4 +1,4 @@
 import tensorflow as tf
 
 
-def 
+def weight_variabl
