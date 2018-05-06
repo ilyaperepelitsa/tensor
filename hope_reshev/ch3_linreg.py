@@ -10,7 +10,7 @@ y_data = np.matmul(w_real, x_data.T) + b_real + noise
 
 
 import tensorflow as tf
-NUM_STEPS = 10
+NUM_STEPS = 1000
 
 g = tf.Graph()
 wb_ = []
@@ -40,4 +40,4 @@ with g.as_default():
                 print(step, sess.run([w, b]))
                 wb_.append(sess.run([w, b]))
 
-        print(10, sess.run())
+        print(10, sess.run([w, b]))
