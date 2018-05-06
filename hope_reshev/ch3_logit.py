@@ -3,4 +3,5 @@ import tensorflow as tf
 
 N = 20000
 
-def sigmi
+def sigmoid(x):
+    ret
