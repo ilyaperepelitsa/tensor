@@ -32,8 +32,9 @@ with g.as_default():
         y_pred = tf.sigmoid(y_pred)
 
     with tf.name_scope("loss") as scope:
-        loss = tf.reduce_mean(tf.square(y_true - y_pred))
+        # loss = tf.reduce_mean(tf.square(y_true - y_pred))
         loss = y_true * tf.log(y_pred) - (1 - y_true) * tf.log(1 - y_pred)
+        
 
     with tf.name_scope("train") as scope:
         learning_rate = 0.001
