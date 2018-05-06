@@ -1,1 +1,1 @@
-from ten
+import numpy as np
