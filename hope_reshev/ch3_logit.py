@@ -33,6 +33,7 @@ with g.as_default():
 
     with tf.name_scope("loss") as scope:
         loss = tf.reduce_mean(tf.square(y_true - y_pred))
+        loss
 
     with tf.name_scope("train") as scope:
         learning_rate = 0.001
