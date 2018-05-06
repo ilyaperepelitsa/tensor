@@ -1,3 +1,3 @@
 import numpy as np
 
-x_data
+x_data = np.random.
