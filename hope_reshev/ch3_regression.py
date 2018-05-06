@@ -1,4 +1,4 @@
 import tensorflow as tf
 
 x = tf.placeholder(tf.float32, shape = [None, 3])
-y_
+y_true = tf.placeho
