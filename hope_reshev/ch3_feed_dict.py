@@ -7,4 +7,4 @@ w_data = np.random.randn(10, 1)
 
 with tf.Graph().as_default():
     x = tf.placeholder(tf.float32, shape = (5, 10))
-    w = tf.placeho
+    w = tf.placeholder(tf.float)
