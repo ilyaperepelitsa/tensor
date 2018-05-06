@@ -11,4 +11,4 @@ w_real = [0.3, 0.5, 0.1]
 b_real = -0.2
 wxb = np.matmul(w_real, x_data.T) + b_real
 
-y_data_pre_noise = si
+y_data_pre_noise = sigmoid(wxb)
