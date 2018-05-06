@@ -35,4 +35,4 @@ with g.as_default():
     with tf.Session() as sess:
         sess.run(init)
         for step in range(NUM_STEPS):
-            sess.run(train,)
+            sess.run(train, {x: x_d})
