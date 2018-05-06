@@ -44,4 +44,6 @@ conv2_flat = tf.reshape(conv2_pool, [-1, 7*7*64])
 full_1 = tf.nn.relu(full_layer(conv2_flat, 1024))
 
 keep_prob = tf.placeholder(tf.float32)
-full1_drop = tf.nn.dropout(full_1, keep_prob = keep_pb)
+full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
+
+y_
