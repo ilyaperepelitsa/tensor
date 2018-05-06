@@ -35,7 +35,8 @@ with g.as_default():
         # loss = tf.reduce_mean(tf.square(y_true - y_pred))
         # THIS
         loss = y_true * tf.log(y_pred) - (1 - y_true) * tf.log(1 - y_pred)
-        # IS THE
+        # IS THE SAME AS THIS
+        
         loss = tf.reduce_mean(loss)
 
     with tf.name_scope("train") as scope:
