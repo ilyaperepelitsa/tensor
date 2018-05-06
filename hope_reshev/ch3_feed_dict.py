@@ -10,4 +10,5 @@ with tf.Graph().as_default():
     w = tf.placeholder(tf.float32, shape = (10, 1))
     b = tf.fill((5, 1), -1.)
     xw = tf.matmul(x, w)
-    
+
+    xw
