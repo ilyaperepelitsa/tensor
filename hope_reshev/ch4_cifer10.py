@@ -29,4 +29,4 @@ def full_layer(input, size):
 
 
 
-x = tf.placeholder(tf.float32, shape)
+x = tf.placeholder(tf.float32, shape = [None, 78])
