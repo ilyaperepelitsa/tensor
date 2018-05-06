@@ -17,7 +17,7 @@ y_data = np.random.binomial(1, y_data_pre_noise)
 y_data
 
 import tensorflow as tf
-NUM_STEPS = 100000
+NUM_STEPS = 10000
 
 g = tf.Graph()
 wb_ = []
