@@ -4,4 +4,4 @@ import tensorflow as tf
 N = 20000
 
 def sigmoid(x):
-    ret
+    return 1 / (1 + np.)
