@@ -15,4 +15,3 @@ with tf.Graph().as_default():
     s = tf.reduce_max(xwb)
     with tf.Session() as sess:
         outs = sess.run(s, feed_dict = {x : x_data, w : w_data})
-        
