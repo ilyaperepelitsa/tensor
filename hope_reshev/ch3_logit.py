@@ -34,7 +34,7 @@ with g.as_default():
     with tf.name_scope("loss") as scope:
         # loss = tf.reduce_mean(tf.square(y_true - y_pred))
         # THIS
-        loss = y_true * tf.log(y_pred) - (1 - y_true) * tf.log(1 - y_pred)
+        # loss = y_true * tf.log(y_pred) - (1 - y_true) * tf.log(1 - y_pred)
         # IS THE SAME AS THIS
         loss = tf.nn.sigmoid_cross_entropy_with_logits(labels = y_true, logits = y_pred)
         loss = tf.reduce_mean(loss)
