@@ -37,4 +37,4 @@ x_image = tf.reshape(x, [-1, 28, 28, 1])
 conv1 = conv_layer(x_image, shape = [5, 5, 1, 32])
 conv1_pool = max_pool_2x2(conv1)
 
-conv2 = conv_layer(conv1_p)
+conv2 = conv_layer(conv1_pool, )
