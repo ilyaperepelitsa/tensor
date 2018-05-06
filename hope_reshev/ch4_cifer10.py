@@ -22,4 +22,4 @@ def conv_layer(input, shape):
     return tf.nn.relu(conv2d(input, W) + b)
 
 def full_layer(input, size):
-    in_size = 
+    in_size = int(input)
