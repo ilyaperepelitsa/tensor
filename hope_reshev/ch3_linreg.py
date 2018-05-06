@@ -20,4 +20,4 @@ with g.as_default():
 
     with tf.name_scope("inference") as scope:
         w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weights")
-        b = tf.
+        b = tf.Variable()
