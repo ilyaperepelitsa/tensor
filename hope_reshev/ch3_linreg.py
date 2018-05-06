@@ -18,4 +18,4 @@ with g.as_default():
     x = tf.placeholder(tf.float32, shape = [None, 3])
     y_true = tf.placeholder(tf.float32, shape = None)
 
-    with tf.
+    with tf.name_scope("infer")
