@@ -1,4 +1,4 @@
 import numpy as np
 
 x_data = np.random.randn(2000, 3)
-w_real = []
+w_real = [0.3, ]
