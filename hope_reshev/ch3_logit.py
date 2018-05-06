@@ -21,15 +21,15 @@ NUM_STEPS = 10000
 
 g = tf.Graph()
 wb_ = []
-with g.as_default():
-    x = tf.placeholder(tf.float32, shape = [None, 3])
-    y_true = tf.placeholder(tf.float32, shape = None)
-
-    with tf.name_scope("inference") as scope:
-        w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weights")
-        b = tf.Variable(0, dtype = tf.float32, name = "bias")
-        y_pred = tf.matmul(w, tf.transpose(x)) + b
-        y_pred = tf.sigmoid(y_pred)
+# with g.as_default():
+#     x = tf.placeholder(tf.float32, shape = [None, 3])
+#     y_true = tf.placeholder(tf.float32, shape = None)
+#
+#     with tf.name_scope("inference") as scope:
+#         w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weights")
+#         b = tf.Variable(0, dtype = tf.float32, name = "bias")
+#         y_pred = tf.matmul(w, tf.transpose(x)) + b
+#         y_pred = tf.sigmoid(y_pred)
 
     with tf.name_scope("loss") as scope:
         # loss = tf.reduce_mean(tf.square(y_true - y_pred))
