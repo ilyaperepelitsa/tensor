@@ -17,4 +17,5 @@ def max_pool_2x2(x):
                             padding = "SAME")
 
 def conv_layer(input, shape):
-    W = weight_variable([in])
+    W = weight_variable([in_size, size])
+    
