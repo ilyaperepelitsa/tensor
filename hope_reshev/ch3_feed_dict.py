@@ -6,3 +6,4 @@ w_data = np.random.randn(10, 1)
 
 
 with tf.Graph().as_default():
+    x = tf.place
