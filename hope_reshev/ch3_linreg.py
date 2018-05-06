@@ -19,4 +19,4 @@ with g.as_default():
     y_true = tf.placeholder(tf.float32, shape = None)
 
     with tf.name_scope("inference") as scope:
-        w = tf.Variable([[0, 0, 0]], dtype = tf.float)
+        w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weight")
