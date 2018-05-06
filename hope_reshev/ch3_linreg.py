@@ -32,4 +32,5 @@ with g.as_default():
         train = optimizer.minimize(loss)
 
     init = tf.global_variables_initializer()
-    with tf.Se
+    with tf.Session() as sess:
+        se
