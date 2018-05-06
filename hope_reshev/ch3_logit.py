@@ -40,7 +40,7 @@ with g.as_default():
         loss = tf.reduce_mean(loss)
 
     with tf.name_scope("train") as scope:
-        learning_rate = 0.01
+        learning_rate = 0.1
         optimizer = tf.train.GradientDescentOptimizer(learning_rate)
         train = optimizer.minimize(loss)
 
