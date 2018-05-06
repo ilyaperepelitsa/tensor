@@ -11,3 +11,5 @@ y_data = np.matmul(w_real, x_data.T) + b_real + noise
 
 import tensorflow as tf
 NUM_STEPS = 10
+
+g = tf.
