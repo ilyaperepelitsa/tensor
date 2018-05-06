@@ -33,4 +33,4 @@ x = tf.placeholder(tf.float32, shape = [None, 784])
 y_ = tf.placeholder(tf.float32, shape = [None, 10])
 
 x_image = tf.reshape(x, [-1, 28, 28, 1])
-conv1 = conv_layer(x_image, shape = )
+conv1 = conv_layer(x_image, shape = [5, 5, 1, 32])
