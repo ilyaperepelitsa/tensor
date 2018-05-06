@@ -1,4 +1,4 @@
 import numpy as np
 import tensorflow as tf
 
-x_data =
+x_data = np.random
