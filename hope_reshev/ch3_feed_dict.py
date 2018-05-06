@@ -12,4 +12,5 @@ with tf.Graph().as_default():
     xw = tf.matmul(x, w)
 
     xwb = xw + b
-    s = tf.reduce_max()
+    s = tf.reduce_max(xwb)
+    with 
