@@ -5,4 +5,4 @@ x_data = np.random.randn(5, 10)
 w_data = np.random.randn(10, 1)
 
 
-witth
+with tf.Graph
