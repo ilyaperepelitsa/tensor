@@ -16,7 +16,8 @@ with tf.Graph().as_default():
     with tf.Session() as sess:
         outs = sess.run(s, feed_dict = {x : x_data, w : w_data})
         outs1 = sess.run(xw, feed_dict = {x : x_data, w : w_data})
-        outs1 = sess.run(xw, feed_dict = {x : x_data, w : w_data})
+        outs2 = sess.run(xwb, feed_dict = {x : x_data, w : w_data})
 
 print(outs)
 print(outs1)
+print(outs2)
