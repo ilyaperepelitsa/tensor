@@ -36,4 +36,4 @@ with g.as_default():
         sess.run(init)
         for step in range(NUM_STEPS):
             sess.run(train, {x: x_data, y_true: y_data})
-            if 
+            if (step )
