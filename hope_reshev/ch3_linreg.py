@@ -21,4 +21,4 @@ with g.as_default():
     with tf.name_scope("inference") as scope:
         w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weights")
         b = tf.Variable(0, dtype = tf.float32, name = "bias")
-        y_pred = tf.matmul(w)
+        y_pred = tf.matmul(w, tf.transpose(x))
