@@ -7,4 +7,4 @@ b = tf.Variable(0, dtype = tf.float32, name = "bias")
 
 y_pred = tf.matmul(w, tf.transpose(x)) + b
 
-loss = tf,
+loss = tf.reduce_mean()
