@@ -15,4 +15,4 @@ NUM_STEPS = 10
 g = tf.Graph()
 wb_ = []
 with g.as_default():
-    x = tf.placeholder(tf.floa)
+    x = tf.placeholder(tf.float32, shape = )
