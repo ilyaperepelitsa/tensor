@@ -14,4 +14,4 @@ with tf.Graph().as_default():
     xwb = xw + b
     s = tf.reduce_max(xwb)
     with tf.Session() as sess:
-        outs = sess.run(s, feed_dict = {x : x_data, w})
+        outs = sess.run(s, feed_dict = {x : x_data, w : })
