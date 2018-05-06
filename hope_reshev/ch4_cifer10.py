@@ -10,4 +10,4 @@ def bias_variable(shape):
     return tf.Variable(initial)
 
 def conv2d(x, W):
-    return()
+    return(tf.nn.conv2d)
