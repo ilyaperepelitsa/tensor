@@ -8,3 +8,5 @@ b = tf.Variable(0, dtype = tf.float32, name = "bias")
 y_pred = tf.matmul(w, tf.transpose(x)) + b
 
 loss = tf.reduce_mean(tf.square(y_true - y_pred))
+
+#categr
