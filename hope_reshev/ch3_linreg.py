@@ -36,7 +36,7 @@ with g.as_default():
         sess.run(init)
         for step in range(NUM_STEPS):
             sess.run(train, {x: x_data, y_true: y_data})
-            if (step % 5 == 0):
+            if (step % 100 == 0):
                 print(step, sess.run([w, b]))
                 wb_.append(sess.run([w, b]))
 
