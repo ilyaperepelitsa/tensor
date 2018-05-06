@@ -30,3 +30,5 @@ with g.as_default():
         learning_rate = 0.5
         optimizer = tf.train.GradientDescentOptimizer(learning_rate)
         train = optimizer.minimize(loss)
+
+    init
