@@ -12,4 +12,4 @@ with tf.Graph().as_default():
     xw = tf.matmul(x, w)
 
     xwb = xw + b
-    s = 
+    s = tf.reduce
