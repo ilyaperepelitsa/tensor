@@ -1,4 +1,5 @@
 import tensorflow as tf
 
 
-def weight_variabl
+def weight_variable(shape):
+    
