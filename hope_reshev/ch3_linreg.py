@@ -9,4 +9,4 @@ y_data = np.matmul(w_real, x_data.T) + b_real + noise
 
 
 
-import 
+import tensorflow as trye
