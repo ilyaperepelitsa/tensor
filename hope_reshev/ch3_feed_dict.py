@@ -19,5 +19,5 @@ with tf.Graph().as_default():
         # outs2 = sess.run(xwb, feed_dict = {x : x_data, w : w_data})
 
 print(outs)
-print(outs1)
-print(outs2)
+# print(outs1)
+# print(outs2)
