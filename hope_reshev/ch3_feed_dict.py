@@ -11,4 +11,4 @@ with tf.Graph().as_default():
     b = tf.fill((5, 1), -1.)
     xw = tf.matmul(x, w)
 
-    xw
+    xwb = xw + b
