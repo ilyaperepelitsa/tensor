@@ -7,4 +7,4 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 x_data = np.random.randn(N, 3)
-w_real = [0.3, ]
+w_real = [0.3, 0.5, 0.1]
