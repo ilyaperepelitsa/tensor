@@ -29,4 +29,4 @@ def full_layer(input, size):
 
 
 
-x = 
+x = tf.placeholder()
