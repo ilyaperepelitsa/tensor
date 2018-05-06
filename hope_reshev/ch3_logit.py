@@ -29,7 +29,7 @@ with g.as_default():
         w = tf.Variable([[0, 0, 0]], dtype = tf.float32, name = "weights")
         b = tf.Variable(0, dtype = tf.float32, name = "bias")
         y_pred = tf.matmul(w, tf.transpose(x)) + b
-        y_pred = tf.sigmoid(y_pred)
+        # y_pred = tf.sigmoid(y_pred)
 
     with tf.name_scope("loss") as scope:
         # loss = tf.reduce_mean(tf.square(y_true - y_pred))
