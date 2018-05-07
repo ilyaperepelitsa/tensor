@@ -51,4 +51,4 @@ y_conv = full_layer()
 x0 = 4
 counter = 0
 while x0 <= 27:
-    coun
+    counter += 1
