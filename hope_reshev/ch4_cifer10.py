@@ -50,4 +50,4 @@ y_conv = full_layer()
 
 x0 = 4
 counter = 0
-while 
+while x0 < 
