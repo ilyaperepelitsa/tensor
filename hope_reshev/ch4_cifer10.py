@@ -47,3 +47,4 @@ keep_prob = tf.placeholder(tf.float32)
 full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer()
+x0
