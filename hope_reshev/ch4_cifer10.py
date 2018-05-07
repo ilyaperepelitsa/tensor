@@ -52,3 +52,4 @@ x0 = 4
 counter = 0
 while x0 <= 27:
     counter += 1
+    x0 +
