@@ -49,5 +49,5 @@ full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 y_conv = full_layer()
 
 x0 = 4
-counter
-while
+counter = 0
+while 
