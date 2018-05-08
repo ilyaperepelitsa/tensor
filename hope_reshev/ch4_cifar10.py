@@ -57,4 +57,4 @@ print("Number of train labels: {}".format(len.d.train.labels))
 print("Number of test images: {}".format(len.d.test.images))
 print("Number of test labels: {}".format(len.d.test.labels))
 images = d.train.images
-di
+display_cifar(images)
