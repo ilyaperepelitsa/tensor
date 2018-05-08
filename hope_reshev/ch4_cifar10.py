@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import pickle
-from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool_2x2, conv_layer
+from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool_2x2, conv_layer, full_layer
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 
