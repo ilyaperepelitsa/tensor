@@ -1,1 +1,4 @@
-import tensorflow as
+import tensorflow as tf
+
+
+class 
