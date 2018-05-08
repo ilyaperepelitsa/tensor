@@ -34,4 +34,4 @@ def one_hot(vec, vals = 10):
     n = len(vec)
     out = np.zeros((n, vals))
     out[range(n), vec] = 1
-    return
+    return out
