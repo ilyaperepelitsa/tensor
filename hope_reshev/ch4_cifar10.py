@@ -38,6 +38,7 @@ def display_cifar(images, size):
     n = len(images)
     plt.figure()
     plt.gca().set_axis_off()
+    im = n
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
