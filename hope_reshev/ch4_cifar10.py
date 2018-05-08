@@ -6,4 +6,6 @@ class CifarLoader(object):
         self._source = source_files
         self._i = 0
         self.images = None
-        self.labels = N
+        self.labels = None
+
+    def loa
