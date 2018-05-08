@@ -80,4 +80,5 @@ with tf.Session() as sess:
     test_accuracy = np.mean([sess.run(accuracy,
                                         feed_dict = {x: X[i],
                                                      y_: Y[i],
-                                                     keep_prob : 1.0})])
+                                                     keep_prob : 1.0})
+                                        ])
