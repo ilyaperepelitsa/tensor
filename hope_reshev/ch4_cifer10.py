@@ -66,4 +66,4 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(NUM_STEPS):
-        batch = mnist.train.next
+        batch = mnist.train.next_batch()
