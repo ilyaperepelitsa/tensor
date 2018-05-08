@@ -30,7 +30,8 @@ class CifarLoader(object):
 
 class CifarDataManager(object):
     def __init__(self):
-        self.train = CifarLoader(["data_batch_{}".format()])
+        self.train = CifarLoader(["data_batch_{}".format(i)
+                        ])
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
