@@ -5,6 +5,12 @@ import os
 import pickle
 from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool_2x2, conv_layer, full_layer
 
+
+from tensorflow.python.client import device_lib
+
+device_lib.list_local_devices()
+
+
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 STEPS = 3000
 BATCH_SIZE = 200
@@ -108,7 +114,6 @@ def test(sess):
     acc= np.mean([sess.run(accuracy, feed_dict = {x: X[i], y_: Y[i], keep_prob: 1.0})
                         for i in range(10)])
     print("Accuracy: {:.4}%".format(acc * 100))
-
 
 
 with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
