@@ -9,4 +9,4 @@ class CifarLoader(object):
         self.labels = None
 
     def load(self):
-        data = [unpickle]
+        data = [unpickle(f) fo]
