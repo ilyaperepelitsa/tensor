@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+import numpy a
 def unpickle(file):
     fo = open(file, "rb")
     dict = pickle.load(fo, encoding = "latin1")
