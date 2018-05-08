@@ -83,4 +83,4 @@ with tf.Session() as sess:
                                                      keep_prob : 1.0})
                                         for i in range(10)])
 
-print("test accuracy")
+print("test accuracy: {}".format)
