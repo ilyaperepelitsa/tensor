@@ -18,7 +18,7 @@ class CifarLoader(object):
         images = np.vstack([d["data"] for d in data])
         n = len(images)
         self.images = images.reshape(n, 3, 32, 32).transpose(0, 2, 3, 1).\
-                                    astype(float) / 255
+                                    .astype(float) / 255
         self.labels = one_hot(np.hstack([d["labels"] for d in data]), 10)
         return self
 
@@ -57,4 +57,4 @@ print("Number of train labels: {}".format(len.d.train.labels))
 print("Number of test images: {}".format(len.d.test.images))
 print("Number of test labels: {}".format(len.d.test.labels))
 images = d.train.images
-display_cifar(images)
+display_cifar(images, 10)
