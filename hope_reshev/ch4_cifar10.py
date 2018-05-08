@@ -2,14 +2,14 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-import cPickle
+import pickle
 
 
 def unpickle(file):
-    # fo = open(file, "rb")
-    # dict = pickle.load(fo, encoding = "latin1")
-    # fo.close()
-    # return dict
+    fo = open(file, "rb")
+    dict = pickle.load(fo, encoding = "latin1")
+    fo.close()
+    return dict
 
 
 class CifarLoader(object):
