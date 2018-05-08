@@ -67,4 +67,4 @@ display_cifar(images, 10)
 
 
 
-cifar = 
+cifar = CifarDataManager()
