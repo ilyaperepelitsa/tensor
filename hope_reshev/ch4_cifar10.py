@@ -9,7 +9,8 @@ def unpickle(file):
     # dict = pickle.load(fo, encoding = "latin1")
     # fo.close()
     # return dict
-    with open(os.path.join(DATA_PATH, file), "rb") as
+    with open(os.path.join(DATA_PATH, file), "rb") as fo:
+        dict = cP
 class CifarLoader(object):
     def __init__(self, source_files):
         self._source = source_files
