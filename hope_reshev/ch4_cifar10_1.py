@@ -110,10 +110,6 @@ def test(sess):
     print("Accuracy: {:.4}%".format(acc * 100))
 
 
-from tensorflow.python.client import device_lib
-
-device_lib.list_local_devices()
-
 
 with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
     sess.run(tf.global_variables_initializer())
