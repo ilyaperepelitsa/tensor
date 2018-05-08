@@ -2,6 +2,8 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 DATA_DIR = "/tmp/data"
+NUM_STEPS = 10000
+MINIBATCH_SIZE = 20
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.1)
@@ -63,4 +65,4 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
-    for i in ra
+    for i in range(STEPS)
