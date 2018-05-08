@@ -81,4 +81,5 @@ conv1_pool = max_pool_2x2(conv1)
 conv2 = conv_layer(conv1_pool, shape = [5, 5, 32, 64])
 conv2_pool = max_pool_2x2(conv2)
 conv2_flat = tf.reshape(conv2_pool, [-1, 8 * 8 * 64])
-full_1 = tf
+
+full_1 = tf.nn
