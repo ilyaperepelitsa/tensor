@@ -53,4 +53,4 @@ y_conv = full_layer(full1_drop, 10)
 mnist = input_data.read_data_sets(DATA_DIR, one_hot = True)
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = y_conv, labels = y_))
 
-train_step = tf.train()
+train_step = tf.train.AdamOptimizer()
