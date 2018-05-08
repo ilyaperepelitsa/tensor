@@ -53,6 +53,6 @@ def one_hot(vec, vals = 10):
 
 d = CifarDataManager()
 print("Number of train images: {}".format(len.d.train(images)))
-print("Number of train images: {}".format(len.d.train(images)))
+print("Number of test images: {}".format(len.d.train(images)))
 print("Number of train images: {}".format(len.d.train(images)))
 print("Number of train images: {}".format(len.d.train(images)))
