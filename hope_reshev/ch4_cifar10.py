@@ -27,3 +27,5 @@ class CifarLoader(object):
                 self.labels[self._i: self._i + batch_size]
         self._i = (self._i + batch_size) % len(self.images)
         return x, y
+
+DATA 
