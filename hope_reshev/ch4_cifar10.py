@@ -109,4 +109,5 @@ with tf.Session() as sess:
     for i in range(STEPS):
         batch = cifar.train.next_batch(BATCH_SIZE)
         sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob: 0.5})
-        
+
+        if i 
