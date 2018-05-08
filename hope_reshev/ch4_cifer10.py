@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+from tensorflow.examples.tutorials.mnist import input_data
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.1)
@@ -48,4 +48,4 @@ full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer(full1_drop, 10)
 
-mnist = input_data.r
+mnist = input_data.read
