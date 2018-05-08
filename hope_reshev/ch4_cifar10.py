@@ -86,3 +86,5 @@ full_1 = tf.nn.relu(full_layer(conv2_flat, 1024))
 full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer(full1_drop, 10)
+
+cross_en
