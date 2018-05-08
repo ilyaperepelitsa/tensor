@@ -37,7 +37,7 @@ class CifarDataManager(object):
 def display_cifar(images, size):
     n = len(images)
     plt.figure()
-    plt.gca().set_ax
+    plt.gca().set_axis_off()
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
