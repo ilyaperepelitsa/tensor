@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-import 
+import matplotlib
 
 def unpickle(file):
     fo = open(file, "rb")
