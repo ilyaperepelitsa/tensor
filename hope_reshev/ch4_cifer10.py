@@ -73,7 +73,7 @@ with tf.Session() as sess:
                                                              y_: batch[1],
                                                              keep_prob: 1.0})
             print("step {}, train accuracy {}".format(i, train_accuracy))
-        sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob = 0.5})
+        sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob  0.5})
 
     X = mnist.test.images.reshape(10, 1000, 784)
     y = mnist.test.labels.reshape(10, 1000, 10)
