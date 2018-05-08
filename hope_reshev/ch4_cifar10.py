@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-import 
+import cPickle
 
 
 def unpickle(file):
@@ -12,6 +12,7 @@ def unpickle(file):
     # return dict
     with open(os.path.join(DATA_PATH, file), "rb") as fo:
         dict = cPickle.load(fo)
+        
 class CifarLoader(object):
     def __init__(self, source_files):
         self._source = source_files
