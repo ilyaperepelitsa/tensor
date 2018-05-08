@@ -17,7 +17,7 @@ def max_pool_2x2(x):
                             padding = "SAME")
 
 def conv_layer(input, shape):
-    W = weight_variable([in_size, size])
+    W = weight_variable(shape)
     b = bias_variable([shape[3]])
     return tf.nn.relu(conv2d(input, W) + b)
 
