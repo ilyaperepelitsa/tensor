@@ -12,5 +12,6 @@ class CifarLoader(object):
         data = [unpickle(f) for f in self._souce]
         images = np.vstack([d["data"] for d in data])
         n = len(images)
-        self.images = images.reshape(n, 3, 32, 32).transpose(0, 2, 3, 1)\
+        self.images = images.reshape(n, 3, 32, 32).transpose(0, 2, 3, 1).\
                                     astype(float) / 255
+                                    
