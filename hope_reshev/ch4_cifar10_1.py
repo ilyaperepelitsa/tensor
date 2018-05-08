@@ -7,9 +7,9 @@ from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool
 
 
 from tensorflow.python.client import device_lib
-
 device_lib.list_local_devices()
 
+tf.test.gpu_device_name()
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 STEPS = 3000
