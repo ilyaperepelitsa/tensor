@@ -2,4 +2,4 @@ import tensorflow as tf
 
 
 class CifarLoader(object):
-    def )
+    def __init__(s)
