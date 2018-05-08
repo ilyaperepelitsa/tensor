@@ -109,7 +109,7 @@ def test(sess):
                         for i in range(10)])
     print("Accuracy: {:.4}%".format(acc * 100))
 
-with tf.Session() as sess:
+with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(STEPS):
