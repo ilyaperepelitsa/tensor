@@ -81,4 +81,4 @@ with tf.Session() as sess:
                                         feed_dict = {x: X[i],
                                                      y_: Y[i],
                                                      keep_prob : 1.0})
-                                        ])
+                                        for i in ra])
