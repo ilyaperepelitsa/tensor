@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import pickle
-from ch
+from ch4_mnis
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 
