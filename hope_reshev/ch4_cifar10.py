@@ -69,4 +69,4 @@ display_cifar(images, 10)
 
 cifar = CifarDataManager()
 
-x =
+x = tf.placeholde
