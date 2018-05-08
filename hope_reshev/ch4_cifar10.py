@@ -15,4 +15,5 @@ class CifarLoader(object):
         self.images = images.reshape(n, 3, 32, 32).transpose(0, 2, 3, 1).\
                                     astype(float) / 255
         self.labels = one_hot(np.hstack([d["labels"] for d in data]), 10)
-        
+        return self
+    
