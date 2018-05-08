@@ -28,7 +28,7 @@ class CifarLoader(object):
         self._i = (self._i + batch_size) % len(self.images)
         return x, y
 
-
+class Cif
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
