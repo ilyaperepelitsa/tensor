@@ -102,4 +102,4 @@ def test(sess):
     print("Accuracy: {:.4}%".format(acc * 100))
 
 with tf.Session() as sess:
-    sess.run(tf.global_)
+    sess.run(tf.global_variables_initializer())
