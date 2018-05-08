@@ -101,4 +101,5 @@ def test(sess):
                         for i in range(10)])
     print("Accuracy: {:.4}%".format(acc * 100))
 
-with tf.Session() as se
+with tf.Session() as sess:
+    sess.run()
