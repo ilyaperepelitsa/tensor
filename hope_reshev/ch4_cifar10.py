@@ -75,3 +75,4 @@ keep_prob = tf.placeholder(tf.float32)
 
 
 conv1 = conv_layer(x, shape = [5, 5, 3, 32])
+conv1
