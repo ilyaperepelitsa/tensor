@@ -7,7 +7,7 @@ from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 STEPS = 3000
-BATCH_SIZE = 50
+BATCH_SIZE = 200
 
 def unpickle(file):
     with open(os.path.join(DATA_PATH, file), 'rb') as fo:
