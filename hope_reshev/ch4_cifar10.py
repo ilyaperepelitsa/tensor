@@ -52,4 +52,4 @@ def one_hot(vec, vals = 10):
     return out
 
 d = CifarDataManager()
-print("Number ")
+print("Number of train images: {}")
