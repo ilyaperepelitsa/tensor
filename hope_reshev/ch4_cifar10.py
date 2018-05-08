@@ -74,4 +74,4 @@ y_ = tf.placeholder(tf.float32, shape = [None, 10])
 keep_prob = tf.placeholder(tf.float32)
 
 
-conv1 = conv_ka
+conv1 = conv_layer(x,)
