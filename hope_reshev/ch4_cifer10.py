@@ -48,4 +48,4 @@ full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer(full1_drop, 10)
 
-mnist = input_data.read
+mnist = input_data.read_data_sets()
