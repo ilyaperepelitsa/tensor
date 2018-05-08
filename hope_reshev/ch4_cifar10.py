@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import pickle
-from hope_reshev.ch4_mnist import weight_variable
+from hope_reshev.ch4_mnist import weight_variable, bias_variable
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 
