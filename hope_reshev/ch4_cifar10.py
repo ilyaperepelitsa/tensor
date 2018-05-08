@@ -1,5 +1,10 @@
 import tensorflow as tf
 
+def unpickle(file):
+    fo = open(file, "rb")
+    dict = pickle.load(fo, encoding = "latin1")
+    fo.close()
+    return dict
 
 class CifarLoader(object):
     def __init__(self, source_files):
