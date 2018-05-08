@@ -34,7 +34,8 @@ class CifarDataManager(object):
                         for i in range(1, 6)]).load()
         self.test = CifarLoader(["test_batch"]).load()
 
-def display_cifar(images, )
+def display_cifar(images, size):
+    
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
