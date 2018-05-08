@@ -8,4 +8,5 @@ class CifarLoader(object):
         self.images = None
         self.labels = None
 
-    def loa
+    def load(self):
+        
