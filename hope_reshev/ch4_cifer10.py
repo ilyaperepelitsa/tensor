@@ -68,4 +68,4 @@ with tf.Session() as sess:
     for i in range(NUM_STEPS):
         batch = mnist.train.next_batch(50)
 
-        if i 
+        if i % 100
