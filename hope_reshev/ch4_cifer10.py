@@ -72,4 +72,4 @@ with tf.Session() as sess:
             train_accuracy = sess.run(accuracy, feed_dict = {x: batch[0],
                                                              y_: batch[1],
                                                              keep_prob: 1.0})
-            print("step {}, train accuracy")
+            print("step {}, train accuracy {}.")
