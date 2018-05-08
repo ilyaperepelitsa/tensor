@@ -6,7 +6,7 @@ import pickle
 from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool_2x2, conv_layer, full_layer
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
-STEPS = 1000
+STEPS = 3000
 BATCH_SIZE = 50
 
 def unpickle(file):
