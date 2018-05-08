@@ -51,4 +51,4 @@ full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 y_conv = full_layer(full1_drop, 10)
 
 mnist = input_data.read_data_sets(DATA_DIR, one_hot = True)
-cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = y_pred, labels = y_true))
+cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = y_conv, labels = y_true))
