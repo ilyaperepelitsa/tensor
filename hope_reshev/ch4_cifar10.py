@@ -89,4 +89,4 @@ y_conv = full_layer(full1_drop, 10)
 
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = y_conv, labels = y_))
 
-train_step = tr.train.AdamOptimizer(1e-3).minimize
+train_step = tr.train.AdamOptimizer(1e-3).minimize(cross_entropy)
