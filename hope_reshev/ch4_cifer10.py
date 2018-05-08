@@ -75,4 +75,4 @@ with tf.Session() as sess:
             print("step {}, train accuracy {}".format(i, train_accuracy))
         sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob = 0.5})
 
-    X 
+    X = mnist.te
