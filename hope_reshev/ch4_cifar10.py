@@ -111,4 +111,4 @@ with tf.Session() as sess:
         sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob: 0.5})
 
         if i % 100 == 0:
-            
+            test(sess)
