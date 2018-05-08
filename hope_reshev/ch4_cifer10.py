@@ -66,7 +66,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(NUM_STEPS):
-        batch = mnist.train.next_batch(20)
+        batch = mnist.train.next_batch(500)
 
         if i % 100 == 0:
             train_accuracy = sess.run(accuracy, feed_dict = {x: batch[0],
@@ -83,4 +83,4 @@ with tf.Session() as sess:
                                                      keep_prob : 1.0})
                                         for i in range(10)])
 
-                        print("test accuracy: {}".format(test_accuracy))
+    print("test accuracy: {}".format(test_accuracy))
