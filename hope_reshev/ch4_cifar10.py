@@ -50,3 +50,5 @@ def one_hot(vec, vals = 10):
     out = np.zeros((n, vals))
     out[range(n), vec] = 1
     return out
+
+d = 
