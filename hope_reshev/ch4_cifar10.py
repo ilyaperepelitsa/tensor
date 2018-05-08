@@ -61,6 +61,10 @@ d = CifarDataManager()
 print("Number of train images: {}".format(len(d.train.images)))
 print("Number of train labels: {}".format(len(d.train.labels)))
 print("Number of test images: {}".format(len(d.test.images)))
-print("Number of test labels: {}".format(len(d.test.labels))
+print("Number of test labels: {}".format(len(d.test.labels)))
 images = d.train.images
 display_cifar(images, 10)
+
+
+
+cifar = 
