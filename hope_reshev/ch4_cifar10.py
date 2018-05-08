@@ -9,4 +9,5 @@ class CifarLoader(object):
         self.labels = None
 
     def load(self):
-        data = [unpickle(f) for f in self._]
+        data = [unpickle(f) for f in self._souce]
+        images = n
