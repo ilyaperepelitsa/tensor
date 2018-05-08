@@ -16,4 +16,5 @@ class CifarLoader(object):
                                     astype(float) / 255
         self.labels = one_hot(np.hstack([d["labels"] for d in data]), 10)
         return self
-    
+
+    def next_
