@@ -29,7 +29,7 @@ class CifarLoader(object):
         return x, y
 
 class CifarDataManager(object):
-    
+    def __init__(self)
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
