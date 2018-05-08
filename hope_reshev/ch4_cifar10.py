@@ -10,4 +10,5 @@ class CifarLoader(object):
 
     def load(self):
         data = [unpickle(f) for f in self._souce]
-        images = np.vstack([d["data"] for ])
+        images = np.vstack([d["data"] for d in data])
+        
