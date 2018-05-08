@@ -95,4 +95,5 @@ correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 def test(sess):
-    X = cifar.test.images.reshape(10, 1000, 32, 32)
+    X = cifar.test.images.reshape(10, 1000, 32, 32, 3)
+    Y = cifar.
