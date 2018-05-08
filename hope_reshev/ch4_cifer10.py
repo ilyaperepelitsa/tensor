@@ -69,4 +69,4 @@ with tf.Session() as sess:
         batch = mnist.train.next_batch(50)
 
         if i % 1000 == 0:
-            train_accuracy = 
+            train_accuracy = sess.run(accuracy)
