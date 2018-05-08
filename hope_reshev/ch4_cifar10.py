@@ -51,4 +51,4 @@ def one_hot(vec, vals = 10):
     out[range(n), vec] = 1
     return out
 
-d = CifarManager
+d = CifarDataManager()
