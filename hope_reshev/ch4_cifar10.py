@@ -8,9 +8,10 @@ import pickle
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 
 def unpickle(file):
-    fo = open(file, "rb")
-    dict = pickle.load(fo, encoding = "latin1")
-    fo.close()
+    with open(os.path.join(DATA_PATH, file), 'rb') as fo:
+        u = pickle._Unpickler(fo)
+        u.encoding = 'latin1'
+        dict = u.load()
     return dict
 
 
