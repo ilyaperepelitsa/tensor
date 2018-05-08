@@ -73,4 +73,4 @@ with tf.Session() as sess:
                                                              y_: batch[1],
                                                              keep_prob: 1.0})
             print("step {}, train accuracy {}".format(i, train_accuracy))
-        sess.run(t)
+        sess.run(train_step, feed)
