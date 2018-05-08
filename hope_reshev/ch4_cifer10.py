@@ -76,4 +76,4 @@ with tf.Session() as sess:
         sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob = 0.5})
 
     X = mnist.test.images.reshape(10, 1000, 784)
-    y = mnist.test.labels.reshape(10)
+    y = mnist.test.labels.reshape(10, 1000, 10)
