@@ -94,4 +94,5 @@ train_step = tr.train.AdamOptimizer(1e-3).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-def 
+def test(sess):
+    X
