@@ -38,7 +38,7 @@ def display_cifar(images, size):
     n = len(images)
     plt.figure()
     plt.gca().set_axis_off()
-    im = np.vstack([np.hstack([images[np.random.c]])])
+    im = np.vstack([np.hstack([images[np.random.choice(n)]])])
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
