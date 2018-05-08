@@ -6,7 +6,7 @@ import pickle
 from hope_reshev.generic import weight_variable, bias_variable, conv2d, max_pool_2x2, conv_layer, full_layer
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
-
+STEPS = 
 def unpickle(file):
     with open(os.path.join(DATA_PATH, file), 'rb') as fo:
         u = pickle._Unpickler(fo)
@@ -104,4 +104,4 @@ def test(sess):
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
-    for i in range(S)
+    for i in range(STEPS)
