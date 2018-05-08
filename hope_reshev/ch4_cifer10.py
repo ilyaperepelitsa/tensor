@@ -79,4 +79,5 @@ with tf.Session() as sess:
     y = mnist.test.labels.reshape(10, 1000, 10)
     test_accuracy = np.mean([sess.run(accuracy,
                                         feed_dict = {x: X[i],
-                                                     y_: Y[i]})])
+                                                     y_: Y[i],
+                                                     keep_prob})])
