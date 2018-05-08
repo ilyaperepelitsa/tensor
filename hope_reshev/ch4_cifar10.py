@@ -97,5 +97,5 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 def test(sess):
     X = cifar.test.images.reshape(10, 1000, 32, 32, 3)
     Y = cifar.test.labels.reshape(10, 1000, 10)
-    acc= np.mean([sess.run(accuracy, feed_dict = {x: X[i], y_: Y[i], keep_prob = 1.0})])
-                        for i in range(1)
+    acc= np.mean([sess.run(accuracy, feed_dict = {x: X[i], y_: Y[i], keep_prob = 1.0})
+                        for i in range(10)])
