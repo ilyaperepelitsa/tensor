@@ -70,4 +70,4 @@ display_cifar(images, 10)
 cifar = CifarDataManager()
 
 x = tf.placeholder(tf.float32, shape = [None, 32, 32, 3])
-y_ = tf.placeholder(tf.float32, shape = [])
+y_ = tf.placeholder(tf.float32, shape = [None, 10])
