@@ -87,4 +87,4 @@ full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer(full1_drop, 10)
 
-cross_en
+cross_entropy = tf.reduce_mean()
