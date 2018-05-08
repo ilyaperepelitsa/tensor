@@ -17,4 +17,5 @@ class CifarLoader(object):
         self.labels = one_hot(np.hstack([d["labels"] for d in data]), 10)
         return self
 
-    def next_batch(self, batch_size)
+    def next_batch(self, batch_size):
+        x, y = self.
