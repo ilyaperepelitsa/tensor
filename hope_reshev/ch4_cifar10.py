@@ -30,4 +30,4 @@ class CifarLoader(object):
 
 DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 
-d
+def one_ho
