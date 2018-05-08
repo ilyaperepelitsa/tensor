@@ -69,4 +69,4 @@ display_cifar(images, 10)
 
 cifar = CifarDataManager()
 
-x = tf.placeholder(tf.float32, shape = )
+x = tf.placeholder(tf.float32, shape = [None, 32, ])
