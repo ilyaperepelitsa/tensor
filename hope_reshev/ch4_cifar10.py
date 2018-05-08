@@ -99,3 +99,4 @@ def test(sess):
     Y = cifar.test.labels.reshape(10, 1000, 10)
     acc= np.mean([sess.run(accuracy, feed_dict = {x: X[i], y_: Y[i], keep_prob = 1.0})
                         for i in range(10)])
+    print("")
