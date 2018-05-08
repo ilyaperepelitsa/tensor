@@ -78,4 +78,5 @@ conv1 = conv_layer(x, shape = [5, 5, 3, 32])
 conv1_pool = max_pool_2x2(conv1)
 
 
-conv2 = conv_layer(conv1_pool, shape = [5, 5, 32, 6])
+conv2 = conv_layer(conv1_pool, shape = [5, 5, 32, 64])
+conv2_
