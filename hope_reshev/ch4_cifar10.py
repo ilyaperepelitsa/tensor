@@ -19,4 +19,4 @@ class CifarLoader(object):
 
     def next_batch(self, batch_size):
         x, y = self.images[self._: self._i + batch_size],
-                self
+                self.labels
