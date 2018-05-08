@@ -86,7 +86,7 @@ conv2_pool = max_pool_2x2(conv2)
 # conv2_flat = tf.reshape(conv2_pool, [-1, 8 * 8 * 64])
 
 conv3 = conv_layer(conv2_pool, shape = [5, 5, 64, 128])
-conv3
+conv3_pool = 
 
 full_1 = tf.nn.relu(full_layer(conv2_flat, 1024))
 full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
