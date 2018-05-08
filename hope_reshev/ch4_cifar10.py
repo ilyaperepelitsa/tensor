@@ -47,7 +47,6 @@ def display_cifar(images, size):
     plt.imshow(im)
     plt.show()
 
-DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py/"
 
 def one_hot(vec, vals = 10):
     n = len(vec)
