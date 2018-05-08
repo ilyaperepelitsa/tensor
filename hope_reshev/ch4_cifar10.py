@@ -107,5 +107,4 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(STEPS):
-        batch = cifar.train.next_batch()
-        
+        batch = cifar.train.next_batch(BATCH_)
