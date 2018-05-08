@@ -71,4 +71,4 @@ with tf.Session() as sess:
         if i % 1000 == 0:
             train_accuracy = sess.run(accuracy, feed_dict = {x: batch[0],
                                                              y_: batch[1],
-                                                             keep_prob})
+                                                             keep_prob: 1.0})
