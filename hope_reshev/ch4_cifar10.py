@@ -33,4 +33,4 @@ DATA_PATH = "/Users/ilyaperepelitsa/Downloads/cifar-10-batches-py"
 def one_hot(vec, vals = 10):
     n = len(vec)
     out = np.zeros((n, vals))
-    
+    out[ra]
