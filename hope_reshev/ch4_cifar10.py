@@ -108,3 +108,4 @@ with tf.Session() as sess:
 
     for i in range(STEPS):
         batch = cifar.train.next_batch()
+        
