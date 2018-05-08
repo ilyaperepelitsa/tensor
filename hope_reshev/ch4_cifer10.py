@@ -47,10 +47,3 @@ keep_prob = tf.placeholder(tf.float32)
 full1_drop = tf.nn.dropout(full_1, keep_prob = keep_prob)
 
 y_conv = full_layer()
-
-x0 = 4
-counter = 0
-while x0 <= 27:
-    counter += 1
-    x0 += 1
-counter
