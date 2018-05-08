@@ -72,3 +72,6 @@ cifar = CifarDataManager()
 x = tf.placeholder(tf.float32, shape = [None, 32, 32, 3])
 y_ = tf.placeholder(tf.float32, shape = [None, 10])
 keep_prob = tf.placeholder(tf.float32)
+
+
+conv1
