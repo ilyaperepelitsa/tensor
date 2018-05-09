@@ -84,4 +84,7 @@ keep_prob = tf.placeholder(tf.float32)
 
 
 C1, C2, C3 = 30, 50, 80
-F1 = 
+F1 = 500
+
+
+conv1_1
