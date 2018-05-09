@@ -103,7 +103,7 @@ conv2_drop = tf.nn.dropout(conv2_pool, keep_prob = keep_prob)
 conv3_1 = conv_layer(conv2_drop, shape = [3, 3, C2, C3])
 conv3_2 = conv_layer(conv3_1, shape = [3, 3, C3, C3])
 conv3_3 = conv_layer(conv3_2, shape = [3, 3, C3, C3])
-conv3_pool = tf.nn.max_pool(conv3_3, ksize = [1, 8, 8, 1], strides = [1, 8, 8, 1] padding = "SAME")
+conv3_pool = tf.nn.max_pool(conv3_3, ksize = [1, 8, 8, 1], strides = [1, 8, 8, 1], padding = "SAME")
 conv3_flat = tf.reshape(conv3_pool, [-1, C3])
 conv3_drop = tf.nn.dropout(conv3_flat, keep_prob = keep_prob)
 
