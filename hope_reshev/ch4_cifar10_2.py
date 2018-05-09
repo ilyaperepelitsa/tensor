@@ -108,4 +108,5 @@ conv3_pool = max_pool_2x2(conv3_3, k_size = [1, 8, 8, 1], padding = "SAME")
 conv3_flat = tf.reshape(conv3_pool, [-1, C3])
 conv3_drop = tf.nn.dropout(conv3_flat, keep_prob = keep_prob)
 
-full1 = tf.nn.relu(full_layer(conv3_flat))
+full1 = tf.nn.relu(full_layer(conv3_flat, F1))
+full1_
