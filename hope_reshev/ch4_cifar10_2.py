@@ -83,4 +83,4 @@ keep_prob = tf.placeholder(tf.float32)
 
 
 
-C1, C
+C1, C2, C3 
