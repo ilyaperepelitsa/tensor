@@ -90,4 +90,4 @@ F1 = 500
 conv1_1 = conv_layer(x, shape = [3, 3, 3, C1])
 conv1_2 = conv_layer(conv1_1, shape = [3, 3, C1, C1])
 conv1_3 = conv_layer(conv1_2, shape = [3, 3, C1, C1])
-conv1_pool = max_pool_2x2
+conv1_pool = max_pool_2x2()
