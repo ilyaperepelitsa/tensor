@@ -126,3 +126,13 @@ def test(sess):
     acc= np.mean([sess.run(accuracy, feed_dict = {x: X[i], y_: Y[i], keep_prob: 1.0})
                         for i in range(10)])
     print("Accuracy: {:.4}%".format(acc * 100))
+
+with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
+    sess.run(tf.global_variables_initializer())
+
+    for i in range(STEPS):
+        batch = cifar.train.next_batch(BATCH_SIZE)
+        sess.run(train_step, feed_dict = {x: batch[0], y_: batch[1], keep_prob: 0.5})
+
+        if i % 100 == 0:
+            test(sess)
