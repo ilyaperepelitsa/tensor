@@ -32,3 +32,4 @@ def variable_summaries(var):
         tf.summary.scalar("stddev", stddev)
         tf.summary.scalar("max", tf.reduce_max(var))
         tf.summary.scalar("min", tf.reduce_min(var))
+        tf.summary.
