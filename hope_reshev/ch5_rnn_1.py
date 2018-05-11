@@ -29,4 +29,4 @@ def variable_summaries(var):
         tf.summary.scalar("mean", mean)
         with tf.name_scope("stddev"):
             stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
-        tf.summary.
+        tf.summary.scalar("stddev")
