@@ -45,4 +45,4 @@ with tf.name_scope("rnn_weights"):
 
     with tf.name_scope("Bias"):
         b_rnn = tf.Variable(tf.zeros([hidden_layer_size]))
-        v
+        variable_summaries(bnn)
