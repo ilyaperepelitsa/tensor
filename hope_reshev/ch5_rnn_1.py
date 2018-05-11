@@ -39,4 +39,4 @@ with tf.name_scope("rnn_weights"):
         Wx = tf.Variable(tf.zeros([elemenet_size, hidden_layer_size]))
         variable_summaries(Wx)
 
-    with tf,
+    with tf.name_sc
