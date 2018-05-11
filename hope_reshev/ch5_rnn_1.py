@@ -19,4 +19,5 @@ _inputs = tf.placeholder(tf.float32, shape = [None, time_steps, elemenet_size],
 y = tf.placeholder(tf.float32, shape = [None, num_classes], name = "labels")
 
 
-batch_x, batch_y = mnist.train.next_batch(b)
+batch_x, batch_y = mnist.train.next_batch(batch_size)
+batch_x = 
