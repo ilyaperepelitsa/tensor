@@ -13,4 +13,4 @@ hidden_layer_size = 128
 
 LOG_DIR = "logs/RNN_with_summaries"
 
-_
+_inputs = tf.pla
