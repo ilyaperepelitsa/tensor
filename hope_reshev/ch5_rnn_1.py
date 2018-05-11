@@ -57,4 +57,4 @@ def rnn_step(previous_hidden_state, x):
 processed_input = tf.transpose(_inputs, perm = [1, 0, 2])
 # Current input shape = (time_steps, batch_size, element_size)
 
-initial_hidden = tf.zeros([batch_size, hidden_la])
+initial_hidden = tf.zeros([batch_size, hidden_layer_size])
