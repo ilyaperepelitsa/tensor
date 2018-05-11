@@ -11,4 +11,4 @@ batch_size = 128
 hidden_layer_size = 128
 
 
-LOG_DIR = "logs/RNN_"
+LOG_DIR = "logs/RNN_with_summaries"
