@@ -27,4 +27,4 @@ def variable_summaries(var):
     with tf.name_scope("summaries"):
         mean = tf.reduce_mean(var)
         tf.summary.scalar("mean", mean)
-        
+        with tf.
