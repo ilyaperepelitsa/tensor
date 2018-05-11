@@ -16,4 +16,7 @@ LOG_DIR = "logs/RNN_with_summaries"
 _inputs = tf.placeholder(tf.float32, shape = [None, time_steps, elemenet_size],
                                         name = "inputs")
 
-y = tf.placeholder(tf.float32, shape = [None, num_classes], name = )
+y = tf.placeholder(tf.float32, shape = [None, num_classes], name = "labels")
+
+
+batch_x, 
