@@ -44,4 +44,4 @@ with tf.name_scope("rnn_weights"):
         variable_summaries(Wh)
 
     with tf.name_scope("Bias"):
-        b_rnn = t
+        b_rnn = tf.Variable(tf.)
