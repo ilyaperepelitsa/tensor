@@ -49,4 +49,4 @@ with tf.name_scope("rnn_weights"):
 
 
 def rnn_step(previous_hidden_state, x):
-    curren
+    current_hidden_state = tf.
