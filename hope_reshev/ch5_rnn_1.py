@@ -24,4 +24,4 @@ batch_x = batch_x.reshape((batch_size, time_steps, elemenet_size))
 
 
 def variable_summaries(var):
-    with tf.name_scope("")
+    with tf.name_scope("summaries")
