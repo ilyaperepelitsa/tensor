@@ -53,4 +53,4 @@ def rnn_step(previous_hidden_state, x):
         tf.matmul(previous_hidden_state, Wh) + tf.matmul(x, Wx) + b_rnn)
     return current_hidden_state
 
-processed_o
+processed_input = 
