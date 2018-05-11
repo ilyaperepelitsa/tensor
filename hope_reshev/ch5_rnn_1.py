@@ -26,4 +26,5 @@ batch_x = batch_x.reshape((batch_size, time_steps, elemenet_size))
 def variable_summaries(var):
     with tf.name_scope("summaries"):
         mean = tf.reduce_mean(var)
-        tf.summary.scalar("mean")
+        tf.summary.scalar("mean", mean)
+        
