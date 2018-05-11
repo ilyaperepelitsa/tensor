@@ -34,4 +34,4 @@ def variable_summaries(var):
         tf.summary.scalar("min", tf.reduce_min(var))
         tf.summary.histogram("histogram", var)
 
-with tf.name
+with tf.name_scope()
