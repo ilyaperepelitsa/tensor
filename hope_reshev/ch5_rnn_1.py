@@ -35,3 +35,4 @@ def variable_summaries(var):
         tf.summary.histogram("histogram", var)
 
 with tf.name_scope("rnn_weights"):
+    wi
