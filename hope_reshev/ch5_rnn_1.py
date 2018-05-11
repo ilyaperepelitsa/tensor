@@ -40,4 +40,5 @@ with tf.name_scope("rnn_weights"):
         variable_summaries(Wx)
 
     with tf.name_scope("W_h"):
-        Wh = tf.Variable(tf.zeros([hidden_layer_size, hidd]))
+        Wh = tf.Variable(tf.zeros([hidden_layer_size, hidden_layer_size]))
+        variable)
