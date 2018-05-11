@@ -21,3 +21,6 @@ y = tf.placeholder(tf.float32, shape = [None, num_classes], name = "labels")
 
 batch_x, batch_y = mnist.train.next_batch(batch_size)
 batch_x = batch_x.reshape((batch_size, time_steps, elemenet_size))
+
+
+def var
