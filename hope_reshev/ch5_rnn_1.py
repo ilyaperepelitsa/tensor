@@ -58,4 +58,5 @@ processed_input = tf.transpose(_inputs, perm = [1, 0, 2])
 # Current input shape = (time_steps, batch_size, element_size)
 
 initial_hidden = tf.zeros([batch_size, hidden_layer_size])
-all_hidden_states = tf.scan(rnn_step, processed_input, initializer = initial_hidde)
+all_hidden_states = tf.scan(rnn_step, processed_input,
+                initializer = initial_hidden, name = "states")
