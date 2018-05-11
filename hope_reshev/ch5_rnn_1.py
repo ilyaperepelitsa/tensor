@@ -5,4 +5,4 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("/tmp/data", one_hot = True)
 
 elemenet_size = 28
-t
+time_steps = num_classes
