@@ -48,4 +48,4 @@ with tf.name_scope("rnn_weights"):
         variable_summaries(b_rnn)
 
 
-def rnn_step(previous)
+def rnn_step(previous_hidd)
