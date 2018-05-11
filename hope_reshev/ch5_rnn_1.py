@@ -36,4 +36,4 @@ def variable_summaries(var):
 
 with tf.name_scope("rnn_weights"):
     with tf.name_scope("W_x"):
-        Wx = tf.Variable(tf.zeros([ele]))
+        Wx = tf.Variable(tf.zeros([elemenet_size, hiden]))
