@@ -53,5 +53,5 @@ def rnn_step(previous_hidden_state, x):
         tf.matmul(previous_hidden_state, Wh) + tf.matmul(x, Wx) + b_rnn)
     return current_hidden_state
 
-# Current input shape = (batch_size, t)
+# Current input shape = (batch_size, time_steps, element_size)
 processed_input = tf.transpose(_inputs, perm = [1, 0, 2])
