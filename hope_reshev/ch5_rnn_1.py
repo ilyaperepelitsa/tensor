@@ -51,4 +51,4 @@ with tf.name_scope("rnn_weights"):
 def rnn_step(previous_hidden_state, x):
     current_hidden_state = tf.tanh(
         tf.matmul(previous_hidden_state, Wh) + tf.matmul(x, Wx) + b_rnn)
-    return cu
+    return current_hidden_state
