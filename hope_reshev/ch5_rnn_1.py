@@ -62,4 +62,4 @@ all_hidden_states = tf.scan(rnn_step, processed_input,
                     initializer = initial_hidden, name = "states")
 
 
-import date
+import datetime.datetime
