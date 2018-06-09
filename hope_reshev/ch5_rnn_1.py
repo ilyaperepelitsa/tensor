@@ -107,4 +107,4 @@ witf tf.Session() as sess:
 
     for i in range(10000):
         batch_x, batch_y = mnist.train.next_batch(batch_size)
-        batch_
+        batch_x = batch_x.res
