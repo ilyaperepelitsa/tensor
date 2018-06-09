@@ -72,4 +72,4 @@ with tf.name_scope("linear_layer_weights") as scope:
         variable_summaries(bl)
 
 def get_linear_layer(hidden_state):
-    return tf.
+    return tf.matmul(hidde)
