@@ -73,7 +73,7 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 def get_linear_layer(hidden_state):
     return tf.matmul(hidden_state, Wl) + bl
-    
+
 with tf.name_scope("linear_layer_weights") as scope:
     all_outputs = tf.map_fn(get_linear_layer, all_hidden_states)
     output = all_outputs[-1]
@@ -82,7 +82,7 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 
 with tf.name_scope("cross_entropy"):
-    cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = output, lebels = y))
+    cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = output, labels = y))
     tf.summary.scalar("cross_entropy", cross_entropy)
 
 with tf.name_scope("train"):
