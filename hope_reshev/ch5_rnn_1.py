@@ -65,4 +65,4 @@ with tf.name_scope("linear_layer_weights") as scope:
     with tf.name_scope("W_linear"):
         Wl = tf.Variable(tf.truncated_normal([hidden_layer_size, num_classes],
                                                 mean = 0, stddev = 0.01))
-        va
+        variable_s
