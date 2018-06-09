@@ -61,4 +61,5 @@ all_hidden_states = tf.scan(rnn_step, processed_input,
                     initializer = initial_hidden, name = "states")
 
 
-with tf.name_scope("linear_layer_weights") as scope
+with tf.name_scope("linear_layer_weights") as scope:
+    with tf.name
