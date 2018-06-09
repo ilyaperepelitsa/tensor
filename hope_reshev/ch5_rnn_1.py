@@ -69,4 +69,6 @@ with tf.name_scope("linear_layer_weights") as scope:
     with tf.name_scope("Bias_linear"):
         bl = tf.Variable(tf.truncated_normal([num_classes],
                                                 mean = 0, stddev = 0.01))
-        variable_summaries()
+        variable_summaries(bl)
+
+def 
