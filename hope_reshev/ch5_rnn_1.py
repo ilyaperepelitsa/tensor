@@ -89,4 +89,5 @@ with tf.name_scope("train"):
     train_step = tf.train.RMSPropOptimizer(0.001, 0.9).minimize(cross_entropy)
 
 with tf.name_scope("accuracy"):
-    correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(output,))
+    correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(output, 1))
+    accuract
