@@ -120,4 +120,4 @@ witf tf.Session() as sess:
         if i % 10:
             summary, acc = sess.run([merged, accuracy], feed_dict = {_inputs: test_data,
                                                                         y: test_label})
-                                                                        
+                                                                        te
