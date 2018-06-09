@@ -112,4 +112,5 @@ witf tf.Session() as sess:
         train_writer.add_summary(summary, i)
 
         if i % 1000 == 0:
-            acc, loss, = sess.run([accuracy, cross_entropy], feed_dict={_inputs: batch_x, y: b})
+            acc, loss, = sess.run([accuracy, cross_entropy], feed_dict={_inputs: batch_x, y: batch_y})
+            pr
