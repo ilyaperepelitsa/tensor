@@ -93,4 +93,4 @@ with tf.name_scope("accuracy"):
     accuracy = (tf.reduce_mean(tf.cast(correct_prediction, tf.float32))) * 100
     tf.summary.scalar("accuracy", accuracy)
 
-merged = tf.summ
+merged = tf.summary.merge_all()
