@@ -75,4 +75,4 @@ def get_linear_layer(hidden_state):
     return tf.matmul(hidden_state)
 
 with tf.name_scope("linear_layer_weights") as scope:
-    all_outputs = tf.map_fn(get_linear_lay)
+    all_outputs = tf.map_fn(get_linear_layer, all_hidden_states)
