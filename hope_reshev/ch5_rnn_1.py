@@ -106,4 +106,5 @@ witf tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(10000):
-        batch_x, batch_y = mnist.train.next_batch(batch_siz)
+        batch_x, batch_y = mnist.train.next_batch(batch_size)
+        batch_
