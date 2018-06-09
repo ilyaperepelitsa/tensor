@@ -86,4 +86,4 @@ with tf.name_scope("cross_entropy"):
     tf.summary.scalar("cross_entropy", cross_entropy)
 
 with tf.name_scope("train"):
-    train_step = tf.train.RMSPropOptimizer(0.001, 0.9)
+    train_step = tf.train.RMSPropOptimizer(0.001, 0.9).minimize
