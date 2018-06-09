@@ -90,4 +90,4 @@ with tf.name_scope("train"):
 
 with tf.name_scope("accuracy"):
     correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(output, 1))
-    accuract
+    accuracy = (tf.reduce)
