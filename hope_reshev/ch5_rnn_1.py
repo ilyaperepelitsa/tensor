@@ -111,4 +111,5 @@ witf tf.Session() as sess:
         summary, _ = sess.run([merged, train_step], feed_dict = {_inputs: batch_x, y: batch_y})
         train_writer.add_summary(summary, i)
 
-        if i % 1000 =:
+        if i % 1000 == 0:
+            acc, loss
