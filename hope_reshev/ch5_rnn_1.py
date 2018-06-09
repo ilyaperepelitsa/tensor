@@ -4,7 +4,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 mnist = input_data.read_data_sets("/tmp/data", one_hot = True)
 
-elemenet_size = 28
+element_size = 28
 time_steps = 28
 num_classes = 10
 batch_size = 128
@@ -96,7 +96,7 @@ with tf.name_scope("accuracy"):
 merged = tf.summary.merge_all()
 
 
-test_data = mnisy.test.images[:batch_size].reshape((-1, time_steps, element_size))
+test_data = mnist.test.images[:batch_size].reshape((-1, time_steps, element_size))
 test_label = mnist.test.labels[:batch_size]
 
 
