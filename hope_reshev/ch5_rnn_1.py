@@ -81,4 +81,5 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 
 
-with tf.name_scope("cros")
+with tf.name_scope("cross_entropy"):
+    cross_
