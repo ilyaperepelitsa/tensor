@@ -94,3 +94,6 @@ with tf.name_scope("accuracy"):
     tf.summary.scalar("accuracy", accuracy)
 
 merged = tf.summary.merge_all()
+
+
+t
