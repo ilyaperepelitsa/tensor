@@ -96,4 +96,4 @@ with tf.name_scope("accuracy"):
 merged = tf.summary.merge_all()
 
 
-test_data = mnis.test.images[:batch_size].reshape((-1, times))
+test_data = mnis.test.images[:batch_size].reshape((-1, time_steps, element_size))
