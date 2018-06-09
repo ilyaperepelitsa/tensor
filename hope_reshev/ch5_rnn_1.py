@@ -115,4 +115,4 @@ witf tf.Session() as sess:
             acc, loss, = sess.run([accuracy, cross_entropy], feed_dict={_inputs: batch_x, y: batch_y})
             print("Iter " + str(i) + ", Minibatch Loss= " + \
                     "{:.6f}".format(loss) + ", Training Accuracy= " +\
-                    "{:.5f}")
+                    "{:.5f}".format())
