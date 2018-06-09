@@ -122,4 +122,4 @@ witf tf.Session() as sess:
                                                                         y: test_label})
             test_acc = sess.run(accuracy, feed_dict={_inputs: test_data,
                                                         y: test_label})
-        test_acc
+    test_acc = sess.run
