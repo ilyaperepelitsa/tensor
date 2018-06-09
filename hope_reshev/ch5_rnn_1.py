@@ -81,4 +81,4 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 
 
-with 
+with tf.name_
