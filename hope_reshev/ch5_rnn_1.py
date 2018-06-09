@@ -105,4 +105,4 @@ witf tf.Session() as sess:
     test_writer = tf.summary.FileWriter(LOG_DIR + "/test", graph = tf.get_default_graph())
     sess.run(tf.global_variables_initializer())
 
-    fo
+    for i in range(10)
