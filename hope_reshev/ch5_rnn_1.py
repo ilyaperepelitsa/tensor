@@ -92,3 +92,5 @@ with tf.name_scope("accuracy"):
     correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(output, 1))
     accuracy = (tf.reduce_mean(tf.cast(correct_prediction, tf.float32))) * 100
     tf.summary.scalar("accuracy", accuracy)
+
+m
