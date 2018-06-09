@@ -100,4 +100,4 @@ test_data = mnis.test.images[:batch_size].reshape((-1, time_steps, element_size)
 test_label = mnist.test.labels[:batch_size]
 
 
-witf tf.Session() 
+witf tf.Session() as sess:
