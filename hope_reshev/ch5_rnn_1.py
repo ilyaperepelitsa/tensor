@@ -85,4 +85,5 @@ with tf.name_scope("cross_entropy"):
     cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = output, lebels = y))
     tf.summary.scalar("cross_entropy", cross_entropy)
 
-with tf
+with tf.name_scope("train"):
+    
