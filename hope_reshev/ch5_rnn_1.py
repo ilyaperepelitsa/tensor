@@ -72,8 +72,8 @@ with tf.name_scope("linear_layer_weights") as scope:
         variable_summaries(bl)
 
 def get_linear_layer(hidden_state):
-    return tf.matmul(hidden_state)
-
+    return tf.matmul(hidden_state, Wl) + bl
+    
 with tf.name_scope("linear_layer_weights") as scope:
     all_outputs = tf.map_fn(get_linear_layer, all_hidden_states)
     output = all_outputs[-1]
@@ -124,4 +124,4 @@ witf tf.Session() as sess:
                                                         y: test_label})
     test_acc = sess.run(accuracy, feed_dict = {_inputs: test_data,
                                                 y: test_label})
-    print("Test Accuracy: ", te)
+    print("Test Accuracy: ", test_acc)
