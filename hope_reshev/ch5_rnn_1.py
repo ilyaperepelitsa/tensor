@@ -121,4 +121,5 @@ witf tf.Session() as sess:
             summary, acc = sess.run([merged, accuracy], feed_dict = {_inputs: test_data,
                                                                         y: test_label})
             test_acc = sess.run(accuracy, feed_dict={_inputs: test_data,
-                                                y: test_label})
+                                                        y: test_label})
+                        
