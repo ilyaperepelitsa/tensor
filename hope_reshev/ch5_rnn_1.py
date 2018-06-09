@@ -79,4 +79,6 @@ with tf.name_scope("linear_layer_weights") as scope:
     output = all_outputs[-1]
     tf.summary.histogram("outputs", output)
 
+
+
 with 
