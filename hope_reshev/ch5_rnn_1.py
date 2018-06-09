@@ -82,4 +82,4 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 
 with tf.name_scope("cross_entropy"):
-    cross_entropy = tf.reduce_mean
+    cross_entropy = tf.reduce_mean(tf.nn.so)
