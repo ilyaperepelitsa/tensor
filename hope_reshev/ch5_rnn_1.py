@@ -106,4 +106,4 @@ witf tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for i in range(10000):
-        batch
+        batch_x, bat
