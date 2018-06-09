@@ -77,4 +77,4 @@ def get_linear_layer(hidden_state):
 with tf.name_scope("linear_layer_weights") as scope:
     all_outputs = tf.map_fn(get_linear_layer, all_hidden_states)
     output = all_outputs[-1]
-    tf.summary.histogram("outp")
+    tf.summary.histogram("outputs", )
