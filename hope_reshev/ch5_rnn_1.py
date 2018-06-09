@@ -81,4 +81,4 @@ with tf.name_scope("linear_layer_weights") as scope:
 
 
 
-with tf.name_
+with tf.name_scope("cros")
