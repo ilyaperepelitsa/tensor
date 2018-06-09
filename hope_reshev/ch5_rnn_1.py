@@ -96,4 +96,4 @@ with tf.name_scope("accuracy"):
 merged = tf.summary.merge_all()
 
 
-t
+test_data = mnis.test.images
