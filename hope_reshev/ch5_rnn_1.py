@@ -118,4 +118,4 @@ witf tf.Session() as sess:
                     "{:.5f}".format(acc))
 
         if i % 10:
-            summary, acc = sess.run([merged, accuracy], feed_dict = {_i})
+            summary, acc = sess.run([merged, accuracy], feed_dict = {_inputs: test_data,})
