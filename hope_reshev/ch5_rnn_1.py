@@ -88,4 +88,4 @@ with tf.name_scope("cross_entropy"):
 with tf.name_scope("train"):
     train_step = tf.train.RMSPropOptimizer(0.001, 0.9).minimize(cross_entropy)
 
-w
+with tf
