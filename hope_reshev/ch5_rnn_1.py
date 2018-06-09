@@ -63,4 +63,5 @@ all_hidden_states = tf.scan(rnn_step, processed_input,
 
 with tf.name_scope("linear_layer_weights") as scope:
     with tf.name_scope("W_linear"):
-        Wl = tf.Variable(tf.truncated_normal([hidden_layer_size, num_classes], ))
+        Wl = tf.Variable(tf.truncated_normal([hidden_layer_size, num_classes],
+                                                ))
