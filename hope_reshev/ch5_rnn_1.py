@@ -71,4 +71,4 @@ with tf.name_scope("linear_layer_weights") as scope:
                                                 mean = 0, stddev = 0.01))
         variable_summaries(bl)
 
-def get_linear_
+def get_linear_layer()
