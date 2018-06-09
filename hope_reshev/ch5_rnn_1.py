@@ -117,4 +117,4 @@ witf tf.Session() as sess:
                     "{:.6f}".format(loss) + ", Training Accuracy= " +\
                     "{:.5f}".format(acc))
 
-        if i
+        if i % 10 
