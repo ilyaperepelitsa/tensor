@@ -101,4 +101,4 @@ test_label = mnist.test.labels[:batch_size]
 
 
 witf tf.Session() as sess:
-    train_writer = tf.summary.FileWr
+    train_writer = tf.summary.FileWriter(LOG_DIR)
